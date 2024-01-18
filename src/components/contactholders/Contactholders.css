@@ -1,0 +1,229 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0em 10em 0em;
+  max-width: 1240px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.contact-header {
+  display: flex;
+
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--color-black);
+
+  align-items: end;
+}
+
+.contact-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact__header-title {
+  font-size: 4rem;
+  line-height: 3rem;
+  color: var(--color-green);
+}
+
+.contact__header-title-home,
+.contact__header-title-projects {
+  color: var(--color-black);
+  padding-right: 0.1em;
+}
+
+.contact__header-title-home:hover,
+.contact__header-title-projects:hover {
+  color: var(--color-purple);
+  transition: 0.5s ease;
+  text-shadow: rgba(226, 188, 226, 0.33) 1px 0px 5px;
+  cursor: pointer;
+}
+
+.contact__header-pgnum {
+  font-size: 1.5rem;
+}
+
+.contact__header-underline {
+  filter: var(--filter-color);
+}
+
+.contact-flexcontainer {
+  display: flex;
+  position: relative;
+}
+
+.contact__left-brace {
+  filter: var(--filter-color);
+}
+
+.contact__main-container {
+  padding-top: 5rem;
+  flex: 1;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__rec-1,
+.contact__rec-2,
+.contact__rec-3,
+.contact__rec-4,
+.contact__rec-5 {
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-right: 8rem;
+  min-width: 11rem;
+}
+
+.contact__rec-5 {
+  margin-top: 2rem;
+}
+
+.contact__link-1,
+.contact__link-2,
+.contact__link-3,
+.contact__link-4,
+.contact__link-5,
+.contact__link-6 {
+  border: 0.1rem;
+  border-style: solid;
+  border-radius: 0.8rem;
+  height: 2.5rem;
+  background-color: var(--color-grey);
+  box-shadow: 0 0.1rem 0.1rem rgba(46, 2, 79, 0.457);
+
+  padding-top: 0.1em;
+
+  color: var(--color-black);
+
+  font-family: "Ubuntu Mono";
+  font-size: 1.25rem;
+
+  width: 11rem;
+  cursor: pointer;
+}
+
+.contact-line-arrow {
+  color: var(--color-purple);
+  width: 5rem;
+}
+/* HOVER / CLICK */
+.contact__link-1:hover,
+.contact__link-2:hover,
+.contact__link-3:hover,
+.contact__link-4:hover,
+.contact__link-5:hover,
+.contact__link-6:hover {
+  border-color: var(--color-green);
+  background-color: rgba(31, 29, 29, 0.17);
+  transition: 0.4s ease;
+  box-shadow: rgb(172, 243, 65) 1px 0px 4px;
+  color: var(--color-white);
+}
+
+.contact__link-1:hover,
+.contact__link-2:hover,
+.contact__link-3:hover,
+.contact__link-4:hover,
+.contact__link-5:hover,
+.contact__link-6:hover {
+  width: 70%;
+  transition: 0.8s ease;
+}
+
+.contact__link-1:active,
+.contact__link-2:active,
+.contact__link-3:active,
+.contact__link-4:active,
+.contact__link-5:active,
+.contact__link-6:active {
+  background-color: rgba(160, 202, 113, 0.298);
+  transition: 0.1s ease;
+}
+/* HOVER / CLICK */
+
+.contact__header-pgnum-box {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 2em;
+}
+
+.contact__xxxx-bt {
+  filter: var(--filter-color);
+  margin-bottom: auto;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 62rem) {
+  .contact__header-title {
+    font-size: 3.5rem;
+  }
+
+  .contact__header-underline {
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 38rem) {
+  .contact__left-brace {
+    display: none;
+  }
+
+  .contact__xxxx-bt {
+    width: 10rem;
+  }
+
+  .contact__rec-1,
+  .contact__rec-2,
+  .contact__rec-3,
+  .contact__rec-4,
+  .contact__rec-5 {
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .contact__rec-1 {
+    min-width: 10rem;
+  }
+
+  .contact__rec-2 {
+    min-width: 10rem;
+  }
+
+  .contact__rec-3 {
+    min-width: 10rem;
+  }
+
+  .contact__rec-4 {
+    min-width: 10rem;
+  }
+
+  .contact__rec-5 {
+    min-width: 10rem;
+  }
+
+  .contact__rec-6 {
+    min-width: 10rem;
+  }
+
+  .contact__rec-7 {
+    padding-top: 3rem;
+  }
+
+  .contact__xxxx-bt {
+    width: 8rem;
+  }
+}

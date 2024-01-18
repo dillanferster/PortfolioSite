@@ -1,0 +1,197 @@
+.bio-page {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0em 10em 0em;
+  max-width: 1240px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.bio-header {
+  display: flex;
+
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--color-black);
+
+  align-items: end;
+}
+
+.bio-header-right {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+}
+
+.bio__header-title {
+  font-size: 4rem;
+  line-height: 3rem;
+  color: rgb(171, 255, 46);
+}
+
+.bio__header-pgnum-box {
+  width: 100%;
+  
+  
+  align-items: flex-end;
+  padding-left: 2em;
+}
+
+.bio__header-underline {
+  filter: var(--filter-color);
+}
+
+.bio__header-title-home,
+.bio__header-title-projects {
+  padding-right: 0.2em;
+  color: var(--color-black);
+}
+
+.bio__header-title-home:hover,
+.bio__header-title-projects:hover {
+  color: var(--color-purple);
+  transition: 0.5s ease;
+  text-shadow: rgba(226, 188, 226, 0.33) 1px 0px 5px;
+  cursor: pointer;
+}
+
+.bio__header-pgnum {
+  font-size: 1.5rem;
+}
+
+.bio-flexcontainer {
+  display: flex;
+}
+
+.bio__left-container {
+  display: flex;
+  flex: 1;
+}
+
+.bio__left-brace {
+  filter: var(--filter-color);
+}
+
+.bio__profilepic-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1em;
+  color: var(--color-black);
+}
+
+.bio__profilepic {
+  width: 20rem;
+  border-radius: 40px;
+}
+
+.bio__profilebox {
+  border: 0.15em;
+  border-style: solid;
+  border-radius: 42px;
+}
+
+.bio__profile-xx {
+  padding: 0 0 0.5em 2em;
+  filter: var(--filter-color);
+}
+
+.bio__profile-x {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em 2em 0em 0em;
+  filter: var(--filter-color);
+}
+
+.bio-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding-top: 1rem;
+  font-family: "Ubuntu Mono";
+
+  color: var(--color-black);
+}
+
+.bio-info-line {
+  padding: 1em 0em 2em 0em;
+}
+
+.bio-info-bottom {
+  display: flex;
+}
+
+.bio-skills-text {
+  display: flex;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--color-black);
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.bio__js-icon,
+.bio__react-icon,
+.bio__html-icon,
+.bio__css-icon,
+.bio__node-icon,
+.bio__c-icon {
+  width: 4.5rem;
+}
+
+.bio__figma-icon {
+  display: flex;
+  width: 2.5rem;
+  padding-left: 1em;
+  justify-content: center;
+}
+
+.bio__tech-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.bio__profilebox {
+  box-shadow: 0 0.3rem 0.3rem rgba(21, 21, 21, 0.325);
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 62rem) {
+  .bio__left-brace {
+    max-width: 6rem;
+  }
+
+  .bio__profilepic {
+    width: 16rem;
+  }
+
+  .bio__profilepic-xx,
+  .bio__profilepic-x {
+    width: 8rem;
+  }
+
+  .bio__header-title {
+    font-size: 3.5rem;
+  }
+
+  .bio__header-underline {
+    width: 6rem;
+  }
+
+  .bio-skills-text {
+    font-size: 1.5rem;
+  }
+
+  .bio-info-top {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 38rem) {
+  .bio-flexcontainer {
+    flex-direction: column;
+  }
+}

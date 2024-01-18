@@ -1,0 +1,26 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-black: #100f0f;
+  --color-white: #e1ddd7;
+  --color-purple: #812fff;
+  --color-green: #adff2f;
+  --color-background: #d1d2d4;
+  --color-grey: #1313133c;
+
+  --filter-color: invert(3%) sepia(11%) saturate(309%) hue-rotate(314deg)
+    brightness(93%) contrast(93%);
+
+  --color-green2: #adff2f;
+}
+
+[data-theme="dark"] {
+  --color-background: #0e0e0e;
+  --color-black: #ddd6d6;
+  --color-grey: #746e6e3c;
+  --filter-color: invert(93%) sepia(3%) saturate(333%) hue-rotate(314deg)
+    brightness(100%) contrast(79%);
+    --color-green2: #812fff;
+}

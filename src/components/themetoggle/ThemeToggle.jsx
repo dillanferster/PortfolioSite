@@ -1,0 +1,35 @@
+import "./ThemeToggle.css";
+import React from "react";
+import sunmoon from "../../assets/sun-moon.svg";
+
+const Toggler = () => {
+  const setDarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+  };
+
+  const setLightMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "light");
+  };
+
+  const toggleTheme = (e) => {
+    if (e.target.checked) {
+      setDarkMode();
+    } else setLightMode();
+  };
+
+  return (
+    <div className="toggle-btn">
+      <input
+        className="toggle-input"
+        id="check"
+        type="checkbox"
+        onChange={toggleTheme}
+      />
+      <label className="theme-label" htmlFor="check">
+        <img className="sunmoon" src={sunmoon} alt="moon"></img>
+      </label>
+    </div>
+  );
+};
+
+export default Toggler;
