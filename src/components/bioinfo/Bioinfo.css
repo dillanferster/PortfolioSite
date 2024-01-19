@@ -33,8 +33,7 @@
 
 .bio__header-pgnum-box {
   width: 100%;
-  
-  
+
   align-items: flex-end;
   padding-left: 2em;
 }
@@ -139,6 +138,7 @@
 .bio__node-icon,
 .bio__c-icon {
   width: 4.5rem;
+  filter: drop-shadow(rgba(15, 15, 15, 0.439) 1px 2px 2px);
 }
 
 .bio__figma-icon {
@@ -146,6 +146,7 @@
   width: 2.5rem;
   padding-left: 1em;
   justify-content: center;
+  filter: drop-shadow(rgba(15, 15, 15, 0.773) 1px 3px 2px);
 }
 
 .bio__tech-icons {
@@ -156,6 +157,49 @@
 .bio__profilebox {
   box-shadow: 0 0.3rem 0.3rem rgba(21, 21, 21, 0.325);
 }
+
+/* animations */
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animateIcon {
+  animation: upDown 6s ease-in-out 0s infinite normal none;
+}
+
+.animateIcon--2 {
+  animation-delay: 0.4s;
+}
+
+.animateIcon--3 {
+  animation-delay: 0.6s;
+}
+
+.animateIcon--4 {
+  animation-delay: 0.5s;
+}
+
+.animateIcon--5 {
+  animation-delay: 0.7s;
+}
+
+.animateIcon--6 {
+  animation-delay: 0.95s;
+}
+
+.animateIcon--7 {
+  animation-delay: 1.2s;
+}
+
+/* animations */
 
 /* MEDIA */
 

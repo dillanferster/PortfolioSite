@@ -172,12 +172,14 @@
   padding-bottom: 0.5em;
   font-size: 1.5rem;
   font-family: "Bebas Neue";
+  color: var(--color-black);
 }
 
 .projects-app-info {
   padding-bottom: 2em;
   font-size: 0.8rem;
   font-family: "Ubuntu Mono";
+  color: var(--color-black);
 }
 
 .tech-box {

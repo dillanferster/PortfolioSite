@@ -37,7 +37,7 @@ const Header = () => {
         <div className="left-container">
           <div className="titlecard__software">Frontend Developer</div>
 
-          <img className="warp-img" src={warp} alt="warp" />
+          <img className="warp-img animateIconWarp" src={warp} alt="warp" />
         </div>
 
         <div className="middle-container">

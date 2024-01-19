@@ -77,7 +77,7 @@ const Bioinfo = () => {
           <div className="bio-info-top">
             <p>
               Currently in my second year of the Software Development Diploma
-              program at the Southern Alberta Institute of Technology (SAIT), I
+              program at the Southern Alberta Institute of Technology (SAIT). I
               have acquired knowledge of Data Structures and algorithims, OOP
               concepts along with an understanding of the Software Development
               Life Cycle, this has provided me with good programming
@@ -98,34 +98,54 @@ const Bioinfo = () => {
           <div className="bio__tech-icons">
             <div className="bio-info-bottom">
               <div>
-                <img className="bio__js-icon" src={jsicon} alt="jsicon" />
-              </div>
-
-              <div>
-                <img className="bio__node-icon" src={nodeicon} alt="nodeicon" />
+                <img
+                  className="bio__js-icon animateIcon"
+                  src={jsicon}
+                  alt="jsicon"
+                />
               </div>
 
               <div>
                 <img
-                  className="bio__react-icon"
+                  className="bio__node-icon animateIcon animateIcon--2"
+                  src={nodeicon}
+                  alt="nodeicon"
+                />
+              </div>
+
+              <div>
+                <img
+                  className="bio__react-icon animateIcon animateIcon--3"
                   src={reacticon}
                   alt="reacticon"
                 />
               </div>
 
               <div>
-                <img className="bio__html-icon" src={htmlicon} alt="htmlicon" />
+                <img
+                  className="bio__html-icon animateIcon animateIcon--4"
+                  src={htmlicon}
+                  alt="htmlicon"
+                />
               </div>
 
               <div>
-                <img className="bio__css-icon" src={cssicon} alt="cssicon" />
+                <img
+                  className="bio__css-icon animateIcon animateIcon--5"
+                  src={cssicon}
+                  alt="cssicon"
+                />
               </div>
 
               <div>
-                <img className="bio__c-icon" src={cicon} alt="cicon" />
+                <img
+                  className="bio__c-icon animateIcon animateIcon--6"
+                  src={cicon}
+                  alt="cicon"
+                />
               </div>
 
-              <div className="bio__figma-icon">
+              <div className="bio__figma-icon animateIcon animateIcon--7">
                 <img src={figmaicon} alt="figmaicon" />
               </div>
             </div>

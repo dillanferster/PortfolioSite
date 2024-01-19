@@ -278,6 +278,34 @@
   }
 }
 
+/* Animations */
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move3d {
+  0%,
+  100% {
+    transform: translate3d();
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animateIconWarp {
+  animation: upDown 5s ease-in-out 0s infinite normal none;
+}
+
 @media screen and (max-width: 41rem) {
   .header-dillan {
     font-size: 1rem;

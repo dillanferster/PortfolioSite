@@ -10,10 +10,8 @@ import Modal from "../modal/Modal";
 const Contactholders = () => {
   const [openModal, setOpenModal] = useState(false);
 
- 
-
   return (
-    <div id="contactpage" className="contact-page" >
+    <div id="contactpage" className="contact-page">
       <div className="contact-header">
         <div className="contact__header-pgnum-box">
           <span className="contact__header-pgnum">./3/3</span>
@@ -43,7 +41,7 @@ const Contactholders = () => {
         </div>
       </div>
 
-      <div className="contact-flexcontainer" >
+      <div className="contact-flexcontainer">
         <div className="contact__left-container">
           <img
             className="contact__left-brace"
