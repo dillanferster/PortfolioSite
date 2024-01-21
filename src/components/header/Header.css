@@ -15,7 +15,7 @@
   width: 90%;
   height: auto;
   flex-direction: column;
-  padding: 1em 0em 10em 0em;
+  padding: 1em 0em 15em 0em;
 }
 
 /* HEADER */
@@ -50,7 +50,7 @@
 
   height: 4.1rem;
   position: absolute;
-  right: -0.42em;
+  right: -0.38em;
   filter: var(--filter-color);
   width: 12.2rem;
 }
@@ -213,7 +213,7 @@
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -431,8 +431,9 @@
   .nav-projects-link,
   .nav-contact-link {
     padding-top: 0.5em;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.2rem;
+    line-height: 2.5rem;
   }
 
   .titlecard__software {
