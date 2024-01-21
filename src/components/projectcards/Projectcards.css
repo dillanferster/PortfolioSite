@@ -23,6 +23,7 @@
 .projects-header-left {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .projects__header-title {
@@ -225,12 +226,12 @@
     font-size: 3.5rem;
   }
 
-  .projects__header-underline {
-    width: 6rem;
-  }
-
   .projects__right-brace {
     display: none;
+  }
+
+  .bio__header-underline {
+    width: 6rem;
   }
 
   .projects__card-left {

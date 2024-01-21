@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Header.css";
 
 import warp from "../../assets/warp.svg";
@@ -11,6 +11,45 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Toggler } from "../../components";
 
 const Header = () => {
+  // WARP moving with mouse ----------- ///
+  // sets the warpbox div as a varible
+  const warpBoxRef = useRef(null);
+
+  // listens for a mouse move on the page and then calls rotate element and passes in the warp varible and the event as e
+  useEffect(() => {
+    const handleMouseMove = (e) => rotateElement(e);
+
+    document.addEventListener("mousemove", handleMouseMove);
+
+    // Cleanup the event listener
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  });
+
+  // takes in the event and element which is our warp varible , event is our mouse moving and clients X,Y  gets the screen cordinates of it and saves them as varible
+  function rotateElement(event) {
+    const warpBox = warpBoxRef.current;
+    if (!warpBox) {return};
+
+    const x = event.clientX;
+    const y = event.clientY;
+
+    // find the left 3rd of the screen
+    const middleX = window.innerWidth / 2;
+    const middleY = window.innerHeight / 2;
+
+    // gets the offest from middle , how far away mouse is from the middle
+    const offestX = ((x - middleX) / middleX) * 25;
+    const offestY = ((y - middleY) / middleY) * 25;
+    console.log(offestX, offestY);
+
+    warpBox.style.setProperty("--rotateX", -1 * offestY + "deg");
+    warpBox.style.setProperty("--rotateY", -1 * offestX + "deg");
+  }
+
+  // WARP moving with mouse ----------- ///
+
   return (
     <div id="homepage" className="header-flexcontainer">
       <div className="header">
@@ -37,7 +76,14 @@ const Header = () => {
         <div className="left-container">
           <div className="titlecard__software">Frontend Developer</div>
 
-          <img className="warp-img animateIconWarp" src={warp} alt="warp" />
+          <div className="warp-img-box" ref={warpBoxRef}>
+            <img
+              id="warp"
+              className="warp-img animateIconWarp"
+              src={warp}
+              alt="warp"
+            />
+          </div>
         </div>
 
         <div className="middle-container">
@@ -95,7 +141,7 @@ const Header = () => {
                 >
                   contact
                 </Link>
-                {/* <button className='bio-button'>contact</button> */}
+                
               </div>
             </div>
           </nav>

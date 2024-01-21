@@ -14,6 +14,8 @@
     brightness(93%) contrast(93%);
 
   --color-green2: #adff2f;
+
+ 
 }
 
 [data-theme="dark"] {
@@ -22,5 +24,5 @@
   --color-grey: #746e6e3c;
   --filter-color: invert(93%) sepia(3%) saturate(333%) hue-rotate(314deg)
     brightness(100%) contrast(79%);
-    --color-green2: #812fff;
+  --color-green2: #812fff;
 }

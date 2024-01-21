@@ -172,7 +172,7 @@
 }
 
 .animateIcon {
-  animation: upDown 6s ease-in-out 0s infinite normal none;
+  animation: upDown 4s ease-in-out 0s infinite normal none;
 }
 
 .animateIcon--2 {
@@ -180,15 +180,15 @@
 }
 
 .animateIcon--3 {
-  animation-delay: 0.6s;
-}
-
-.animateIcon--4 {
   animation-delay: 0.5s;
 }
 
+.animateIcon--4 {
+  animation-delay: 0.6s;
+}
+
 .animateIcon--5 {
-  animation-delay: 0.7s;
+  animation-delay: 0.75s;
 }
 
 .animateIcon--6 {

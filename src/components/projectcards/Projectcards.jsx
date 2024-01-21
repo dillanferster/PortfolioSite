@@ -6,7 +6,6 @@ import xxxx from "../../assets/xxxx1.svg";
 import projectcard from "../../assets/project-rec.svg";
 import { HashLink as Link } from "react-router-hash-link";
 import Libapp from "../../assets/Libapp2.png";
-import jQuery from "jquery";
 
 const Projectcards = () => {
   const [isActive, setIsActive] = useState(false);
