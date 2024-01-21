@@ -60,8 +60,7 @@ const Header = () => {
             <Toggler></Toggler>
           </div>
           <div className="header-oval">
-            {" "}
-            <img src={oval} alt="oval"></img>
+            
           </div>
 
           <div className="header-star">

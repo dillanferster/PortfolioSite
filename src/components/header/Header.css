@@ -15,7 +15,7 @@
   width: 90%;
   height: auto;
   flex-direction: column;
-  padding: 1em 0em 5em 0em;
+  padding: 1em 0em 10em 0em;
 }
 
 /* HEADER */
@@ -45,6 +45,10 @@
 }
 
 .header-oval {
+  border: 0.1rem solid;
+  border-radius: 40px;
+
+  height: 4.1rem;
   position: absolute;
   right: -0.42em;
   filter: var(--filter-color);
@@ -85,7 +89,7 @@
 }
 
 .warp-img {
-  width: 15rem;
+  width: 16rem;
   filter: drop-shadow(1px 4px 6px rgba(98, 14, 171, 0.628));
 
   /* filter: drop-shadow(3px 4px 3px rgba(83, 83, 82, 0.778)); */
@@ -205,11 +209,11 @@
 @keyframes upDownWarp {
   0%,
   100% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
 
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
 
@@ -298,8 +302,10 @@
   }
 
   .header-oval {
-    right: -0.3em;
-    width: 11rem;
+    right: -0.25em;
+
+    width: 10rem;
+    height: 3.75rem;
   }
 
   .header-pgnum {
@@ -314,7 +320,8 @@
 
   .header-oval {
     right: -0.35em;
-    width: 7.9rem;
+    width: 6.3rem;
+    height: 2.75rem;
   }
 
   .header-star {
@@ -383,8 +390,9 @@
 
 @media screen and (max-width: 38rem) {
   .header-oval {
-    right: -0.35em;
-    width: 6.5rem;
+    right: -0.35rem;
+    width: 6rem;
+    height: 2.25rem;
   }
 
   .theme-toggle {
@@ -405,8 +413,9 @@
   }
 
   .header-oval {
-    right: -0.34em;
-    width: 6.5rem;
+    right: -0.35rem;
+    width: 6rem;
+    height: 2.25rem;
   }
 
   .header-pgnum {
