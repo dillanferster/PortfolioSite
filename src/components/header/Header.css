@@ -399,13 +399,14 @@
     margin-right: 1.3rem;
   }
 }
-@media screen and (max-width: 20rem) {
+@media screen and (max-width: 25rem) {
   .title-card {
     flex-direction: column;
   }
 
   .header-star {
     width: 1.5rem;
+    margin-right: 1em;
   }
 
   .header-dillan {
