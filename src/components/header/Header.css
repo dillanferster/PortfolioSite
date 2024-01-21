@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "caustics";
+  font-family: "caustics demo";
   src: url("./assets/fonts/caustics_demo-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -15,7 +15,7 @@
   width: 90%;
   height: auto;
   flex-direction: column;
-  padding: 1em 0em 15em 0em;
+  padding: 1em 0em 16em 0em;
 }
 
 /* HEADER */
