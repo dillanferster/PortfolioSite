@@ -36,11 +36,7 @@ const Projectcards = () => {
             contact
           </Link>
 
-          <img
-            className="projects__header-underline"
-            src={headerunderline}
-            alt="underline"
-          />
+          <hr className="projects__header-underline" />
         </div>
 
         <div className="projects__header-pgnum-box">

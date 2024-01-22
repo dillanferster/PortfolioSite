@@ -38,11 +38,7 @@ const Bioinfo = () => {
             projects
           </Link>
 
-          <img
-            className="bio__header-underline"
-            src={headerunderline}
-            alt="underline"
-          />
+          <hr className="bio__header-underline"/>
         </div>
       </div>
 

@@ -43,11 +43,7 @@ const Contactholders = () => {
 
       <div className="contact-flexcontainer">
         <div className="contact__left-container">
-          <img
-            className="contact__left-brace"
-            src={leftbrace}
-            alt="contact left brace"
-          />
+          <hr className="contact__left-brace" />
         </div>
 
         <Modal open={openModal} onClose={() => setOpenModal(false)}></Modal>

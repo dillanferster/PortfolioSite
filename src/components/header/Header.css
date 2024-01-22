@@ -431,9 +431,17 @@
   .nav-projects-link,
   .nav-contact-link {
     padding-top: 0.5em;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     letter-spacing: 0.2rem;
     line-height: 2.5rem;
+  }
+
+  .nav-bio-link,
+  .nav-projects-link,
+  .nav-contact-link {
+    text-shadow: -0.04rem -0.04rem 0 rgb(171, 255, 46),
+      0.04rem -0.04rem 0 rgb(171, 255, 46), -0.04rem 0.04rem 0 rgb(171, 255, 46),
+      0.04rem 0.04rem 0 rgb(171, 255, 46);
   }
 
   .titlecard__software {

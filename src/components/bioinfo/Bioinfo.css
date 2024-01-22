@@ -39,7 +39,10 @@
 }
 
 .bio__header-underline {
-  filter: var(--filter-color);
+  width: 6rem;
+  height: 0.1rem;
+  background-color: var(--color-black);
+  border-color: var(--color-black);
 }
 
 .bio__header-title-home,
@@ -236,6 +239,13 @@
 
 @media screen and (max-width: 38rem) {
   .bio-flexcontainer {
+    padding-top: 2rem;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .bio__left-brace {
+    display: none;
   }
 }

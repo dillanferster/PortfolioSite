@@ -33,7 +33,10 @@
 }
 
 .projects__header-underline {
-  filter: var(--filter-color);
+  width: 6rem;
+  height: 0.1rem;
+  background-color: var(--color-black);
+  border-color: var(--color-black);
 }
 
 .projects__header-title-bio,
