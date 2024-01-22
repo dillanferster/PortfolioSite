@@ -7,15 +7,13 @@
   --color-white: #e1ddd7;
   --color-purple: #812fff;
   --color-green: #adff2f;
-  --color-background: #d1d2d4;
+  /* --color-background: #d1d2d4; */
   --color-grey: #1313133c;
-
+  --color-background: #d4d4d1;
   --filter-color: invert(3%) sepia(11%) saturate(309%) hue-rotate(314deg)
     brightness(93%) contrast(93%);
 
   --color-green2: #adff2f;
-
- 
 }
 
 [data-theme="dark"] {

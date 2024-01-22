@@ -33,17 +33,13 @@ const Contactholders = () => {
             home
           </Link>
 
-          <img
-            className="contact__header-underline"
-            src={headerunderline}
-            alt="underline"
-          />
+          <hr className="contact__header-underline" />
         </div>
       </div>
 
       <div className="contact-flexcontainer">
         <div className="contact__left-container">
-          <hr className="contact__left-brace" />
+          <img src={leftbrace} alt="left" className="contact__left-brace" />
         </div>
 
         <Modal open={openModal} onClose={() => setOpenModal(false)}></Modal>
