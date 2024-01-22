@@ -1,10 +1,10 @@
 @font-face {
   font-family: "caustics demo";
-  src: url("/assets/fonts/caustics_demo-webfont.woff2") format("woff2"),
-    url("/assets/fonts/caustics_demo-webfont.svg#caustics_demoregular")
+  src: url("../assets/fonts/caustics_demo-webfont.woff2") format("woff2"),
+    url("../assets/fonts/caustics_demo-webfont.svg#caustics_demoregular")
       format("svg"),
-    url("/assets/fonts/caustics_demo-webfont.woff") format("woff"),
-    url("/assets/fonts/caustics_demo-webfont.ttf") format("truetype");
+    url("../assets/fonts/caustics_demo-webfont.woff") format("woff"),
+    url("../assets/fonts/caustics_demo-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
