@@ -176,9 +176,9 @@
 .nav-bio-link,
 .nav-projects-link,
 .nav-contact-link {
-  text-shadow: -0.2rem -0.2rem 0 rgb(171, 255, 46),
-    0.2rem -0.2rem 0 rgb(171, 255, 46), -0.2rem 0.2rem 0 rgb(171, 255, 46),
-    0.2rem 0.2rem 0 rgb(171, 255, 46);
+  text-shadow: -0.12rem -0.12rem 0 rgb(171, 255, 46),
+    0.12rem -0.12rem 0 rgb(171, 255, 46), -0.12rem 0.12rem 0 rgb(171, 255, 46),
+    0.12rem 0.12rem 0 rgb(171, 255, 46);
 
   font-size: 7.5rem;
   letter-spacing: 0.2rem;
