@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "caustics demo";
+  font-family: "caustics-demo";
   src: url("./assets/fonts/caustics_demo-webfont.woff2") format("woff2"),
     url("./assets/fonts/caustics_demo-webfont.svg#caustics_demoregular")
       format("svg"),
@@ -122,7 +122,7 @@
 }
 
 .titlecard__software {
-  font-family: "caustics demo";
+  font-family: "caustics-demo";
   font-size: 3rem;
   color: var(--color-black);
 
