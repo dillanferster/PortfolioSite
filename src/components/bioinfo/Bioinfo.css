@@ -253,4 +253,13 @@
   .bio__profilepic-box {
     padding-bottom: 2rem;
   }
+
+  .bio__header-pgnum {
+    font-size: 1rem;
+    
+  }
+
+  .bio__header-pgnum-box{
+    padding-left: 0;
+  }
 }

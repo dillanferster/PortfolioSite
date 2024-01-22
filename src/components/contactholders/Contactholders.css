@@ -1,7 +1,7 @@
 .contact-page {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0em 10em 0em;
+  padding: 1rem 0em 8em 0em;
   max-width: 1240px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -195,6 +195,14 @@
   .contact__rec-4,
   .contact__rec-5 {
     padding-right: 1rem;
+  }
+
+  .contact__header-pgnum {
+    font-size: 1rem;
+  }
+
+  .contact__header-pgnum-box {
+    padding-left: 0;
   }
 }
 

@@ -302,4 +302,16 @@
     width: 18rem;
     height: 24.5rem;
   }
+
+  .projects__header-pgnum {
+    font-size: 1rem;
+  }
+
+  .projects__header-pgnum-box {
+    padding-right: 0;
+  }
+
+  .projects__left-container{
+    padding-top: 5rem;
+  }
 }

@@ -30,7 +30,9 @@ const Header = () => {
   // takes in the event and element which is our warp varible , event is our mouse moving and clients X,Y  gets the screen cordinates of it and saves them as varible
   function rotateElement(event) {
     const warpBox = warpBoxRef.current;
-    if (!warpBox) {return};
+    if (!warpBox) {
+      return;
+    }
 
     const x = event.clientX;
     const y = event.clientY;
@@ -40,8 +42,8 @@ const Header = () => {
     const middleY = window.innerHeight / 2;
 
     // gets the offest from middle , how far away mouse is from the middle
-    const offestX = ((x - middleX) / middleX) * 25;
-    const offestY = ((y - middleY) / middleY) * 25;
+    const offestX = ((x - middleX) / middleX) * 30;
+    const offestY = ((y - middleY) / middleY) * 30;
     console.log(offestX, offestY);
 
     warpBox.style.setProperty("--rotateX", -1 * offestY + "deg");
@@ -59,9 +61,7 @@ const Header = () => {
           <div className="theme-toggle">
             <Toggler></Toggler>
           </div>
-          <div className="header-oval">
-            
-          </div>
+          <div className="header-oval"></div>
 
           <div className="header-star">
             <img src={star} alt="star"></img>
@@ -140,7 +140,6 @@ const Header = () => {
                 >
                   contact
                 </Link>
-                
               </div>
             </div>
           </nav>
