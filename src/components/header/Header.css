@@ -1,6 +1,9 @@
 @font-face {
   font-family: "caustics demo";
-  src: url("./assets/fonts/caustics_demo-webfont.woff2") format("woff2");
+  src: url("./assets/fonts/caustics_demo-webfont.woff2") format("woff2"),
+    url("./assets/fonts/caustics_demo-webfont.svg") format("svg"),
+    url("./assets/fonts/caustics_demo-webfont.woff") format("woff"),
+    url("./assets/fonts/caustics_demo-webfont.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
