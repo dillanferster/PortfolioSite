@@ -1,7 +1,7 @@
 .bio-page {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0em 20em 0em;
+  padding: 8rem 0em 15em 0em;
   max-width: 1240px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -256,10 +256,9 @@
 
   .bio__header-pgnum {
     font-size: 1rem;
-    
   }
 
-  .bio__header-pgnum-box{
+  .bio__header-pgnum-box {
     padding-left: 0;
   }
 }

@@ -1,5 +1,6 @@
 .toggle-input {
   visibility: hidden;
+  
 }
 
 .toggle-btn {
@@ -25,7 +26,7 @@
   border-radius: 1rem;
   background-color: var(--color-green2);
   transition: .4s ease;
-  
+
 }
 
 .sunmoon {

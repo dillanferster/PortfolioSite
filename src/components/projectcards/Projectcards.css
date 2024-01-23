@@ -1,7 +1,7 @@
 .projects-page {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0em 20em 0em;
+  padding: 8rem 0em 15em 0em;
   max-width: 1240px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -311,7 +311,7 @@
     padding-right: 0;
   }
 
-  .projects__left-container{
+  .projects__left-container {
     padding-top: 5rem;
   }
 }
