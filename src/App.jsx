@@ -12,17 +12,11 @@ function App() {
       <div className="App" data-theme={"light"}>
         <Header></Header>
 
-        <div className="bio-page-main">
-          <Bioinfo />
-        </div>
+        <Bioinfo />
 
-        <div className="projects-page-main">
-          <Projectcards />
-        </div>
+        <Projectcards />
 
-        <div className="contact-page-main">
-          <Contactholders />
-        </div>
+        <Contactholders />
       </div>
     </BrowserRouter>
   );

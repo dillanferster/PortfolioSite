@@ -4,7 +4,6 @@ import "./Modal.css";
 import { useRef, useEffect } from "react";
 
 const Modal = ({ open, onClose }) => {
-  
   const stopPropagation = (e) => {
     e.stopPropagation();
   };

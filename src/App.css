@@ -3,9 +3,12 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+
 }
 
-.App {
+
+.App{
+  
   /* background: radial-gradient(ellipse at 0% 28%, rgba(32, 52, 70, 1) 0%, rgba(37, 49, 61, 1) 70%, rgba(55, 78, 107, 1) 100%); */
 
   background-color: var(--color-background);
@@ -13,21 +16,7 @@
   /* background-color: rgb(19, 18, 18); */
 
   /* background-color: #2C3A49; */
+
+ 
 }
 
-.bio-page-main,
-.projects-page-main,
-.contact-page-main {
-  scale: 0.8;
-  opacity: 0;
-  animation: fade-in linear forwards;
-  animation-timeline: view();
-  animation-range: entry;
-}
-
-@keyframes fade-in {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
