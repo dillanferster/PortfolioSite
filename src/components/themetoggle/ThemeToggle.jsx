@@ -1,14 +1,17 @@
 import "./ThemeToggle.css";
-import React from "react";
+import React, { useContext } from "react";
 import sunmoon from "../../assets/sun-moon.svg";
+import { ThemeContext } from "../../App";
 
 const Toggler = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
   const setDarkMode = () => {
-    document.querySelector("body").setAttribute("data-theme", "dark");
+    setTheme(false);
   };
 
   const setLightMode = () => {
-    document.querySelector("body").setAttribute("data-theme", "light");
+    setTheme(true);
   };
 
   const toggleTheme = (e) => {
