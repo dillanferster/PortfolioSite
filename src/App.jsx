@@ -6,9 +6,11 @@ import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import "./components/themetoggle/ThemeToggle";
 
+// context api for light/dark theme
 export const ThemeContext = createContext();
 
 function App() {
+  // state varible for light and dark theme
   const [theme, setTheme] = useState(true);
 
   return (

@@ -11,9 +11,6 @@ import { HashLink as Link } from "react-router-hash-link";
 import { Toggler } from "../../components";
 
 const Header = () => {
-
-  
-
   // WARP moving with mouse ----------- ///
   // sets the warpbox div as a varible
   const warpBoxRef = useRef(null);
@@ -49,6 +46,7 @@ const Header = () => {
     const offestY = ((y - middleY) / middleY) * 30;
     console.log(offestX, offestY);
 
+    // changes the style of the specified property
     warpBox.style.setProperty("--rotateX", -1 * offestY + "deg");
     warpBox.style.setProperty("--rotateY", -1 * offestX + "deg");
   }
