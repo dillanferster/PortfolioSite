@@ -189,7 +189,7 @@
 
   font-size: 7.5rem;
   letter-spacing: 0.2rem;
-  color: var(--color-background);
+  color: var(--color-nav);
 }
 
 .nav-bio-link:hover,

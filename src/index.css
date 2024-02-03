@@ -7,9 +7,24 @@
   --color-white: #e1ddd7;
   --color-purple: #812fff;
   --color-green: #adff2f;
-  /* --color-background: #d1d2d4; */
   --color-grey: #1313133c;
-  --color-background: #c1c1be;
+  --color-nav: #c1c1be;
+  --bg-gradient: linear-gradient(
+    to right bottom,
+    #d4d9da,
+    #d0d4d4,
+    #ccd0ce,
+    #c9cbc9,
+    #c6c6c4,
+    #c4c4c2,
+    #c3c2c0,
+    #c1c0be,
+    #c1c0be,
+    #c1c0be,
+    #c1c1be,
+    #c1c1be
+  );
+  --color-background: var(--bg-gradient);
   --filter-color: invert(3%) sepia(11%) saturate(309%) hue-rotate(314deg)
     brightness(93%) contrast(93%);
 
@@ -23,4 +38,5 @@
   --filter-color: invert(93%) sepia(3%) saturate(333%) hue-rotate(314deg)
     brightness(100%) contrast(79%);
   --color-green2: #812fff;
+  --color-nav: #0e0e0e;
 }
