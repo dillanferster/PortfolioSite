@@ -5,6 +5,8 @@ import { Bioinfo, Contactholders, Header, Projectcards } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import "./components/themetoggle/ThemeToggle";
+import sky from "./assets/sky1.jpeg";
+import star from "./assets/stars-bg.jpeg";
 
 // context api for light/dark theme
 export const ThemeContext = createContext();
@@ -13,10 +15,28 @@ function App() {
   // state varible for light and dark theme
   const [theme, setTheme] = useState(true);
 
+  // depending on the state varible theme changes the background image
+  const bgStyle =
+    theme === false
+      ? {
+          backgroundImage: `url(${star})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }
+      : {
+          backgroundImage: `url(${sky})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        };
+
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <BrowserRouter>
-        <div className="App" data-theme={theme ? "light" : "dark"}>
+        <div
+          style={bgStyle}
+          className="App"
+          data-theme={theme ? "light" : "dark"}
+        >
           <Header></Header>
 
           <Bioinfo />
