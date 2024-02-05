@@ -5,7 +5,8 @@ import { Bioinfo, Contactholders, Header, Projectcards } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import "./components/themetoggle/ThemeToggle";
-import sky from "./assets/sky2.png";
+import sky from "./assets/sky1.jpeg";
+import star from "./assets/stars-bg.jpeg";
 
 // context api for light/dark theme
 export const ThemeContext = createContext();
@@ -18,7 +19,7 @@ function App() {
   const bgStyle =
     theme === false
       ? {
-          backgroundImage: `url(${sky})`,
+          backgroundImage: `url(${star})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }
