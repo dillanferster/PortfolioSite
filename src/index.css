@@ -24,8 +24,7 @@
     #c1c1be,
     #c1c1be
   );
-  /* --color-background: var(--bg-gradient); */
-  --color-background: var(--color-white);
+  --color-background: var(--bg-gradient);
   --filter-color: invert(3%) sepia(11%) saturate(309%) hue-rotate(314deg)
     brightness(93%) contrast(93%);
 
