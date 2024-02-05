@@ -127,7 +127,7 @@ const Header = () => {
                   activeClass="nav-projects-link-active"
                   smooth={true}
                 >
-                  projects
+                  PROJECTS
                 </Link>
               </div>
 
@@ -139,7 +139,7 @@ const Header = () => {
                   activeClass="nav-contact-link-active"
                   smooth={true}
                 >
-                  contact
+                  CONTACT
                 </Link>
               </div>
             </div>
