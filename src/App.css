@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +6,5 @@
 }
 
 .App {
-  
   background: fixed var(--color-background);
 }
