@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
 }
 
-.App {
+.App,
+body {
   background: fixed var(--color-background);
 }
+
+/* body {
+  background-color: #c1c1be;
+} */

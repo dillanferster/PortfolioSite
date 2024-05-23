@@ -1,12 +1,13 @@
 .bio-page {
   display: flex;
-  flex-direction: column;
-  padding: 3rem 0em 18em 0em;
+  flex-direction: row;
+  padding: 10rem 2em 8em 2em;
   max-width: 1240px;
   margin: 0 auto;
   flex-wrap: wrap;
   width: 90%;
   box-sizing: border-box;
+  gap: 4rem;
 }
 
 .bio-header {

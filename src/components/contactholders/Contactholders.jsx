@@ -1,85 +1,42 @@
 import React, { useState, useEffect } from "react";
 import "./Contactholders.css";
-import headerunderline from "../../assets/header-underline.svg";
-import leftbrace from "../../assets/Brace-left.svg";
-
-import xxxx from "../../assets/xxxxCT.svg";
-import { HashLink as Link } from "react-router-hash-link";
+import Arrow from "../../assets/north-east-arrow.svg";
 import Modal from "../modal/Modal";
+import NavBar from "../navbar/NavBar";
 
 const Contactholders = () => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div id="contactpage" className="contact-page">
-      <div className="contact-header">
-        <div className="contact__header-pgnum-box">
-          <span className="contact__header-pgnum">./3/3</span>
-        </div>
-        <div className="contact-header-right">
-          <Link
-            className="contact__header-title-projects"
-            to="#projectspage"
-            smooth={true}
-          >
-            projects
-          </Link>
-          <span className="contact__header-title">contact</span>
-          <Link
-            className="contact__header-title-home"
-            to="#homepage"
-            smooth={true}
-          >
-            home
-          </Link>
-
-          <hr className="contact__header-underline" />
-        </div>
-      </div>
-
-      <div className="contact-flexcontainer">
-        <div className="contact__left-container">
-          <img src={leftbrace} alt="left" className="contact__left-brace" />
-        </div>
-
-        <Modal open={openModal} onClose={() => setOpenModal(false)}></Modal>
-
-        <div className="contact__main-container">
-          <div className="contact__rec-1">
-            <a
-              className="contact__link-1"
-              href="https://www.linkedin.com/in/dillan-ferster-60003b164"
-              target="blank"
-            >
-              LINKEDIN<span className="contact-line-arrow">&#8599;</span>
-            </a>
-          </div>
-
-          <div className="contact__rec-2">
-            <a
-              className="contact__link-2"
-              href="https://github.com/dillanferster"
-              target="blank"
-            >
-              GITHUB<span className="contact-line-arrow">&#8599;</span>
-            </a>
-          </div>
-
-          <div className="contact__rec-3">
-            <a className="contact__link-3" href="mailto:dillyferster@gmail.com">
-              EMAIL<span className="contact-line-arrow">&#8599;</span>
-            </a>
-          </div>
-
-          <div className="contact__rec-4">
-            <div className="contact__link-4" onClick={() => setOpenModal(true)}>
-              RESUME<span className="contact-line-arrow">&#8599;</span>
+    <div>
+      <NavBar pageName="Contact" leftArrow="/projects" rightArrow="/home" />
+      <div className="flex flex-col  items-center pt-[10rem] gap-10 px-4">
+        <div className=" flex flex-col items-center text-[4em] font-Armata ">
+          <div className="flex w-[20rem] justify-start">
+            Linkedin{" "}
+            <div>
+              <img src={Arrow} alt="arrow-link" />
             </div>
           </div>
-
-          <div className="contact__rec-5">
-            <img className="contact__xxxx-bt" src={xxxx} alt="xxxx"></img>
+          <hr className="w-[60rem]  border-[var(--color-green)] "></hr>
+        </div>
+        <div className=" flex flex-col items-center text-[4em] font-Armata ">
+          <div className="flex w-[20rem] justify-start">
+            Github <div className="text-[var(--color-purple)]"> &#8599;</div>
           </div>
+          <hr className="w-[60rem]  border-[var(--color-green)] "></hr>
+        </div>
+        <div className=" flex flex-col items-center text-[4em] font-Armata ">
+          <div className="flex w-[20rem] justify-start">
+            Email <div className="text-[var(--color-purple)]"> &#8599;</div>
+          </div>
+          <hr className="w-[60rem]  border-[var(--color-green)] "></hr>
+        </div>
+        <div className=" flex flex-col items-center text-[4em] font-Armata ">
+          <div className="flex w-[20rem] justify-start">
+            Resume <div className="text-[var(--color-purple)]"> &#8599;</div>
+          </div>
+          <hr className="w-[60rem]  border-[var(--color-green)] "></hr>
         </div>
       </div>
     </div>
