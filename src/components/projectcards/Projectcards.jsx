@@ -4,7 +4,14 @@ import NavBar from "../navbar/NavBar.jsx";
 const Projectcards = () => {
   return (
     <div>
-      <NavBar pageName="Projects" leftArrow="/bio" rightArrow="/contact" />
+      <NavBar
+        home="Home"
+        bio="Bio"
+        projects="Projects"
+        contact="Contact"
+        leftArrow="/bio"
+        rightArrow="/contact"
+      />
     </div>
   );
 };

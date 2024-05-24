@@ -9,7 +9,14 @@ const Contactholders = () => {
 
   return (
     <div>
-      <NavBar pageName="Contact" leftArrow="/projects" rightArrow="/home" />
+      <NavBar
+        home="Home"
+        bio="Bio"
+        projects="Projects"
+        contact="Contact"
+        leftArrow="/projects"
+        rightArrow="/home"
+      />
       <div className="flex flex-col  items-center pt-[10rem] gap-10 px-4">
         <div className=" flex flex-col items-center text-[4em] font-Armata ">
           <div className="flex w-[20rem] justify-start">

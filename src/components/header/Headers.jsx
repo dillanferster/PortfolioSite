@@ -55,7 +55,14 @@ const Header = () => {
 
   return (
     <div>
-      <NavBar pageName="Home" leftArrow="/contact" rightArrow="/bio" />
+      <NavBar
+        home="0"
+        bio="/"
+        projects="/"
+        contact="0"
+        leftArrow="/contact"
+        rightArrow="/bio"
+      />
       <div id="homepage" className="header-flexcontainer">
         <div className="title-card">
           <div className="left-container">
