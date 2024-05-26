@@ -8,7 +8,7 @@ import headerx from "../../assets/x.svg";
 import star from "../../assets/star1.svg";
 import oval from "../../assets/header-oval.svg";
 import { HashLink as Link } from "react-router-hash-link";
-import { NavBar, Toggler } from "../../components";
+import { NavBar, Toggler } from "..";
 
 const Header = () => {
   // WARP moving with mouse ----------- ///

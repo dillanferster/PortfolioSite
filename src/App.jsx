@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Headers from "./components/header/Headers.jsx";
 import Bioinfo from "./components/bioinfo/Bioinfo.jsx";
 import Project from "./components/projectcards/Projectcards.jsx";
-import Contact from "./components/contactholders/Contactholders.jsx";
+import Contact from "./components/contactholders/Contactpage.jsx";
 import "./components/themetoggle/ThemeToggle";
 
 // context api for light/dark theme

@@ -16,20 +16,20 @@ const NavBar = ({ leftArrow, rightArrow, home, bio, projects, contact }) => {
           <a className="max-sm:hidden" href={leftArrow}>
             <div>&#60;</div>
           </a>
-          <div className=" max-sm:text-xs">
+          <div className=" max-sm:text-xs text-gray-800">
             <a href={home}>{home}</a>
           </div>
-          <div className="underline underline-offset-4 decoration-[var(--color-green)] max-sm:text-xs">
+          <div className="max-sm:text-xs text-gray-800">
             <a href={bio}>{bio}</a>
           </div>
-          <div className=" max-sm:text-xs">
+          <div className=" max-sm:text-xs text-gray-800">
             <a href={projects}>{projects}</a>
           </div>
-          <div className=" max-sm:text-xs">
+          <div className=" max-sm:text-xs text-gray-800">
             <a href={contact}>{contact}</a>
           </div>
 
-          <a className="max-sm:hidden" href={rightArrow}>
+          <a className="max-sm:hidden text-gray-800" href={rightArrow}>
             <div>&#62;</div>
           </a>
         </div>

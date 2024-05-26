@@ -1,31 +1,32 @@
 import React from "react";
 import resume from "../../assets/resume.png";
-import "./Modal.css";
-import { useRef, useEffect } from "react";
 
-const Modal = ({ open, onClose }) => {
-  const stopPropagation = (e) => {
-    e.stopPropagation();
-  };
+import { useState, useEffect } from "react";
 
-  if (!open) {
-    return null;
-  }
-
+const Modal = ({ open, handlemodal }) => {
   return (
-    <div className="overlay" onClick={onClose}>
-      <div className="modalContainer">
-        <div className="close-btn-container">
-          <button className="closebtn" onClick={onClose}>
+    <div
+      className={`${
+        open
+          ? "visible flex fixed z-[1000]  backdrop-blur-sm  h-full w-full transition-colors  transition-all justify-center items-center  px-4"
+          : "hidden"
+      }`}
+      onClick={() => handlemodal(false)}
+    >
+      <div
+        className="w-[38rem] transition-all  rounded-sm"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex justify-end ">
+          <p
+            className="flex justify-end cursor-pointer w-4"
+            onClick={() => handlemodal(false)}
+          >
             X
-          </button>
+          </p>
         </div>
-        <img
-          onClick={stopPropagation}
-          className="resume-img"
-          src={resume}
-          alt="resume"
-        />
+
+        <img src={resume} alt="resume" />
       </div>
     </div>
   );
