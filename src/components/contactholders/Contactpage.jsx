@@ -13,7 +13,7 @@ const Contactholders = () => {
   }
 
   return (
-    <div>
+    <div className="h-screen">
       <Modal open={openModal} handlemodal={handleModal}></Modal>
       <NavBar
         home="Home"

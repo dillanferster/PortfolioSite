@@ -17,8 +17,15 @@ import NavBar from "../navbar/NavBar";
 
 const Bioinfo = () => {
   return (
-    <div>
-      <NavBar home="Home" bio="Bio" projects="Projects" contact="Contact" leftArrow="/home" rightArrow="/projects" />
+    <div className="h-screen">
+      <NavBar
+        home="Home"
+        bio="Bio"
+        projects="Projects"
+        contact="Contact"
+        leftArrow="/home"
+        rightArrow="/projects"
+      />
       <div id="biopage" className="bio-page">
         <div className="bio-flexcontainer">
           <div className="bio__left-container">

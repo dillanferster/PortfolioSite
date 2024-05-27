@@ -54,7 +54,7 @@ const Header = () => {
   // WARP moving with mouse ----------- ///
 
   return (
-    <div>
+    <div className="h-screen">
       <NavBar
         home="0"
         bio="/"
