@@ -17,6 +17,7 @@ const Projectcards = () => {
       />
       <div className="pt-32">
         <DropDown desc={desc} project="YYC Flight Deals" />
+        <DropDown desc={desc} project="Mobile App" />
       </div>
     </div>
   );

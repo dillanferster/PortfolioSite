@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Projectcard.css";
+import mainPage from "../../assets/mainpage.png";
+import "./Dropdown.css";
 
 const DropDown = ({ project, desc }) => {
   const [dropDownOpen, setDropDownOpen] = useState(false);
@@ -32,17 +34,31 @@ const DropDown = ({ project, desc }) => {
           ></hr>
         </div>
       </div>
-      {dropDownOpen ? (
-        <hr className="w-[100%] max-w-[75rem]  border-[var(--color-green)]  mb-8"></hr>
-      ) : (
-        <hr className="w-[100%] max-w-[75rem]  border-black  mb-8"></hr>
-      )}
+      <hr
+        className={`w-[100%] max-w-[75rem] border-${
+          dropDownOpen ? "[var(--color-green)]" : "black"
+        } mb-8`}
+      />
 
       {dropDownOpen && (
-        <div className="flex w-full justify-evenly">
-          <div>img</div>
-          <div>{desc}</div>
-          <div>info</div>
+        <div
+          id="drop-down"
+          className="flex flex-col w-[90%] justify-between  p-4 flex-wrap pb-16"
+        >
+          <div className="flex w-[100%] h-[40rem] border-2 border-black rounded-md">
+            <img className="w-full" src={mainPage} />
+          </div>
+          <div className="flex justify-between">
+            <div>{desc}</div>
+
+            <div className="font-bold">
+              ROLE: <p className="font-normal">Designer & Developer</p>
+            </div>
+            <div className="font-bold">GITHUB &#8599;</div>
+            <div className="font-bold font-BebasNeue text-lg tracking-wider">
+              VIEW WEBSITE &#8599;
+            </div>
+          </div>
         </div>
       )}
     </div>
