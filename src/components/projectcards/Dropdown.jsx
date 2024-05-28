@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Projectcard.css";
 import mainPage from "../../assets/mainpage.png";
-import "./Dropdown.css";
 
 const DropDown = ({ project, desc }) => {
   const [dropDownOpen, setDropDownOpen] = useState(false);
@@ -9,7 +8,7 @@ const DropDown = ({ project, desc }) => {
   return (
     <div className="flex flex-col justify-center items-center p-2 ">
       <div
-        onClick={() => setDropDownOpen((prev) => !prev)}
+        onClick={() => setDropDownOpen(!dropDownOpen)}
         id="projectBox"
         className=" w-[100%] max-w-[75rem] flex justify-between  items-center  text-[3em] font-Armata  overflow-hidden max-sm:text-[3rem] cursor-pointer"
       >
