@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Projectcard.css";
-import mainPage from "../../assets/mainpage.png";
+import flightapp from "../../assets/flightapp.png";
 
-const DropDown = ({ project, desc }) => {
+const DropDown = ({ project, desc, tech }) => {
   const [dropDownOpen, setDropDownOpen] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center p-2 ">
+    <div className="flex flex-col justify-center items-center p-2 max-w-[80rem] mx-auto ">
       <div
         onClick={() => setDropDownOpen(!dropDownOpen)}
         id="projectBox"
@@ -42,20 +42,45 @@ const DropDown = ({ project, desc }) => {
       {dropDownOpen && (
         <div
           id="drop-down"
-          className="flex flex-col w-[90%] justify-between  p-4 flex-wrap pb-16"
+          className="flex flex-col w-[90%] justify-evenly  p-4  pb-16 "
         >
-          <div className="flex w-[100%] h-[40rem] border-2 border-black rounded-md">
-            <img className="w-full" src={mainPage} />
+          <div className="flex h-auto mx-w-full border-2 border-black  rounded-sm">
+            <img src={flightapp} alt="flightpic" />
           </div>
-          <div className="flex justify-between">
-            <div>{desc}</div>
-
-            <div className="font-bold">
-              ROLE: <p className="font-normal">Designer & Developer</p>
+          <div className="flex flex-wrap justify-between p-4">
+            <div className="max-w-[30rem] mb-4">
+              <div className="font-bold">Description:</div>
+              <div>{desc}</div>
             </div>
-            <div className="font-bold">GITHUB &#8599;</div>
-            <div className="font-bold font-BebasNeue text-lg tracking-wider">
-              VIEW WEBSITE &#8599;
+            <div className="mb-4 flex flex-col pr-4">
+              <div className="font-bold ">Tech used: </div>
+              <div className="flex flex-wrap">{tech}</div>
+            </div>
+            <div className="flex flex-col border-l border-black w-[12rem]">
+              <div className="font-bold  pl-4 pr-4 h-[4rem] ">
+                ROLE:{" "}
+                <p className="font-normal text-sm">Designer & Developer</p>
+              </div>
+              <div className="font-bold   pl-4 h-[4rem]">
+                <a
+                  href="https://yyc-flight-deals.vercel.app/"
+                  target="blank"
+                  className="hover:underline cursor-pointer"
+                >
+                  WEBSITE{" "}
+                  <span className="text-[var(--color-purple)] ">&#8599;</span>
+                </a>
+              </div>
+              <div className="font-bold pl-4 h-[2rem]">
+                <a
+                  href="https://github.com/dillanferster/YYCFlightDeals"
+                  target="blank"
+                  className="hover:underline cursor-pointer"
+                >
+                  GITHUB{" "}
+                  <span className="text-[var(--color-purple)]">&#8599;</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
