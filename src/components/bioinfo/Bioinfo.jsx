@@ -1,7 +1,6 @@
 import React from "react";
 import "./Bioinfo.css";
-import headerunderline from "../../assets/header-underline.svg";
-import leftbrace from "../../assets/Brace-left.svg";
+
 import profilexx from "../../assets/profile-xx.svg";
 import profilex from "../../assets/profile-x.svg";
 import infoline from "../../assets/bio-info-line.svg";
@@ -14,6 +13,7 @@ import figmaicon from "../../assets/figma_logo.svg";
 import cicon from "../../assets/cicon.svg";
 import profilepic1 from "../../assets/profile-pic.png";
 import NavBar from "../navbar/NavBar";
+import { motion } from "framer-motion";
 
 const Bioinfo = () => {
   return (
@@ -26,7 +26,14 @@ const Bioinfo = () => {
         leftArrow="/home"
         rightArrow="/projects"
       />
-      <div id="biopage" className="bio-page">
+      <motion.div
+        id="biopage"
+        className="bio-page"
+        initial={{ opacity: 0 }}
+        animate={{ y: 10, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 50, delay: 0.1 }}
+        layout
+      >
         <div className="bio-flexcontainer">
           <div className="bio__left-container">
             <div className="bio__profilepic-box">
@@ -127,7 +134,7 @@ const Bioinfo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
