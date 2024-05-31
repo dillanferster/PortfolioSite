@@ -24,7 +24,7 @@ const NavBar = ({ leftArrow, rightArrow, home, bio, projects, contact }) => {
           </div>
           <div
             className={`max-sm:text-xs text-gray-800 ${
-              location.pathname === "/Bio"
+              location.pathname === "/bio"
                 ? "underline decoration-[var(--color-green)] underline-offset-4"
                 : ""
             }`}
@@ -33,7 +33,7 @@ const NavBar = ({ leftArrow, rightArrow, home, bio, projects, contact }) => {
           </div>
           <div
             className={`max-sm:text-xs text-gray-800 ${
-              location.pathname === "/Projects"
+              location.pathname === "/projects"
                 ? "underline decoration-[var(--color-green)] underline-offset-4"
                 : ""
             }`}
@@ -42,7 +42,7 @@ const NavBar = ({ leftArrow, rightArrow, home, bio, projects, contact }) => {
           </div>
           <div
             className={`max-sm:text-xs text-gray-800 ${
-              location.pathname === "/Contact"
+              location.pathname === "/contact"
                 ? "underline decoration-[var(--color-green)] underline-offset-4"
                 : ""
             }`}

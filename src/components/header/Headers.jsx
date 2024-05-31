@@ -109,7 +109,7 @@ const Header = () => {
                   <a
                     className="nav-bio-link"
                     activeClass="nav-bio-link-active"
-                    href="/Bio"
+                    href="/bio"
                   >
                     BIO
                   </a>
@@ -118,7 +118,7 @@ const Header = () => {
                 <div className="nav-projects">
                   <a
                     className="nav-projects-link"
-                    href="/Projects"
+                    href="/projects"
                     activeClass="nav-projects-link-active"
                   >
                     projects
@@ -128,7 +128,7 @@ const Header = () => {
                 <div className="nav-contact">
                   <a
                     className="nav-contact-link"
-                    href="/Contact"
+                    href="/contact"
                     activeClass="nav-contact-link-active"
                   >
                     contact
