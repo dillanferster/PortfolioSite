@@ -14,7 +14,7 @@ const Modal = ({ open, handlemodal }) => {
       onClick={() => handlemodal(false)}
     >
       <div
-        className="w-[38rem] transition-all  rounded-sm shadow-md"
+        className="w-[38rem] transition-all  rounded-sm"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-end ">
