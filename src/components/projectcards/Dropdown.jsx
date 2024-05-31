@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Projectcard.css";
 import flightapp from "../../assets/flightapp.png";
-import { motion, AnimatePresence, backInOut } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import "./Dropdown.css";
 

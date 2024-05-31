@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import Modal from "../modal/Modal";
 import NavBar from "../navbar/NavBar";
-import ContactLink from "./contactLink";
+import ContactLink from "./Contactlink";
 
 const Contactholders = () => {
   const [openModal, setOpenModal] = useState(false);
