@@ -14,14 +14,6 @@ const Projectcards = () => {
 
   return (
     <div className="h-screen ">
-      <NavBar
-        home="Home"
-        bio="Bio"
-        projects="Projects"
-        contact="Contact"
-        leftArrow="/bio"
-        rightArrow="/contact"
-      />
       <AnimatePresence mode="popLayout">
         {" "}
         <motion.div className="pt-32 px-2 h-auto">

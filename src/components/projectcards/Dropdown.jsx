@@ -29,7 +29,7 @@ const DropDown = ({ project, desc, tech }) => {
           </div>
         )}
 
-        <div className=" w-[100%] max-w-[75rem] absolute translate-y-[2.25rem]  overflow-hidden">
+        <div className=" w-[100%] max-w-[75rem] absolute translate-y-[2.25rem]  overflow-hidden max-sm:hidden">
           <hr
             id="projectLineHover"
             className=" border-[var(--color-green)] "

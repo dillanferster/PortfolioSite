@@ -54,14 +54,6 @@ const Header = () => {
 
   return (
     <div className="h-screen">
-      <NavBar
-        home="0"
-        bio="/"
-        projects="/"
-        contact="0"
-        leftArrow="/contact"
-        rightArrow="/bio"
-      />
       <motion.div
         id="homepage"
         className="header-flexcontainer"

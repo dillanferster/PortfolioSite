@@ -18,14 +18,6 @@ import { motion } from "framer-motion";
 const Bioinfo = () => {
   return (
     <div className="h-screen">
-      <NavBar
-        home="Home"
-        bio="Bio"
-        projects="Projects"
-        contact="Contact"
-        leftArrow="/home"
-        rightArrow="/projects"
-      />
       <motion.div
         id="biopage"
         className="bio-page"

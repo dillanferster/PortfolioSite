@@ -20,7 +20,7 @@ const ContactLink = ({ link }) => {
           </div>
         </motion.div>
 
-        <div className=" w-[80%] max-w-[45rem] absolute translate-y-[6rem] overflow-hidden">
+        <div className=" w-[80%] max-w-[45rem] absolute translate-y-[6rem] overflow-hidden max-sm:hidden">
           <hr
             id="linkedinLineHover"
             className=" border-[var(--color-green)] "

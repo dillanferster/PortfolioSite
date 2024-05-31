@@ -7,6 +7,7 @@ import Bioinfo from "./components/bioinfo/Bioinfo.jsx";
 import Project from "./components/projectcards/Projectcards.jsx";
 import Contact from "./components/contactholders/Contactpage.jsx";
 import "./components/themetoggle/ThemeToggle";
+import { NavBar } from "./components/index.js";
 
 // context api for light/dark theme
 export const ThemeContext = createContext();
@@ -18,6 +19,14 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <BrowserRouter>
+        <NavBar
+          home="home"
+          bio="bio"
+          projects="projects"
+          contact="contact"
+          leftArrow="/projects"
+          rightArrow="/home"
+        ></NavBar>
         <div className="App" data-theme={theme ? "light" : "dark"}>
           <Routes>
             <Route index element={<Headers />} />

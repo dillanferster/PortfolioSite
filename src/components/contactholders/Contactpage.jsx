@@ -16,14 +16,6 @@ const Contactholders = () => {
   return (
     <div className="h-screen">
       <Modal open={openModal} handlemodal={handleModal}></Modal>
-      <NavBar
-        home="Home"
-        bio="Bio"
-        projects="Projects"
-        contact="Contact"
-        leftArrow="/projects"
-        rightArrow="/home"
-      />
 
       <div className="pt-[10rem]">
         <motion.div
