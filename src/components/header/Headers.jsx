@@ -65,9 +65,9 @@ const Header = () => {
       <motion.div
         id="homepage"
         className="header-flexcontainer"
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, type: "spring", stiffness: 50 }}
+        initial={{ scale: 0.95 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.05, type: "spring", stiffness: 50 }}
         exit={{ y: 0, opacity: 0 }}
       >
         <div className="title-card">

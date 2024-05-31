@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Contactholders.css";
+import { motion } from "framer-motion";
 
 import Modal from "../modal/Modal";
 import NavBar from "../navbar/NavBar";
@@ -25,18 +26,43 @@ const Contactholders = () => {
       />
 
       <div className="pt-[10rem]">
-        <a href="https://www.linkedin.com/in/dillan-ferster" target="blank">
-          <ContactLink link="Linkedin" />
-        </a>
-        <a href="https://github.com/dillanferster" target="blank">
-          <ContactLink link="GitHub" />
-        </a>
-        <a href="mailto:dillyferster@gmail.com" target="blank">
-          <ContactLink link="Email" />
-        </a>
-        <div className="cursor-pointer" onClick={() => handleModal(true)}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ y: 10, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
+        >
+          <a href="https://www.linkedin.com/in/dillan-ferster" target="blank">
+            <ContactLink link="Linkedin" />
+          </a>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ y: 10, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
+        >
+          <a href="https://github.com/dillanferster" target="blank">
+            <ContactLink link="GitHub" />
+          </a>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ y: 10, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
+        >
+          <a href="mailto:dillyferster@gmail.com" target="blank">
+            <ContactLink link="Email" />
+          </a>
+        </motion.div>
+
+        <motion.div
+          className="cursor-pointer"
+          onClick={() => handleModal(true)}
+          initial={{ opacity: 0 }}
+          animate={{ y: 10, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
+        >
           <ContactLink link="Resume" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
