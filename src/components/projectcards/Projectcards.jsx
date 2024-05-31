@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../navbar/NavBar.jsx";
 import DropDown from "./Dropdown.jsx";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Projectcards = () => {
   const descYycFlights =
@@ -21,13 +22,35 @@ const Projectcards = () => {
         leftArrow="/bio"
         rightArrow="/contact"
       />
-      <div className="pt-32 px-2">
-        <DropDown
-          desc={descYycFlights}
-          tech={techYycFlights}
-          project="YYC Flight Deals"
-        />
-      </div>
+      <AnimatePresence mode="popLayout">
+        {" "}
+        <motion.div className="pt-32 px-2 h-auto">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ y: 10, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
+            layout
+          >
+            <DropDown
+              desc={descYycFlights}
+              tech={techYycFlights}
+              project="YYC Flight Deals"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ y: 10, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+            layout
+          >
+            <DropDown
+              desc={descYycFlights}
+              tech={techYycFlights}
+              project="YYC Flight Deals"
+            />
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

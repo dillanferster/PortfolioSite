@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "./Header.css";
+import { motion } from "framer-motion";
 
 import warp from "../../assets/warp.svg";
 import barcode from "../../assets/barcode2.svg";
 import headerline from "../../assets/header-line.svg";
 import headerx from "../../assets/x.svg";
-import star from "../../assets/star1.svg";
-import oval from "../../assets/header-oval.svg";
-import { HashLink as Link } from "react-router-hash-link";
-import { NavBar, Toggler } from "..";
+
+import { NavBar } from "..";
 
 const Header = () => {
   // WARP moving with mouse ----------- ///
@@ -63,7 +62,14 @@ const Header = () => {
         leftArrow="/contact"
         rightArrow="/bio"
       />
-      <div id="homepage" className="header-flexcontainer">
+      <motion.div
+        id="homepage"
+        className="header-flexcontainer"
+        initial={{ y: -10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, type: "spring", stiffness: 50 }}
+        exit={{ y: 0, opacity: 0 }}
+      >
         <div className="title-card">
           <div className="left-container">
             <div className="titlecard__software">Frontend Developer</div>
@@ -103,7 +109,7 @@ const Header = () => {
                   <a
                     className="nav-bio-link"
                     activeClass="nav-bio-link-active"
-                    href="/bio"
+                    href="/Bio"
                   >
                     BIO
                   </a>
@@ -112,7 +118,7 @@ const Header = () => {
                 <div className="nav-projects">
                   <a
                     className="nav-projects-link"
-                    href="/projects"
+                    href="/Projects"
                     activeClass="nav-projects-link-active"
                   >
                     projects
@@ -122,7 +128,7 @@ const Header = () => {
                 <div className="nav-contact">
                   <a
                     className="nav-contact-link"
-                    href="/contact"
+                    href="/Contact"
                     activeClass="nav-contact-link-active"
                   >
                     contact
@@ -132,7 +138,7 @@ const Header = () => {
             </nav>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

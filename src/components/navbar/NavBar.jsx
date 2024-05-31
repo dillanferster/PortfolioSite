@@ -1,6 +1,9 @@
 import Toggler from "../themetoggle/ThemeToggle.jsx";
+import { useLocation } from "react-router-dom";
 
 const NavBar = ({ leftArrow, rightArrow, home, bio, projects, contact }) => {
+  const location = useLocation();
+
   return (
     <div className="flex gap-4 justify-center items-center max-sm:gap-2 px-12 max-sm:px-6 max-md:px-10">
       <div className="  flex items-center justify-between pl-8 mt-4 border-2 border-black rounded-full h-16 w-[38rem]  min-w-[10.5rem] max-sm:pl-0  max-sm:justify-center ">
@@ -16,16 +19,34 @@ const NavBar = ({ leftArrow, rightArrow, home, bio, projects, contact }) => {
           <a className="max-sm:hidden" href={leftArrow}>
             <div>&#60;</div>
           </a>
-          <div className=" max-sm:text-xs text-gray-800">
+          <div className="max-sm:text-xs text-gray-800">
             <a href={home}>{home}</a>
           </div>
-          <div className="max-sm:text-xs text-gray-800">
+          <div
+            className={`max-sm:text-xs text-gray-800 ${
+              location.pathname === "/Bio"
+                ? "underline decoration-[var(--color-green)] underline-offset-4"
+                : ""
+            }`}
+          >
             <a href={bio}>{bio}</a>
           </div>
-          <div className=" max-sm:text-xs text-gray-800">
+          <div
+            className={`max-sm:text-xs text-gray-800 ${
+              location.pathname === "/Projects"
+                ? "underline decoration-[var(--color-green)] underline-offset-4"
+                : ""
+            }`}
+          >
             <a href={projects}>{projects}</a>
           </div>
-          <div className=" max-sm:text-xs text-gray-800">
+          <div
+            className={`max-sm:text-xs text-gray-800 ${
+              location.pathname === "/Contact"
+                ? "underline decoration-[var(--color-green)] underline-offset-4"
+                : ""
+            }`}
+          >
             <a href={contact}>{contact}</a>
           </div>
 
