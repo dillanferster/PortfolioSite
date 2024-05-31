@@ -17,7 +17,7 @@ const Contactholders = () => {
     <div className="h-screen">
       <Modal open={openModal} handlemodal={handleModal}></Modal>
 
-      <div className="pt-[10rem]">
+      <div className="pt-[10rem] max-sm:pt-[8rem]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ y: 10, opacity: 1 }}
