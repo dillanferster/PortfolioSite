@@ -64,7 +64,9 @@ const Header = () => {
       >
         <div className="title-card">
           <div className="left-container">
-            <div className="titlecard__software">Frontend Developer</div>
+            <div className="titlecard__software max-xl:text-4xl  max-lg:text-2xl max-md:text-xl">
+              Frontend Developer
+            </div>
 
             <div className="warp-img-box" ref={warpBoxRef}>
               <img

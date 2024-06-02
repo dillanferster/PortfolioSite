@@ -8,7 +8,7 @@ import Project from "./components/projectcards/Projectcards.jsx";
 import Contact from "./components/contactholders/Contactpage.jsx";
 import "./components/themetoggle/ThemeToggle";
 import { NavBar } from "./components/index.js";
-import { useInView } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 // context api for light/dark theme
 export const ThemeContext = createContext();
@@ -17,32 +17,56 @@ function App() {
   // state varible for light and dark theme
   const [theme, setTheme] = useState(true);
 
-  // ref to bio page
-  const bioref = useRef(null);
-  // framer motin in view to see if ref in in screen view
-  const isInView = useInView(bioref);
+  // page for nav bar
+  const [activeSelection, setActiveSelection] = useState();
+
+  const [bioref, inViewBio] = useInView({
+    threshold: 0.7,
+  });
+  const [projectref, inViewProject] = useInView({
+    threshold: 0.7,
+  });
+  const [contactref, inViewContact] = useInView({
+    threshold: 0.7,
+  });
+  const [homeref, inViewHome] = useInView({
+    threshold: 0.7,
+  });
 
   useEffect(() => {
-    console.log(isInView);
-  }),
-    [isInView];
+    if (inViewBio) {
+      setActiveSelection("Bio");
+    }
+    if (inViewProject) {
+      setActiveSelection("Projects");
+    }
+    if (inViewContact) {
+      setActiveSelection("Contact");
+    }
+    if (inViewHome) {
+      setActiveSelection("Home");
+    }
+  }, [inViewBio, inViewContact, inViewProject, inViewHome]);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <BrowserRouter>
-        <NavBar></NavBar>
-        <div className="App" data-theme={theme ? "light" : "dark"}>
-          <div id="headerSection">
+        <div
+          className="App scroll-smooth"
+          data-theme={theme ? "light" : "dark"}
+        >
+          <NavBar navpage={activeSelection}></NavBar>
+          <div ref={homeref} id="headerSection">
             <Header></Header>
           </div>
 
-          <div id="bioSection">
+          <div ref={bioref} id="bioSection">
             <Bioinfo></Bioinfo>
           </div>
-          <div id="projectsSection">
+          <div ref={projectref} id="projectsSection">
             <Project></Project>
           </div>
-          <div id="contactSection">
+          <div ref={contactref} id="contactSection">
             <Contact></Contact>
           </div>
         </div>
