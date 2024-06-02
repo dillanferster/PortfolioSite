@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Header.css";
 import { motion } from "framer-motion";
-
+import { NavLink } from "react-router-dom";
 import warp from "../../assets/warp.svg";
 import barcode from "../../assets/barcode2.svg";
 import headerline from "../../assets/header-line.svg";
@@ -53,7 +53,7 @@ const Header = () => {
   // WARP moving with mouse ----------- ///
 
   return (
-    <div className="h-screen">
+    <div>
       <motion.div
         id="homepage"
         className="header-flexcontainer"
@@ -101,7 +101,7 @@ const Header = () => {
                   <a
                     className="nav-bio-link"
                     activeClass="nav-bio-link-active"
-                    href="/bio"
+                    href="#bioSection"
                   >
                     BIO
                   </a>
@@ -110,7 +110,7 @@ const Header = () => {
                 <div className="nav-projects">
                   <a
                     className="nav-projects-link"
-                    href="/projects"
+                    href="#projectsSection"
                     activeClass="nav-projects-link-active"
                   >
                     projects
@@ -120,7 +120,7 @@ const Header = () => {
                 <div className="nav-contact">
                   <a
                     className="nav-contact-link"
-                    href="/contact"
+                    href="#contactSection"
                     activeClass="nav-contact-link-active"
                   >
                     contact

@@ -8,7 +8,7 @@ const Modal = ({ open, handlemodal }) => {
     <div
       className={`${
         open
-          ? "visible flex fixed z-[1000]  backdrop-blur-sm  h-screen w-screen justify-center  items-start pt-8  px-4"
+          ? "visible flex absolute z-[100]  backdrop-blur-sm  h-screen w-screen justify-center  items-start pt-8  px-4"
           : "hidden"
       }`}
       onClick={() => handlemodal(false)}

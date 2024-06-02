@@ -13,13 +13,13 @@ const Projectcards = () => {
   ];
 
   return (
-    <div className="h-screen ">
+    <div className="pt-[15rem] max-sm:pt-[10rem]">
       <AnimatePresence mode="popLayout">
         {" "}
         <motion.div className="pt-32 px-2 h-auto">
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ y: 10, opacity: 1 }}
+            whileInView={{ y: 10, opacity: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
             layout
           >

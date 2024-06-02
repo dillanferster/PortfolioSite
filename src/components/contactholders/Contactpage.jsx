@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Contactholders.css";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 
 import Modal from "../modal/Modal";
-import NavBar from "../navbar/NavBar";
+
 import ContactLink from "./ContactBox";
 
 const Contactholders = () => {
@@ -13,14 +13,24 @@ const Contactholders = () => {
     setOpenModal(trigger);
   }
 
-  return (
-    <div className="h-screen">
-      <Modal open={openModal} handlemodal={handleModal}></Modal>
+  const fadeInVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      y: 10,
+      opacity: 1,
+    },
+  };
 
+  return (
+    <div className="pb-[10rem] pt-[18rem] max-sm:pt-[10rem]">
+      <Modal open={openModal} handlemodal={handleModal}></Modal>
       <div className="pt-[10rem] max-sm:pt-[8rem]">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ y: 10, opacity: 1 }}
+          variants={fadeInVariants}
+          initial="initial"
+          whileInView="animate"
           transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
         >
           <a href="https://www.linkedin.com/in/dillan-ferster" target="blank">
@@ -28,8 +38,9 @@ const Contactholders = () => {
           </a>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ y: 10, opacity: 1 }}
+          variants={fadeInVariants}
+          initial="initial"
+          whileInView="animate"
           transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
         >
           <a href="https://github.com/dillanferster" target="blank">
@@ -37,8 +48,9 @@ const Contactholders = () => {
           </a>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ y: 10, opacity: 1 }}
+          variants={fadeInVariants}
+          initial="initial"
+          whileInView="animate"
           transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
         >
           <a href="mailto:dillyferster@gmail.com" target="blank">
@@ -49,8 +61,9 @@ const Contactholders = () => {
         <motion.div
           className="cursor-pointer"
           onClick={() => handleModal(true)}
-          initial={{ opacity: 0 }}
-          animate={{ y: 10, opacity: 1 }}
+          variants={fadeInVariants}
+          initial="initial"
+          whileInView="animate"
           transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
         >
           <ContactLink link="Resume" />

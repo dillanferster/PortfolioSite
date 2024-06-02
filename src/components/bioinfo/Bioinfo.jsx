@@ -13,18 +13,22 @@ import figmaicon from "../../assets/figma_logo.svg";
 import cicon from "../../assets/cicon.svg";
 import profilepic1 from "../../assets/profile-pic.png";
 import NavBar from "../navbar/NavBar";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Bioinfo = () => {
   return (
-    <div className="h-screen">
+    <div className="pt-[15rem] max-sm:pt-[10rem]">
       <motion.div
-        id="biopage"
         className="bio-page"
-        initial={{ opacity: 0 }}
-        animate={{ y: 10, opacity: 1 }}
-        transition={{ type: "spring", stiffness: 50, delay: 0.1 }}
-        layout
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          type: "spring",
+          stiffness: 100,
+          delay: 0.3,
+        }}
       >
         <div className="bio-flexcontainer">
           <div className="bio__left-container">
