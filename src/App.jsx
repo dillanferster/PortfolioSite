@@ -36,13 +36,13 @@ function App() {
             <Header></Header>
           </div>
 
-          <div ref={bioref} id="bioSection">
+          <div id="bioSection">
             <Bioinfo></Bioinfo>
           </div>
-          <div ref={projectref} id="projectsSection">
+          <div id="projectsSection">
             <Project></Project>
           </div>
-          <div ref={contactref} id="contactSection">
+          <div id="contactSection">
             <Contact></Contact>
           </div>
         </div>
