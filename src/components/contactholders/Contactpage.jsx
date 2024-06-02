@@ -24,7 +24,7 @@ const Contactholders = () => {
   };
 
   return (
-    <div className="pb-[10rem] pt-[5rem] max-sm:pt-[10rem]">
+    <div className="pb-[10rem] pt-[5rem] ">
       <Modal open={openModal} handlemodal={handleModal}></Modal>
       <div className="pt-[10rem] max-sm:pt-[8rem]">
         <motion.div
