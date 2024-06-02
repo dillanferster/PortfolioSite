@@ -24,7 +24,7 @@ const Contactholders = () => {
   };
 
   return (
-    <div className="pb-[10rem] pt-[18rem] max-sm:pt-[10rem]">
+    <div className="pb-[10rem] pt-[10rem] max-sm:pt-[10rem]">
       <Modal open={openModal} handlemodal={handleModal}></Modal>
       <div className="pt-[10rem] max-sm:pt-[8rem]">
         <motion.div
@@ -41,7 +41,7 @@ const Contactholders = () => {
           variants={fadeInVariants}
           initial="initial"
           whileInView="animate"
-          transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
         >
           <a href="https://github.com/dillanferster" target="blank">
             <ContactLink link="GitHub" />
@@ -64,7 +64,7 @@ const Contactholders = () => {
           variants={fadeInVariants}
           initial="initial"
           whileInView="animate"
-          transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.5 }}
         >
           <ContactLink link="Resume" />
         </motion.div>

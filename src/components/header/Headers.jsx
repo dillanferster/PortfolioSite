@@ -53,7 +53,7 @@ const Header = () => {
   // WARP moving with mouse ----------- ///
 
   return (
-    <div>
+    <div className="pb-[5rem]">
       <motion.div
         id="homepage"
         className="header-flexcontainer"
