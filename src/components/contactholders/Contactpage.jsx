@@ -24,9 +24,9 @@ const Contactholders = () => {
   };
 
   return (
-    <div className="pb-[10rem] pt-[3rem] ">
+    <div className="pb-[7rem] pt-[3rem] ">
       <Modal open={openModal} handlemodal={handleModal}></Modal>
-      <div className="pt-[10rem] max-sm:pt-[8rem]">
+      <div className="flex flex-col items-center  pt-[10rem] max-sm:pt-[8rem]">
         <motion.div
           variants={fadeInVariants}
           initial="initial"

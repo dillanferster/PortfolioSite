@@ -9,6 +9,7 @@ import Contact from "./components/contactholders/Contactpage.jsx";
 import "./components/themetoggle/ThemeToggle";
 import { NavBar } from "./components/index.js";
 import { useInView } from "react-intersection-observer";
+import Footer from "./components/footer/footer.jsx";
 
 // context api for light/dark theme
 export const ThemeContext = createContext();
@@ -68,6 +69,7 @@ function App() {
           </div>
           <div ref={contactref} id="contactSection">
             <Contact></Contact>
+            <Footer></Footer>
           </div>
         </div>
       </BrowserRouter>
