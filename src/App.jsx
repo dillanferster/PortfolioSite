@@ -21,16 +21,16 @@ function App() {
   const [activeSelection, setActiveSelection] = useState();
 
   const [bioref, inViewBio] = useInView({
-    threshold: 0.6,
+    threshold: 0.5,
   });
   const [projectref, inViewProject] = useInView({
-    threshold: 0.7,
+    threshold: 0.6,
   });
   const [contactref, inViewContact] = useInView({
-    threshold: 0.7,
+    threshold: 0.6,
   });
   const [homeref, inViewHome] = useInView({
-    threshold: 0.7,
+    threshold: 0.6,
   });
 
   useEffect(() => {

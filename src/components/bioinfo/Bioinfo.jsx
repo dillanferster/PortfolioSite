@@ -17,7 +17,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Bioinfo = () => {
   return (
-    <div className="pt-[10rem] pb-[10rem]  ">
+    <div className="pt-[10rem] pb-[10rem]  max-sm:pt-[8rem]">
       <motion.div
         className="bio-page"
         initial={{ y: 20, opacity: 0 }}
