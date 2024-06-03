@@ -9,7 +9,7 @@ import Contact from "./components/contactholders/Contactpage.jsx";
 import "./components/themetoggle/ThemeToggle";
 import { NavBar } from "./components/index.js";
 import { useInView } from "react-intersection-observer";
-import Footer from "./components/footer/footer.jsx";
+import Footer from "./components/footer/index.jsx";
 
 // context api for light/dark theme
 export const ThemeContext = createContext();
