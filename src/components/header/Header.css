@@ -108,7 +108,7 @@
 .titlecard__software {
   /* font-family: "caustics demo"; */
   font-family: "Eczar", serif;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   color: var(--color-black);
 
   margin-bottom: 3rem;
@@ -219,9 +219,9 @@
   .header-dillan {
     font-size: 2rem;
   }
-  .titlecard__software {
+  /* .titlecard__software {
     font-size: 2.5rem;
-  }
+  } */
 
   .warp-img {
     width: 13rem;
@@ -240,9 +240,9 @@
     width: 10rem;
   }
 
-  .titlecard__software {
+  /* .titlecard__software {
     font-size: 1.75rem;
-  }
+  } */
 
   .titlecard__barcode {
     width: 8rem;

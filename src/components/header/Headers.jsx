@@ -64,7 +64,7 @@ const Header = () => {
       >
         <div className="title-card">
           <div className="left-container">
-            <div className="titlecard__software max-xl:text-4xl  max-lg:text-2xl max-md:text-xl max-sm:text-xl text-gray-400">
+            <div className="titlecard__software text-5xl max-xl:text-4xl  max-lg:text-3xl max-md:text-2xl max-sm:text-2xl text-gray-400">
               Frontend Developer
             </div>
 

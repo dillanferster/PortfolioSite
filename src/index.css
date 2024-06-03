@@ -32,6 +32,9 @@
 
   --color-secondary: #414558;
   --color-primary: #282a36;
+
+  --color-nav: rgba(98, 124, 130, 0.07);
+  --color-navHover: rgba(98, 124, 130, 0.2);
 }
 
 [data-theme="dark"] {
