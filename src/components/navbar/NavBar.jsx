@@ -5,7 +5,7 @@ import { easeInOut, motion } from "framer-motion";
 const NavBar = ({ navpage }) => {
   const [openNav, setOpenNav] = useState();
 
-  const [navMenu, setNavMenu] = useState([]);
+ 
 
   const navOptions = ["Home", "Bio", "Projects", "Contact"];
 

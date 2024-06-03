@@ -21,7 +21,7 @@ function App() {
   const [activeSelection, setActiveSelection] = useState();
 
   const [bioref, inViewBio] = useInView({
-    threshold: 0.7,
+    threshold: 0.6,
   });
   const [projectref, inViewProject] = useInView({
     threshold: 0.7,
