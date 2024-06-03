@@ -56,7 +56,7 @@
 .bio__header-title-projects:hover {
   color: var(--color-purple);
   transition: 0.5s ease;
-  text-shadow: rgba(226, 188, 226, 0.33) 1px 0px 5px;
+  text-shadow: rgba(226, 188, 226, 0.33) 1px 0px 1px;
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .bio__profilebox {
-  box-shadow: 0 0.3rem 0.3rem rgba(21, 21, 21, 0.325);
+  box-shadow: 0 0.1rem 0.3rem rgba(21, 21, 21, 0.325);
 }
 
 /* animations */

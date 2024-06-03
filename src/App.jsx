@@ -56,7 +56,7 @@ function App() {
           data-theme={theme ? "light" : "dark"}
         >
           <NavBar navpage={activeSelection}></NavBar>
-          <div ref={homeref} id="headerSection">
+          <div ref={homeref} id="homeSection">
             <Header></Header>
           </div>
 
