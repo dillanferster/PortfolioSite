@@ -5,11 +5,11 @@ import { easeInOut, motion } from "framer-motion";
 const NavBar = ({ navpage }) => {
   const [openNav, setOpenNav] = useState();
 
-  const navOptions = ["Home", "Bio", "Projects", "Contact"];
+  const navOptions = ["home", "bio", "projects", "contact"];
 
   return (
     <div className=" sticky top-0 z-[1000] flex gap-4 justify-center items-center max-sm:gap-2 px-12 max-sm:px-6 max-md:px-10">
-      <div className=" backdrop-blur-md  flex items-center justify-between pl-8 mt-4 border-2 border-[#414558] rounded-full h-14 w-[66rem]  min-w-[10.5rem] max-sm:pl-0  max-sm:justify-center shadow-sm">
+      <div className=" backdrop-blur-md  flex items-center justify-between pl-8 mt-4 border-2 border-[#414558] rounded-full h-14 w-[66rem]  min-w-[10.5rem] max-sm:pl-0  max-sm:justify-center shadow-sm cursor-pointer">
         <div className="font-BebasNeue text-3xl max-sm:text-lg text-gray-400">
           <a href="#headerSection">Dillan Ferster</a>
         </div>
@@ -38,10 +38,16 @@ const NavBar = ({ navpage }) => {
             exit={{ opacity: 0 }}
           >
             <div className="flex justify-center items-center  w-[100%] px-8">
-              <ul className=" flex flex-col justify-evenly pt-6 text-gray-400">
+              <ul className=" flex flex-col justify-between pt-8  text-gray-400">
                 {navOptions.map((item, index) => {
-                  if (openNav !== item) {
-                    return <li key={index}>{item}</li>;
+                  if (navpage != item) {
+                    return (
+                      <a href={`#${item}Section`}>
+                        <li className="pt-2" key={index}>
+                          {item}
+                        </li>
+                      </a>
+                    );
                   }
                 })}
               </ul>

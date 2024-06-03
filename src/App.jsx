@@ -35,16 +35,16 @@ function App() {
 
   useEffect(() => {
     if (inViewBio) {
-      setActiveSelection("Bio");
+      setActiveSelection("bio");
     }
     if (inViewProject) {
-      setActiveSelection("Projects");
+      setActiveSelection("projects");
     }
     if (inViewContact) {
-      setActiveSelection("Contact");
+      setActiveSelection("contact");
     }
     if (inViewHome) {
-      setActiveSelection("Home");
+      setActiveSelection("home");
     }
   }, [inViewBio, inViewContact, inViewProject, inViewHome]);
 
