@@ -32,7 +32,7 @@
 
   border: 0.13rem solid;
   border-radius: 40px;
-  border-color: var(--color-black);
+  border-color: var(--color-secondary);
   padding: 0.5em 0.5em 0.5em 2em;
 }
 
@@ -49,23 +49,6 @@
   margin-right: 4rem;
 }
 
-.header-oval {
-  border: 0.13rem solid;
-  border-radius: 40px;
-
-  height: 4.2rem;
-  position: absolute;
-  right: -0.4em;
-  filter: var(--filter-color);
-  width: 12.2rem;
-}
-
-.header-star {
-  width: 3rem;
-  margin-right: 1.5em;
-  filter: var(--filter-color);
-}
-
 .header-pgnum {
   padding-right: 0.3em;
   color: var(--color-black);
@@ -76,7 +59,7 @@
   text-align: center;
   align-self: center;
 
-  color: var(--color-black);
+  color: var(--color-secondary);
   font-size: 2rem;
 }
 /* HEADER */
@@ -88,7 +71,7 @@
   height: 42rem;
   border: 0.13rem solid;
   border-radius: 40px;
-  border-color: var(--color-black);
+  border-color: var(--color-secondary);
 
   margin-top: 1rem;
 }
@@ -189,7 +172,7 @@
 
   font-size: 7.5rem;
   letter-spacing: 0.2rem;
-  color: var(--color-nav);
+  color: var(--color-primary);
 }
 
 .nav-bio-link:hover,

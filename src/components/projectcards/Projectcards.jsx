@@ -13,7 +13,7 @@ const Projectcards = () => {
   ];
 
   return (
-    <div className="pt-[10rem] pb-[5rem] max-sm:pt-[5rem]">
+    <div className="pt-[10rem] pb-[15rem] max-sm:pt-[5rem] bg-gray-900">
       <AnimatePresence mode="popLayout">
         {" "}
         <motion.div className="pt-32 px-2 h-auto">

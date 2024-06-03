@@ -29,6 +29,9 @@
     brightness(93%) contrast(93%);
 
   --color-green2: #adff2f;
+
+  --color-secondary: #414558;
+  --color-primary: #282a36;
 }
 
 [data-theme="dark"] {

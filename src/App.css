@@ -7,7 +7,9 @@
 
 .App,
 body {
-  background: fixed var(--color-background);
+  /* background: fixed var(--color-background); */
+  /* background: #2a303c; */
+  background: fixed var(--color-primary);
 }
 
 /* body {

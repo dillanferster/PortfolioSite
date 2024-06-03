@@ -10,7 +10,7 @@ const ContactLink = ({ link }) => {
         className=" w-[80%] max-w-[45rem] flex flex-col items-center  text-[4rem] font-Armata  overflow-hidden max-sm:text-[3rem]"
       >
         <motion.div
-          className="flex w-[22rem] justify-start max-sm:w-[16rem] 
+          className="flex w-[22rem] text-gray-400 justify-start max-sm:w-[16rem] 
         "
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 100 }}
@@ -35,7 +35,7 @@ const ContactLink = ({ link }) => {
 
       <hr
         id="linkedinLine"
-        className="w-[80%] max-w-[45rem]  border-gray-700 transition-colors mb-8 "
+        className="w-[80%] max-w-[45rem]  border-[var(--color-secondary)] transition-colors mb-8 "
       ></hr>
     </div>
   );

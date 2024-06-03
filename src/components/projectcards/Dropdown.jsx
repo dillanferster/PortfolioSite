@@ -15,7 +15,7 @@ const DropDown = ({ project, desc, tech }) => {
         id="projectBox"
         className=" w-[100%] max-w-[75rem] flex justify-between  items-center  text-[3em] font-Armata  overflow-hidden max-sm:text-[3rem] cursor-pointer "
       >
-        <div className="flex w-[50rem] font-Armata gap-16 max-sm:w-[18rem] max-sm:text-lg ">
+        <div className="flex w-[50rem] text-gray-400 font-Armata gap-16 max-sm:w-[18rem] max-sm:text-lg ">
           <div className="text-2xl flex flex-col  justify-center ">[00]</div>
           {project}
         </div>
@@ -38,7 +38,7 @@ const DropDown = ({ project, desc, tech }) => {
       </div>
       <hr
         className={`w-[100%] max-w-[75rem] border-${
-          dropDownOpen ? "[var(--color-green)]" : "black"
+          dropDownOpen ? "[var(--color-green)]" : "[var(--color-secondary)]"
         } mb-8`}
       />
 
@@ -46,10 +46,10 @@ const DropDown = ({ project, desc, tech }) => {
         <AnimatePresence>
           <div
             id="drop-down"
-            className="flex flex-col w-[90%] justify-evenly  pb-16 h-auto "
+            className="flex flex-col w-[90%] justify-evenly  pb-16 h-auto text-gray-400"
           >
             <motion.div
-              className="flex h-auto mx-w-full border-2 border-black  rounded-sm shadow-lg"
+              className="flex h-auto mx-w-full border-2 border-[var(--color-secondary)]  rounded-sm shadow-lg"
               initial={{ y: 0, opacity: 0 }}
               animate={{ y: 20, opacity: 1 }}
               transition={{ type: "spring", stiffness: 50 }}
@@ -72,7 +72,7 @@ const DropDown = ({ project, desc, tech }) => {
                 <div className="font-bold ">Tech used: </div>
                 <div className="flex flex-wrap">{tech}</div>
               </div>
-              <div className="flex flex-col border-l border-black w-[12rem]">
+              <div className="flex flex-col border-l border-[var(--color-secondary)] w-[12rem]">
                 <div className="font-bold  pl-4 pr-4 h-[4rem] ">
                   ROLE:{" "}
                   <p className="font-normal text-sm">Designer & Developer</p>
