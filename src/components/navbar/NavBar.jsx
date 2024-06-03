@@ -9,7 +9,7 @@ const NavBar = ({ navpage }) => {
 
   return (
     <div className=" sticky top-0 z-[1000] flex gap-4 justify-center items-center max-sm:gap-2 px-12 max-sm:px-6 max-md:px-10 cursor-pointer ">
-      <div className=" backdrop-blur-md  flex items-center justify-between pl-8 mt-4 border-2 border-[#414558] bg-[var(--color-nav)] rounded-full h-14 w-[66rem]  min-w-[10.5rem] max-sm:pl-0  max-sm:justify-center shadow-sm ">
+      <div className=" backdrop-blur-md  flex items-center justify-between pl-8 mt-4 border-2 border-[#414558] bg-[var(--color-nav)] rounded-full h-14 w-[66rem]  min-w-[10.5rem] max-sm:pl-0  max-sm:justify-center shadow-[--color-navShadow] shadow-sm ">
         <div className="font-BebasNeue text-3xl max-sm:text-lg text-gray-400">
           <a href="#headerSection">Dillan Ferster</a>
         </div>
@@ -19,7 +19,7 @@ const NavBar = ({ navpage }) => {
       </div>
       <div className="flex flex-col ">
         <div
-          className=" backdrop-blur-md  flex items-center justify-center border-2 border-[var(--color-secondary)]  rounded-full h-14 mt-4 w-[10rem] min-w-[10.5rem] bg-[var(--color-nav)] hover:bg-[var(--color-navHover)] "
+          className=" backdrop-blur-md  flex items-center justify-center border-2 border-[var(--color-secondary)]  rounded-full h-14 mt-4 w-[10rem] min-w-[10.5rem] bg-[var(--color-nav)] hover:bg-[var(--color-navHover)] shadow-[--color-navShadow] shadow-sm"
           onClick={() => setOpenNav(!openNav)}
         >
           <div className="flex justify-center items-center text-gray-400  w-[100%] px-8">
@@ -37,7 +37,7 @@ const NavBar = ({ navpage }) => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             exit={{ opacity: 0 }}
           >
-            <div className="flex justify-center items-center  w-[100%] h-full px-8 bg-[var(--color-nav)]">
+            <div className="flex justify-center items-center  w-[100%] h-full rounded-3xl px-8 bg-[var(--color-nav)]">
               <ul className=" flex flex-col justify-between pt-8  text-gray-400 ">
                 {navOptions.map((item, index) => {
                   if (navpage != item) {

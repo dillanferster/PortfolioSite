@@ -53,7 +53,7 @@ const Header = () => {
   // WARP moving with mouse ----------- ///
 
   return (
-    <div className="pb-[5rem] backdrop-blur-md">
+    <div className="pb-[5rem] backdrop-blur-md ">
       <motion.div
         id="homepage"
         className="header-flexcontainer"
@@ -62,7 +62,7 @@ const Header = () => {
         transition={{ duration: 0.05, type: "spring", stiffness: 50 }}
         exit={{ y: 0, opacity: 0 }}
       >
-        <div className="title-card">
+        <div className="title-card bg-[var(--color-nav)]">
           <div className="left-container">
             <div className="titlecard__software text-5xl max-xl:text-4xl  max-lg:text-3xl max-md:text-2xl max-sm:text-2xl text-gray-400">
               Frontend Developer
