@@ -53,7 +53,7 @@ const Header = () => {
   // WARP moving with mouse ----------- ///
 
   return (
-    <div className="pb-[5rem] backdrop-blur-md ">
+    <div className="pb-[5rem] pt-[1rem] mt-0 backdrop-blur-md ">
       <motion.div
         id="homepage"
         className="header-flexcontainer"

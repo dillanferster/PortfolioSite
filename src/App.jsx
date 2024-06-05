@@ -52,26 +52,26 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <BrowserRouter>
-        <div
+        <main
           className="App scroll-smooth"
           data-theme={theme ? "light" : "dark"}
         >
           <NavBar navpage={activeSelection}></NavBar>
-          <div ref={homeref} id="homeSection">
+          <section ref={homeref} id="homeSection">
             <Header></Header>
-          </div>
+          </section>
 
-          <div ref={bioref} id="bioSection">
+          <section ref={bioref} id="bioSection">
             <Bioinfo></Bioinfo>
-          </div>
-          <div ref={projectref} id="projectsSection">
+          </section>
+          <section ref={projectref} id="projectsSection">
             <Project></Project>
-          </div>
-          <div ref={contactref} id="contactSection">
+          </section>
+          <section ref={contactref} id="contactSection">
             <Contact></Contact>
             <Footer></Footer>
-          </div>
-        </div>
+          </section>
+        </main>
       </BrowserRouter>
     </ThemeContext.Provider>
   );
