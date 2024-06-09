@@ -53,24 +53,26 @@ const Bioinfo = () => {
 
           <div className="bio-info text-gray-400">
             <div className="bio-info-top">
+              <span className="underline underline-offset-4">About Me: </span>
               <p>
                 Currently in my second year of the Software Development Diploma
                 program at the Southern Alberta Institute of Technology (SAIT).
-                I have acquired knowledge of Data Structures and algorithims,
-                OOP concepts along with an understanding of the Software
-                Development Life Cycle, this has provided me with good
-                programming foundations. After begining javascript I have found
-                that web design & frontend software development is what I am the
-                most passionate about
+                Prior to school I had experience working in graphic design and
+                digital art space. Through school I have acquired knowledge of
+                Data Structures and algorithms, OOP concepts using C# along with
+                an understanding of the Software Development Life Cycle, this
+                has provided me with good programming foundations.
+              </p>
+              <span className="underline underline-offset-4">Skills:</span>
+              <p>
+                My main skill set and what I enjoy the most is frontend web
+                development and web design using Javascript, HTML/CSS, React.js
+                and Figma.
               </p>
             </div>
 
             <div>
               <img className="bio-info-line" src={infoline} alt="infoline" />
-            </div>
-
-            <div className="bio-skills-text">
-              <span>I have Experience with these Technologies</span>
             </div>
 
             <div className="bio__tech-icons">
