@@ -9,7 +9,7 @@ const NavBar = ({ navpage }) => {
 
   return (
     <div className=" sticky top-0 z-[1000] flex gap-4 justify-center items-center max-sm:gap-2 px-12 max-sm:px-6 max-md:px-10 ">
-      <div className=" backdrop-blur-md  flex items-center justify-between pl-8 mt-4 border-2 border-[#414558] bg-[var(--color-nav)] rounded-full h-14 w-[66rem]  min-w-[10.5rem] max-sm:pl-0  max-sm:justify-center  shadow-sm ">
+      <div className=" backdrop-blur-lg  flex items-center justify-between pl-8 mt-4 border-2 border-[#414558] bg-[var(--color-nav)] rounded-full h-14 w-[66rem]  min-w-[10.5rem] max-sm:pl-0  max-sm:justify-center  shadow-sm ">
         <div className="font-BebasNeue text-3xl max-sm:text-lg text-gray-400 cursor-pointer ">
           <a href="#homeSection">Dillan Ferster</a>
         </div>

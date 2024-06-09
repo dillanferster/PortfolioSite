@@ -109,7 +109,6 @@
   /* font-family: "caustics demo"; */
   font-family: "Eczar", serif;
   /* font-size: 3rem; */
-  color: var(--color-black);
 
   margin-bottom: 3rem;
 }
@@ -129,11 +128,9 @@
 
 .barcode {
   width: 80%;
-  filter: var(--filter-color);
 }
 
 .header__middle-line {
-  filter: var(--filter-color);
 }
 
 .middle-container {
