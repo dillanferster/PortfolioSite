@@ -13,9 +13,9 @@ const DropDown = ({ project, desc, tech }) => {
       <div
         onClick={() => setDropDownOpen(!dropDownOpen)}
         id="projectBox"
-        className=" w-[100%] max-w-[75rem] flex justify-between  items-center  text-[3em] font-Armata  overflow-hidden max-sm:text-[3rem] cursor-pointer "
+        className=" w-[100%] max-w-[75rem] flex justify-between  items-center   font-Armata  overflow-hidden max-sm:text-[3rem] cursor-pointer "
       >
-        <div className="flex w-[50rem] text-gray-400 font-Armata gap-16 max-sm:w-[18rem] max-sm:text-lg ">
+        <div className="flex w-[50rem] text-gray-400 font-Armata text-[3rem] gap-16 max-sm:w-[18rem] max-sm:text-lg ">
           <div className="text-2xl flex flex-col  justify-center max-sm:text-[1rem] ">
             [00]
           </div>

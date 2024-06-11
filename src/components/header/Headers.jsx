@@ -64,9 +64,9 @@ const Header = () => {
       >
         <div className="title-card bg-[var(--color-nav)]">
           <div className="left-container">
-            <div className="titlecard__software text-5xl max-xl:text-4xl  max-lg:text-3xl max-md:text-2xl max-sm:text-2xl text-gray-400">
+            <h1 className="titlecard__software text-3xl max-xl:text-4xl  max-lg:text-3xl max-md:text-2xl max-sm:text-2xl text-gray-400 font-Armata ">
               Frontend Developer
-            </div>
+            </h1>
 
             <div className="warp-img-box" ref={warpBoxRef}>
               <img

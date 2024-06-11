@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         BebasNeue: ['"Bebas Neue"', "sans-serif"],
         Armata: ["Armata", "sans-serif"],
+        UbuntuMono: ['" Ubuntu Mono"', "sans-serif"],
       },
     },
   },

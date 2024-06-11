@@ -129,7 +129,7 @@
 
 .bio-skills-text {
   display: flex;
-  font-family: "Bebas Neue", sans-serif;
+
   color: var(--color-black);
   font-size: 2rem;
   justify-content: center;

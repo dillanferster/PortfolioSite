@@ -74,62 +74,6 @@ const Bioinfo = () => {
             <div>
               <img className="bio-info-line" src={infoline} alt="infoline" />
             </div>
-
-            <div className="bio__tech-icons">
-              <div className="bio-info-bottom">
-                <div>
-                  <img
-                    className="bio__js-icon animateIcon"
-                    src={jsicon}
-                    alt="jsicon"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    className="bio__node-icon animateIcon animateIcon--2"
-                    src={nodeicon}
-                    alt="nodeicon"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    className="bio__react-icon animateIcon animateIcon--3"
-                    src={reacticon}
-                    alt="reacticon"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    className="bio__html-icon animateIcon animateIcon--4"
-                    src={htmlicon}
-                    alt="htmlicon"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    className="bio__css-icon animateIcon animateIcon--5"
-                    src={cssicon}
-                    alt="cssicon"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    className="bio__c-icon animateIcon animateIcon--6"
-                    src={cicon}
-                    alt="cicon"
-                  />
-                </div>
-
-                <div className="bio__figma-icon animateIcon animateIcon--7">
-                  <img src={figmaicon} alt="figmaicon" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </motion.div>
