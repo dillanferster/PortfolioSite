@@ -1,0 +1,4 @@
+#projectBtn-box:hover #projectBtn-arrow-box {
+  rotate: -45deg;
+  transition: rotate 0.5s;
+}

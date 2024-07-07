@@ -3,47 +3,13 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --color-black: #100f0f;
-  --color-white: #e1ddd7;
-  --color-purple: #812fff;
-  --color-green: #adff2f;
-  --color-grey: #1313133c;
-  --color-nav: #c1c1be;
-  --bg-gradient: linear-gradient(
-    to right bottom,
-    #d4d9da,
-    #d0d5d4,
-    #ccd0cf,
-    #c8ccc9,
-    #c5c7c4,
-    #c4c5c2,
-    #c2c3c0,
-    #c1c1be,
-    #c1c1be,
-    #c1c1be,
-    #c1c1be,
-    #c1c1be
-  );
-  --color-background: var(--bg-gradient);
-  --filter-color: invert(3%) sepia(11%) saturate(309%) hue-rotate(314deg)
-    brightness(93%) contrast(93%);
-
-  --color-green2: #adff2f;
-
-  --color-secondary: #414558;
-  --color-primary: #282a36;
-
-  --color-nav: rgba(98, 124, 138, 0.07);
-  --color-navHover: rgba(98, 124, 130, 0.2);
-  --color-navShadow: rgba(249, 250, 251, 0.05);
-}
-
-[data-theme="dark"] {
-  --color-background: #0e0e0e;
-  --color-black: #ddd6d6;
-  --color-grey: #746e6e3c;
-  --filter-color: invert(93%) sepia(3%) saturate(333%) hue-rotate(314deg)
-    brightness(100%) contrast(79%);
-  --color-green2: #812fff;
-  --color-nav: #0e0e0e;
+  --black: #454543;
+  --pink: #f1aff7;
+  --purple: #d2c4f6;
+  --blue: #cedef2;
+  --green: #d3ecee;
+  --bg: #7a8e8e;
+  --bg2: #597b7b;
+  --hover: #e4e7e7;
+  --text-hover: #61615f;
 }
