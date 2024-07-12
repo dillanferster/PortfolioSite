@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../assets/arrowcontact.svg";
+import arrow from "../../assets/arrow.svg";
 import "./styles.css";
 
 function Contact() {

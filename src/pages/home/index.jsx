@@ -1,12 +1,8 @@
 import React from "react";
 import Introduction from "../../components/introduction";
 import Projectbtn from "../../components/projectBtn";
-import blocks from "../../assets/blocks.svg";
-
-import blocks2 from "../../assets/blocks2.svg";
-
-import gradient1 from "../../assets/gd1.svg";
-
+import blocks from "../../assets/blocksp.svg";
+import blocks2 from "../../assets/blocksb.svg";
 function HomePage() {
   return (
     <main
@@ -21,12 +17,9 @@ function HomePage() {
           <Introduction></Introduction>
           <Projectbtn></Projectbtn>
         </div>
-        <div id="main-right-side" className="w-[27rem] ">
+        <div id="main-right-side">
           <img className="w-[27rem]" src={blocks2} alt="building blocks"></img>
         </div>
-      </div>
-      <div className="flex justify-center max-w-[80rem] px-14 pt-[10rem]">
-        <img className="w-full" src={gradient1} alt="gradient"></img>
       </div>
     </main>
   );

@@ -3,7 +3,7 @@ import arrow from "../../assets/arrow2.svg";
 
 function ProjectItem({ project }) {
   return (
-    <div className=" px-[3.5rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-10">
+    <div className=" px-[3.5rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-10 ">
       <button className="w-full">
         <div className="flex justify-between w-full ">
           <p className="text-[32px]">{project}</p>

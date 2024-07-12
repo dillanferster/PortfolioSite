@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../assets/arrow2.svg";
+import arrow2 from "../../assets/arrow2.svg";
 import "./styles.css";
 
 function Projectbtn() {
@@ -12,12 +12,12 @@ function Projectbtn() {
         >
           <h2>Projects </h2>
           <div id="projectBtn-arrow-box">
-            <img src={arrow} alt="arrow icon"></img>
+            <img src={arrow2} alt="arrow icon"></img>
           </div>
         </button>
       </a>
 
-      <hr className="border-[var(--pink)]  " />
+      <hr className="border-[var(--black)]" />
       <div>
         <p>Check out what im working on</p>
       </div>
