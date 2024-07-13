@@ -1,0 +1,4 @@
+#project-item-btn:hover #project-item-arrow {
+  rotate: -45deg;
+  transition: rotate 0.5s;
+}

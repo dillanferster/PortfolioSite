@@ -1,26 +1,23 @@
 import React from "react";
-import arrow2 from "../../assets/arrow2.svg";
+import arrow from "../../assets/arrow2.svg";
 import "./styles.css";
 
 function Projectbtn() {
   return (
-    <div className="text-[var(--black)] w-[23rem] pb-9 ">
+    <div className="text-[var(--black)] w-[23rem] rounded-full border-[var(--black)] border p-2 px-4 bg-[var(--bg)]">
       <a href="/projects">
         <button
           id="projectBtn-box"
-          className="w-full text-[32px] flex items-center justify-between cursor-pointer hover:text-[var(--text-hover)] rounded-sm"
+          className="w-full text-[28px] flex items-center justify-between cursor-pointer hover:text-[var(--text-hover)] rounded-sm"
         >
           <h2>Projects </h2>
           <div id="projectBtn-arrow-box">
-            <img src={arrow2} alt="arrow icon"></img>
+            <img src={arrow} alt="arrow icon"></img>
           </div>
         </button>
       </a>
 
-      <hr className="border-[var(--black)]" />
-      <div>
-        <p>Check out what im working on</p>
-      </div>
+      {/* <hr className="border-[var(--purple)] border-2" /> */}
     </div>
   );
 }
