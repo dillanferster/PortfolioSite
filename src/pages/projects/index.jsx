@@ -15,7 +15,7 @@ function ProjectsPage() {
     {
       projectName: "YYC Flight Deals",
       path: "/ProjectArticleTwo",
-      desc: "Web app that shows cheap popular flights out of Calgary",
+      desc: "Web app that shows cheap popular flights out of Calgary  ",
       id: "01",
     },
     {
@@ -23,6 +23,12 @@ function ProjectsPage() {
       path: "/ProjectArticleTwo",
       desc: "CRUD app, using C# .Net & Sql",
       id: "02",
+    },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
     },
   ];
   ///
