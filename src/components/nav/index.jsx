@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 function Nav() {
+  const container = {
+    show: {
+      transition: {
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
+  const listItem = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+
+      transition: {
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
   return (
     <div>
       <nav
@@ -10,31 +32,35 @@ function Nav() {
         <div id="nav-title">
           <a href="/">Dillan Ferster</a>
         </div>
-        <ul
+
+        <motion.ul
+          variants={container}
+          initial="hidden"
+          animate="show"
           id="nav-items"
-          className="flex justify-evenly align-middle gap-8 text-[var(--black)]"
+          className="flex justify-evenly align-middle gap-8 text-[var(--black)] "
         >
-          <li>
+          <motion.li variants={listItem}>
             <a className="hover:text-[var(--text-hover)]" href="/">
               Home
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={listItem}>
             <a className="hover:text-[var(--text-hover)]" href="/projects">
               Projects
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={listItem}>
             <a className="hover:text-[var(--text-hover)]" href="/about">
               About
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={listItem}>
             <a className="hover:text-[var(--text-hover)]" href="/contact">
               Contact
             </a>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       </nav>
       <hr className="border-[var(--black)]" />
     </div>

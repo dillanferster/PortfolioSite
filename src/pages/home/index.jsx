@@ -1,46 +1,49 @@
 import React from "react";
-import Introduction from "../../components/introduction";
+
 import Projectbtn from "../../components/projectBtn";
-import blocks from "../../assets/blocksp.svg";
-import blocks2 from "../../assets/blocksb.svg";
+
 function HomePage() {
   return (
     <main id="home-container" className="flex flex-col   h-full justify-center">
       <div
         id="main-div"
-        className="flex flex-col gap-[5rem]  pt-[5rem] px-16 max-w-[100rem]  mx-auto   w-full justify-between  min-h-[30rem] text-[80px] max-2xl:pt-[4rem] max-2xl:gap-[4rem]"
+        className="flex flex-col gap-[5rem]  pt-[5rem] px-16 max-w-[100rem]  mx-auto   w-full justify-between  min-h-[30rem] text-[80px] max-2xl:pt-[4rem] max-2xl:gap-[4rem] max-lg:text-[50px] max-sm:text-[27px]  max-sm:px-8 max-sm:gap-[3rem]   max-sm:min-h-[20rem]"
       >
-        <div className="flex text-[var(--black)]">
-          <div className="flex justify-center items-center border border-[var(--beige)] rounded-full  px-6">
+        <div className="flex  text-[var(--black)]">
+          <div className="flex justify-start items-center border border-[var(--beige)] rounded-full  px-6 max-md:px-2">
             <h1>Frontend</h1>
           </div>
           &nbsp;
-          <div className="flex justify-center items-center pl-4">
+          <div className="flex justify-center items-center pl-4 max-sm:pl-0">
             <h1>Developer</h1>
           </div>
+          <div className="w-full pl-8 flex items-center  max-sm:pl-0">
+            {" "}
+            <hr className="border-[var(--black)] w-full  translate-y-4 max-md:translate-y-2 max-sm:translate-y-1" />
+          </div>
         </div>
-        <div className="flex justify-end text-[100px] text-[var(--beige)]">
+        <div className="flex justify-start text-[100px] text-[var(--beige)] max-lg:text-[65px] max-sm:text-[40px]">
           <h1>&</h1>
         </div>
         <div className="flex items-center">
+          <hr className="border-[var(--black)] w-full mr-[2rem]  translate-y-4 max-md:translate-y-2 max-sm:translate-y-0" />
           <h1 className="text-[var(--black)]">Designer</h1>
-          <hr className="border-[var(--black)] w-full ml-[6rem]  translate-y-4" />
         </div>
       </div>
       <div
         id="main-left-side"
         className="flex  justify-between bg-[var(--beige)] w-full border h-[6rem] mt-[5rem] max-2xl:mt-[4rem]"
       >
-        <div className="flex max-w-[100rem] mx-auto justify-between w-full px-16 items-center">
+        <div className="flex max-w-[100rem] mx-auto justify-between w-full px-16 items-center max-sm:px-8 ">
           <div>
-            <h2 className="italic text-[var(--black)] text-[18px]">
+            <h2 className="italic text-[var(--black)] text-[18px]  max-lg:text-[16px] max-sm:text-[12px]">
               check out what im working on
             </h2>
           </div>
           <div>
-            <button>
+            <div>
               <Projectbtn></Projectbtn>
-            </button>
+            </div>
           </div>
         </div>
       </div>

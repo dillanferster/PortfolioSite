@@ -1,20 +1,65 @@
 import React from "react";
 import Header from "../../components/header";
 import ProjectItem from "../../components/projectItem";
+import { motion } from "framer-motion";
 
 function ProjectsPage() {
+  const ProjectList = [
+    {
+      projectName: "Portfolio Site",
+      path: "/ProjectArticleOne",
+      desc: "This is a dive into the site you are currently on",
+      id: "00",
+    },
+    {
+      projectName: "YYC Flight Deals",
+      path: "/ProjectArticleTwo",
+      desc: "Web app that shows cheap popular flights out of Calgary",
+      id: "01",
+    },
+  ];
+
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
+  const listItem = {
+    hidden: { opacity: 0, y: -5 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
   return (
     <main className="w-full">
       <Header title="What im working on"></Header>
       <div className="pt-32">
-        <ul>
-          <li>
-            <ProjectItem project="Portfolio Site"></ProjectItem>
-          </li>
-          <li>
-            <ProjectItem project="YYC Flight Deals"></ProjectItem>
-          </li>
-        </ul>
+        <motion.ul variants={container} initial="hidden" animate="show">
+          {ProjectList.map(function (item) {
+            return (
+              <a href={item.path}>
+                <motion.li key={item.id} variants={listItem}>
+                  <ProjectItem
+                    id={item.id}
+                    project={item.projectName}
+                    desc={item.desc}
+                  ></ProjectItem>
+                </motion.li>
+              </a>
+            );
+          })}
+        </motion.ul>
       </div>
     </main>
   );
