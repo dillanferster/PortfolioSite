@@ -7,6 +7,9 @@ import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact";
 import Nav from "./components/nav";
 import ProjectArticleOne from "./pages/projectArticleOne";
+import ProjectArticleTwo from "./pages/projectArticleTwo";
+import ProjectArticleThree from "./pages/projectArticleThree";
+import ProjectArticleFour from "./pages/projectArticleFour";
 import BurgerNav from "./components/burgerNav";
 
 function App() {
@@ -51,6 +54,18 @@ function App() {
         <Route
           path="/projectArticleOne"
           element={<ProjectArticleOne></ProjectArticleOne>}
+        ></Route>
+        <Route
+          path="/projectArticleTwo"
+          element={<ProjectArticleTwo></ProjectArticleTwo>}
+        ></Route>
+        <Route
+          path="/projectArticleThree"
+          element={<ProjectArticleThree></ProjectArticleThree>}
+        ></Route>
+        <Route
+          path="/projectArticleFour"
+          element={<ProjectArticleFour></ProjectArticleFour>}
         ></Route>
         <Route path="/about" element={<AboutPage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>

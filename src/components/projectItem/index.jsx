@@ -9,8 +9,7 @@ function ProjectItem({ project, desc, id }) {
         id="project-item-btn"
         className="w-full hover:text-[var(--text-hover)] "
       >
-        <div className="grid grid-cols-[1fr,2fr,2fr,1fr] max-sm:grid-cols-[1fr] ">
-          <div className="flex justify-start text-[28px] pl-4 max-sm:text-[18px] max-sm:hidden">{`[${id}]`}</div>
+        <div className="grid grid-cols-[1fr] ">
           <div className="flex justify-start items-center">
             <p className="text-[28px] max-sm:text-[18px]">{project}</p>
           </div>
@@ -20,7 +19,7 @@ function ProjectItem({ project, desc, id }) {
             </p>
           </div>
 
-          <div className="flex w-full justify-end max-sm:-translate-y-[2rem]">
+          <div className="flex w-full justify-end -translate-y-[2rem]">
             <img
               id="project-item-arrow"
               className="w-[35px] max-sm:w-[25px]"

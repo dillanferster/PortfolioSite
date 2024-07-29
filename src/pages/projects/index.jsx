@@ -4,11 +4,12 @@ import ProjectItem from "../../components/projectItem";
 import { motion } from "framer-motion";
 
 function ProjectsPage() {
+  // project objects//
   const ProjectList = [
     {
       projectName: "Portfolio Site",
       path: "/ProjectArticleOne",
-      desc: "This is a dive into the site you are currently on",
+      desc: "A dive into the site you are currently on",
       id: "00",
     },
     {
@@ -17,12 +18,20 @@ function ProjectsPage() {
       desc: "Web app that shows cheap popular flights out of Calgary",
       id: "01",
     },
+    {
+      projectName: "Library book management",
+      path: "/ProjectArticleTwo",
+      desc: "CRUD app, using C# .Net & Sql",
+      id: "02",
+    },
   ];
+  ///
 
+  // varibles for framer motion //
   const container = {
     show: {
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.18,
         type: "spring",
         stiffness: 100,
       },
@@ -40,6 +49,7 @@ function ProjectsPage() {
       },
     },
   };
+  //
 
   return (
     <main className="w-full">
