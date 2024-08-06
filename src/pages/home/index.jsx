@@ -11,7 +11,7 @@ function HomePage() {
       >
         <div className="flex  text-[var(--black)]">
           <div className="flex justify-start items-center border border-[var(--beige)] rounded-full  px-6 max-md:px-2">
-            <h1>Frontend</h1>
+            <h1>Software</h1>
           </div>
           &nbsp;
           <div className="flex justify-center items-center pl-4 max-sm:pl-0">
@@ -22,7 +22,7 @@ function HomePage() {
             <hr className="border-[var(--black)] w-full  translate-y-4 max-md:translate-y-2 max-sm:translate-y-1" />
           </div>
         </div>
-        <div className="flex justify-start text-[100px] text-[var(--beige)] max-lg:text-[65px] max-sm:text-[40px]">
+        <div className="flex justify-start text-[100px] text-[var(--black)] max-lg:text-[65px] max-sm:text-[40px]">
           <h1>&</h1>
         </div>
         <div className="flex items-center">
