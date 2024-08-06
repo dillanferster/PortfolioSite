@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 const BurgerNav = ({ burgerOpen, setBurgerOpen }) => {
   return (
-    <div>
+    <div className="">
       {burgerOpen ? <BurgerMenu burgerOpen={burgerOpen}></BurgerMenu> : null}
 
       <nav
         id="nav"
-        className="flex sticky z-[1000] top justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] max-sm:text-[16px] max-sm:px-8"
+        className="flex sticky z-[100] top-0 justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] max-sm:text-[16px] max-sm:px-8"
       >
         <div id="nav-title">
           <a href="/">Dillan Ferster</a>

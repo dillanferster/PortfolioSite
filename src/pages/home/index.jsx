@@ -17,16 +17,16 @@ function HomePage() {
           <div className="flex justify-center items-center pl-4 max-sm:pl-0">
             <h1>Developer</h1>
           </div>
-          <div className="w-full pl-8 flex items-center  max-sm:pl-0">
+          <div className="w-full pl-8 flex items-center  max-sm:pl-2">
             {" "}
             <hr className="border-[var(--black)] w-full  translate-y-4 max-md:translate-y-2 max-sm:translate-y-1" />
           </div>
         </div>
-        <div className="flex justify-start text-[100px] text-[var(--black)] max-lg:text-[65px] max-sm:text-[40px]">
+        <div className="flex justify-start text-[100px] text-[var(--black)] max-lg:text-[65px] max-sm:text-[30px]">
           <h1>&</h1>
         </div>
         <div className="flex items-center">
-          <hr className="border-[var(--black)] w-full mr-[2rem]  translate-y-4 max-md:translate-y-2 max-sm:translate-y-0" />
+          <hr className="border-[var(--black)] w-full mr-2 translate-y-4 max-md:translate-y-2 max-sm:translate-y-0" />
           <h1 className="text-[var(--black)]">Designer</h1>
         </div>
       </div>
