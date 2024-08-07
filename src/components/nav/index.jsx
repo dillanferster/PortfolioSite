@@ -24,10 +24,10 @@ function Nav() {
   };
 
   return (
-    <div>
+    <div className="sticky top  z-[1000] ">
       <nav
         id="nav"
-        className="flex sticky z-[1000] top-0 justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] "
+        className="flex justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] "
       >
         <div id="nav-title">
           <a href="/">Dillan Ferster</a>
