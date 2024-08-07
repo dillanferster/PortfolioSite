@@ -24,7 +24,7 @@ function Nav() {
   };
 
   return (
-    <div className="sticky top  z-[1000] ">
+    <div>
       <nav
         id="nav"
         className="flex justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] "

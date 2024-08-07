@@ -60,7 +60,7 @@ function ProjectsPage() {
   return (
     <main className="w-full">
       <Header title="What im working on"></Header>
-      <div className="pt-28 overflow-y-scroll h-[40rem]">
+      <div className="pt-28 overflow-y-scroll h-[40rem] max-md:h-[30rem]">
         <motion.ul variants={container} initial="hidden" animate="show">
           {ProjectList.map(function (item) {
             return (
