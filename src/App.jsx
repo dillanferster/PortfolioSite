@@ -39,16 +39,14 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="sticky top-0  z-[1000]">
-        {windowSize <= windowSmall ? (
-          <BurgerNav
-            burgerOpen={burgerOpen}
-            setBurgerOpen={setBurgerOpen}
-          ></BurgerNav>
-        ) : (
-          <Nav></Nav>
-        )}
-      </div>
+      {windowSize <= windowSmall ? (
+        <BurgerNav
+          burgerOpen={burgerOpen}
+          setBurgerOpen={setBurgerOpen}
+        ></BurgerNav>
+      ) : (
+        <Nav></Nav>
+      )}
 
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
