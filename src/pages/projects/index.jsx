@@ -30,6 +30,36 @@ function ProjectsPage() {
       desc: "Ski mountain weather mobile app",
       id: "03",
     },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
   ];
   ///
 
@@ -60,7 +90,7 @@ function ProjectsPage() {
   return (
     <main className="w-full">
       <Header title="What im working on"></Header>
-      <div className="pt-28 overflow-y-scroll h-[40rem] max-md:h-[30rem]">
+      <div className="pt-[12rem]  ">
         <motion.ul variants={container} initial="hidden" animate="show">
           {ProjectList.map(function (item) {
             return (

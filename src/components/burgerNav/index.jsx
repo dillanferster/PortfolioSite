@@ -7,10 +7,10 @@ const BurgerNav = ({ burgerOpen, setBurgerOpen }) => {
     <div>
       {burgerOpen ? <BurgerMenu burgerOpen={burgerOpen}></BurgerMenu> : null}
 
-      <div className="sticky z-[1000] top-0 ">
+      <div className=" fixed top-0 w-screen  z-[1000]  bg-[var(--bg)] border-b-[1px] border-[var(--black)]">
         <nav
           id="nav"
-          className="flex justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] max-sm:text-[16px] max-sm:px-8"
+          className="flex h-[4rem] justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] max-sm:text-[16px] max-sm:px-8"
         >
           <div id="nav-title">
             <a href="/">Dillan Ferster</a>
@@ -53,7 +53,6 @@ const BurgerNav = ({ burgerOpen, setBurgerOpen }) => {
           </div>
         </nav>
       </div>
-      <hr className="border-[var(--black)]" />
     </div>
   );
 };

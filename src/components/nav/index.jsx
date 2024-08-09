@@ -24,10 +24,10 @@ function Nav() {
   };
 
   return (
-    <div>
+    <div className="  fixed top-0 w-screen  z-[999]  backdrop-blur-md border-b-[1px] border-[var(--black)]">
       <nav
         id="nav"
-        className="flex justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)] max-w-[100rem] mx-auto text-[18px] "
+        className="flex h-[4rem] justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)]  text-[18px] max-w-[100rem] mx-auto"
       >
         <div id="nav-title">
           <a href="/">Dillan Ferster</a>
@@ -62,7 +62,6 @@ function Nav() {
           </motion.li>
         </motion.ul>
       </nav>
-      <hr className="border-[var(--black)]" />
     </div>
   );
 }
