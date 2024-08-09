@@ -3,7 +3,7 @@ import Header from "../../components/header";
 import ProjectItem from "../../components/projectItem";
 import { motion } from "framer-motion";
 
-function ProjectsPage() {
+function ProjectsPage({ burgerOpen }) {
   // project objects//
   const ProjectList = [
     {
@@ -90,7 +90,11 @@ function ProjectsPage() {
   return (
     <main className="w-full">
       <Header title="What im working on"></Header>
-      <div className="pt-[12rem]  ">
+      <div
+        className={`pt-[12rem] ${
+          burgerOpen ? "h-screen overflow-y-hidden" : ""
+        } `}
+      >
         <motion.ul variants={container} initial="hidden" animate="show">
           {ProjectList.map(function (item) {
             return (

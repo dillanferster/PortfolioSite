@@ -50,7 +50,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/projects" element={<ProjectsPage />}></Route>
+        <Route
+          path="/projects"
+          element={<ProjectsPage burgerOpen={burgerOpen} />}
+        ></Route>
         <Route
           path="/projectArticleOne"
           element={<ProjectArticleOne></ProjectArticleOne>}
