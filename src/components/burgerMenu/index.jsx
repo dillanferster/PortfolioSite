@@ -15,7 +15,7 @@ const BurgerMenu = () => {
   };
 
   return (
-    <div className="flex z-[1000] justify-end px-16 pt-4 items-center text-[var(--black)] text-[28px] backdrop-blur-lg absolute  w-full h-full max-sm:text-[18px] ">
+    <div className="flex z-[1000] justify-end px-16 pt-4 items-center text-[var(--black)] text-[28px] backdrop-blur-lg absolute  w-full h-screen max-sm:text-[18px] ">
       <nav className="w-full">
         <motion.ul
           variants={container}
@@ -27,25 +27,25 @@ const BurgerMenu = () => {
             <a href="/">
               <p className="w-full">Home</p>
             </a>
-            <hr className="border border-[var(--beige)]" />
+            <hr className="border border-[var(--black)]" />
           </motion.li>
           <motion.li className="hover:text-[var(--text-hover)]">
             <a href="/projects">
               <p className="w-full">Projects</p>
             </a>
-            <hr className="border border-[var(--beige)]" />
+            <hr className="border border-[var(--black)]" />
           </motion.li>
           <motion.li className="hover:text-[var(--text-hover)]">
             <a href="/about">
               <p className="w-full">About</p>
             </a>
-            <hr className="border border-[var(--beige)]" />
+            <hr className="border border-[var(--black)]" />
           </motion.li>
           <motion.li className="hover:text-[var(--text-hover)]">
             <a href="/contact">
               <p className="w-full">Contact</p>
             </a>
-            <hr className="border border-[var(--beige)]" />
+            <hr className="border border-[var(--black)]" />
           </motion.li>
         </motion.ul>
       </nav>

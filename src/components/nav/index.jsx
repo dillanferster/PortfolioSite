@@ -24,7 +24,7 @@ function Nav() {
   };
 
   return (
-    <div className="  fixed top-0 w-screen  z-[999]  backdrop-blur-md border-b-[1px] border-[var(--black)]">
+    <div className="  fixed top-0 w-screen  z-[999]  bg-[var(--bg)] border-b-[1px] border-[var(--black)]">
       <nav
         id="nav"
         className="flex h-[4rem] justify-between pb-4 px-16 pt-4 align-middle text-[var(--black)]  text-[18px] max-w-[100rem] mx-auto"

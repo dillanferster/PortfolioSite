@@ -10,7 +10,7 @@ function HomePage() {
     >
       <div
         id="main-div"
-        className="flex flex-col gap-[5rem]  pt-[5rem] px-16 max-w-[100rem]  mx-auto   justify-between  min-h-[30rem] text-[80px] max-2xl:pt-[4rem] max-2xl:gap-[4rem] max-lg:text-[50px] max-sm:text-[27px]  max-sm:px-8 max-sm:gap-[3rem]   max-sm:min-h-[20rem]"
+        className="flex flex-col gap-[5rem]  pt-[5rem] px-16 max-w-[100rem]  mx-auto   w-full justify-between  min-h-[30rem] text-[80px] max-2xl:pt-[4rem] max-2xl:gap-[4rem] max-lg:text-[50px] max-sm:text-[27px]  max-sm:px-8 max-sm:gap-[3rem]   max-sm:min-h-[20rem]"
       >
         <div className="flex  text-[var(--black)]">
           <div className="flex justify-start items-center border border-[var(--beige)] rounded-full  px-6 max-md:px-2">
