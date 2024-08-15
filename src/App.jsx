@@ -55,19 +55,19 @@ function App() {
           element={<ProjectsPage burgerOpen={burgerOpen} />}
         ></Route>
         <Route
-          path="/projectArticleOne"
+          path="/ProjectArticleOne"
           element={<ProjectArticleOne></ProjectArticleOne>}
         ></Route>
         <Route
-          path="/projectArticleTwo"
+          path="/ProjectArticleTwo"
           element={<ProjectArticleTwo></ProjectArticleTwo>}
         ></Route>
         <Route
-          path="/projectArticleThree"
+          path="/ProjectArticleThree"
           element={<ProjectArticleThree></ProjectArticleThree>}
         ></Route>
         <Route
-          path="/projectArticleFour"
+          path="/ProjectArticleFour"
           element={<ProjectArticleFour></ProjectArticleFour>}
         ></Route>
         <Route path="/about" element={<AboutPage />}></Route>

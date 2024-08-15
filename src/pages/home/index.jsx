@@ -6,11 +6,11 @@ function HomePage() {
   return (
     <main
       id="home-container"
-      className="flex flex-col   h-full justify-center pt-[5rem]"
+      className="flex flex-col   h-full justify-center pt-[4rem]"
     >
       <div
         id="main-div"
-        className="flex flex-col gap-[5rem]  pt-[5rem] px-16 max-w-[100rem]  mx-auto   w-full justify-between  min-h-[30rem] text-[80px] max-2xl:pt-[4rem] max-2xl:gap-[4rem] max-lg:text-[50px] max-sm:text-[27px]  max-sm:px-8 max-sm:gap-[3rem]   max-sm:min-h-[20rem]"
+        className="flex flex-col gap-[5rem] pt-[4rem] px-16 max-w-[100rem]  mx-auto   w-full justify-between  min-h-[30rem] text-[80px] max-2xl:pt-[4rem] max-2xl:gap-[4rem] max-lg:text-[50px] max-sm:text-[27px]  max-sm:px-8 max-sm:gap-[3rem]   max-sm:min-h-[20rem]"
       >
         <div className="flex  text-[var(--black)]">
           <div className="flex justify-start items-center border border-[var(--beige)] rounded-full  px-6 max-md:px-2">
@@ -22,14 +22,14 @@ function HomePage() {
           </div>
           <div className="w-full pl-8 flex items-center  max-sm:pl-2">
             {" "}
-            <hr className="border-[var(--black)] w-full  translate-y-4 max-md:translate-y-2 max-sm:translate-y-1" />
+            <hr className="border-[var(--black)] w-full  translate-y-4 max-lg:translate-y-2 max-sm:translate-y-1" />
           </div>
         </div>
         <div className="flex justify-start text-[100px] text-[var(--black)] max-lg:text-[65px] max-sm:text-[30px]">
           <h1>&</h1>
         </div>
         <div className="flex items-center">
-          <hr className="border-[var(--black)] w-full mr-2 translate-y-4 max-md:translate-y-2 max-sm:translate-y-0" />
+          <hr className="border-[var(--black)] w-full mr-4 translate-y-4 max-lg:translate-y-2 max-sm:translate-y-0  max-sm:mr-2" />
           <h1 className="text-[var(--black)]">Designer</h1>
         </div>
       </div>

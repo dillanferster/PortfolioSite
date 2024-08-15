@@ -11,7 +11,7 @@ function Projectbtn() {
             id="projectBtn-box"
             className="w-full text-[28px]  flex items-center justify-between cursor-pointer hover:text-[var(--text-hover)] rounded-sm max-lg:text-[22px] max-sm:text-[16px]"
           >
-            <h2>Projects </h2>
+            <span>Projects </span>
             <div id="projectBtn-arrow-box">
               <img
                 src={arrow}
