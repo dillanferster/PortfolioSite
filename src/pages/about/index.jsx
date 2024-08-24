@@ -6,11 +6,9 @@ function AboutPage() {
     <main>
       <Header title="Get to know me"></Header>
       <div className="flex justify-between gap-16 text-[var(--black)] px-16 max-w-[100rem] mx-auto ">
-        <section>
+        <article className="flex flex-col gap-8 pt-16">
           <div className="w-[10rem] h-[10rem] border"></div>
-        </section>
-        <section className="flex flex-col gap-8 pt-16">
-          <article>
+          <section>
             <h3 className="font-bold text-[18px]">About me</h3>
             <p className="pb-4">
               Hi, my name is Dillan Ferster, I’m a designer and developer. I
@@ -30,8 +28,8 @@ function AboutPage() {
               the summer, I enjoy hiking in the mountains, and in the winter I
               love to snowboard.
             </p>
-          </article>{" "}
-          <article>
+          </section>{" "}
+          <section>
             <h3 className="font-bold text-[18px]">Education</h3>
             <p>
               I attended the Southern Alberta Institute of Technology (SAIT) and
@@ -43,8 +41,8 @@ function AboutPage() {
               application using C# with .Net MAUI, and most of all I found an
               interest in web design and frontend software development.
             </p>
-          </article>
-        </section>
+          </section>
+        </article>
       </div>
     </main>
   );
