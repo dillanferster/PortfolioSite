@@ -17,7 +17,7 @@ function ProjectArticleOne({ burgerOpen }) {
       <Header title="Portfolio Site"></Header>
 
       <article className="flex flex-col px-16 max-w-[100rem] mx-auto pb-[4rem] max-md:px-8 text-[var(--black)]">
-        <div className="-translate-x-3 w-full mt-[12rem] pb-[4rem] ">
+        <div className="-translate-x-3 w-full mt-[12rem] pb-[2rem] ">
           <a href="/projects">
             <button className="flex justify-center w-[6rem] items-center text-[18px] text-[var(--black)] hover:text-[var(--text-hover)]">
               <img
