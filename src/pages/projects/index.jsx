@@ -30,6 +30,24 @@ function ProjectsPage({ burgerOpen }) {
       desc: "Ski mountain weather mobile app",
       id: "03",
     },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
+    {
+      projectName: "Mountain weather",
+      path: "/ProjectArticleFour",
+      desc: "Ski mountain weather mobile app",
+      id: "03",
+    },
   ];
   ///
 

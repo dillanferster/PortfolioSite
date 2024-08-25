@@ -41,7 +41,7 @@ function HomePage() {
         {" "}
         <div
           id="main-left-side"
-          className="flex  justify-between bg-[var(--beige)] w-full border h-[6rem] mt-[5rem] max-2xl:mt-[4rem]"
+          className="flex  justify-between bg-[var(--beige)] w-full border h-[6rem] mt-[5rem] max-2xl:mt-[4rem] max-md:h-[5rem]"
         >
           <div className="flex max-w-[100rem] mx-auto justify-between w-full px-16 items-center max-sm:px-8 ">
             <div>
