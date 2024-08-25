@@ -4,11 +4,13 @@ import Header from "../../components/header";
 
 import photo2 from "../../assets/photo1.png";
 
-function ProjectArticleOne() {
+function ProjectArticleOne({ burgerOpen }) {
   return (
-    <main className="w-full mt-[12rem] ">
+    <main
+      className={` ${burgerOpen ? "h-screen overflow-y-hidden" : ""}  w-full  `}
+    >
       <Header title="Portfolio Site"></Header>
-      <div className="w-full  mx-auto pl-[3rem] pb-[4rem] ">
+      <div className="w-full  mx-auto pl-[3rem] pb-[4rem] mt-[12rem]">
         <div className="max-w-[100rem] mx-auto">
           <a href="/projects">
             <button className="flex justify-center w-[6rem] items-center text-[18px] text-[var(--black)] hover:text-[var(--text-hover)]">

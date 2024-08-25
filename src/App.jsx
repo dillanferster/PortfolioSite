@@ -56,7 +56,7 @@ function App() {
         ></Route>
         <Route
           path="/ProjectArticleOne"
-          element={<ProjectArticleOne></ProjectArticleOne>}
+          element={<ProjectArticleOne burgerOpen={burgerOpen} />}
         ></Route>
         <Route
           path="/ProjectArticleTwo"
