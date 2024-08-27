@@ -46,7 +46,7 @@ function HomePage() {
           <div className="flex max-w-[100rem] mx-auto justify-between w-full px-16 items-center max-sm:px-8 ">
             <div>
               <h2 className="italic text-[var(--black)] text-[18px]  max-lg:text-[16px] max-sm:text-[12px]">
-                check out what im working on
+                check out what i'm working on
               </h2>
             </div>
             <div>

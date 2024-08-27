@@ -34,7 +34,7 @@ function ProjectArticleOne({ burgerOpen }) {
             <img src={photo1} alt="website photo" />
           </div>
           <h1 className="text-[28px] font-bold underline underline-offset-8 pb-[1rem]">
-            A focus on alignment and proximity 
+            A focus on alignment and proximity
           </h1>
           <ul className="flex flex-col gap-1 max-w-[60rem]">
             <li>
@@ -47,16 +47,17 @@ function ProjectArticleOne({ burgerOpen }) {
             </li>
             <li>
               <p>
-                My design focus was on alignment and spacing, I wanted to show
-                how powerful these fundamentals can be in creating a sleek
+                My design focus is on alignment and spacing, I wanted to show
+                how powerful these fundamentals can be in creating a sleek and
                 modern looking site. Proper proximity keeps everything organized
                 and is crucial for a user-friendly experience.
               </p>
             </li>
             <li>
               <p>
-                The layout follows a 12-column grid system, ensuring everything
-                is aligned to the edges, creating a structured appearance.
+                The layout follows a 12-column grid system, ensuring that
+                everything is aligned to the edges, creating a structured
+                appearance.
               </p>
             </li>
             <li>
