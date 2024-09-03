@@ -95,7 +95,7 @@ function ProjectArticleTwo({ burgerOpen }) {
                 typography adds a sense of fun and spontaneity into the design.
                 The visuals and copy together keeps the overall theme of the app
                 enjoyable and inviting, encouraging users to take that first
-                step towards their next adventure
+                step towards their next adventure.
               </p>
             </li>
             <li>
@@ -103,8 +103,8 @@ function ProjectArticleTwo({ burgerOpen }) {
               <p>
                 That's right no pre-made components were used in the making of
                 this site. Every button, card, grid layout, and interactive
-                element you see is the result of custom CSS. I gained invaluable
-                hands-on experience and a deeper understanding of CSS. Plus, it
+                element you see is the result of custom CSS. Through this, I
+                gained experience and a deeper understanding of CSS. Plus, it
                 gave me the freedom to fine-tune every detail, creating a user
                 interface that stands out from cookie-cutter designs.
               </p>
