@@ -60,7 +60,7 @@ function App() {
         ></Route>
         <Route
           path="/ProjectArticleTwo"
-          element={<ProjectArticleTwo></ProjectArticleTwo>}
+          element={<ProjectArticleTwo burgerOpen={burgerOpen} />}
         ></Route>
         <Route
           path="/ProjectArticleThree"
