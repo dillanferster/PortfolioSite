@@ -2,20 +2,25 @@ import React from "react";
 import arrow from "../../assets/arrow2.svg";
 import "./styles.css";
 
-function ProjectItem({ project, desc, id }) {
+function ProjectItem({ project, desc, tag }) {
   return (
-    <div className=" px-[3.5rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-10 max-sm:px-[2rem] ">
+    <div className=" px-[3.5rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-6 max-sm:px-[2rem] border rounded-lg shadow-md border-[var(--black)] mb-4 ">
       <button
         id="project-item-btn"
         className="w-full hover:text-[var(--text-hover)] "
       >
         <div className="flex justify-between w-full">
           <div className="flex flex-col">
-            <div className="flex justify-start items-center">
-              <p className="text-[28px] max-sm:text-[18px]">{project}</p>
+            <div className="flex justify-start items-center ">
+              <p className="text-[28px] font-bold max-sm:text-[18px]">
+                {project}
+              </p>
             </div>
 
             <div className="">
+              <div className="w-[5.5rem] bg-[var(--purple)]  text-[var(--black)] rounded-md mr-2 shadow-sm border border-[var(--beige)] shadow-[var(--purple)] mb-1 max-sm:text-[12px] max-sm:w-[4rem]">
+                {tag}
+              </div>
               <p className="text-[18px] max-sm:text-[12px] wrap  text-start">
                 {desc}
               </p>
@@ -32,7 +37,7 @@ function ProjectItem({ project, desc, id }) {
         </div>
       </button>
 
-      <hr className="border-[var(--black)] " />
+      {/* <hr className="border-[var(--black)] " /> */}
     </div>
   );
 }

@@ -9,25 +9,29 @@ function ProjectsPage({ burgerOpen }) {
     {
       projectName: "Portfolio Site",
       path: "/ProjectArticleOne",
+      tag: "Website",
       desc: "A dive into the site you are currently on",
       id: "00",
     },
     {
       projectName: "YYC Flight Deals",
       path: "/ProjectArticleTwo",
-      desc: "Web app that shows cheap popular flights out of Calgary  ",
+      tag: "Web app",
+      desc: "Displays cheap popular flights out of Calgary  ",
       id: "01",
     },
     {
       projectName: "Library book management",
       path: "/ProjectArticleTwo",
-      desc: "CRUD app, using C# .Net & Sql",
+      tag: "Crud app",
+      desc: "C# .Net & Sql",
       id: "02",
     },
     {
       projectName: "Mountain weather",
+      tag: "Mobile app",
       path: "/ProjectArticleFour",
-      desc: "Ski mountain weather mobile app",
+      desc: "Ski mountain weather",
       id: "03",
     },
   ];
@@ -61,7 +65,7 @@ function ProjectsPage({ burgerOpen }) {
     <main className="w-full">
       <Header title="What im working on"></Header>
       <div
-        className={`pt-[12rem] ${
+        className={`pt-[12rem] px-10 ${
           burgerOpen ? "h-screen overflow-y-hidden" : ""
         } `}
       >
@@ -72,6 +76,7 @@ function ProjectsPage({ burgerOpen }) {
                 <motion.li key={item.id} variants={listItem}>
                   <ProjectItem
                     id={item.id}
+                    tag={item.tag}
                     project={item.projectName}
                     desc={item.desc}
                   ></ProjectItem>
