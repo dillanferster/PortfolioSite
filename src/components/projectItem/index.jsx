@@ -4,7 +4,7 @@ import "./styles.css";
 
 function ProjectItem({ project, desc, tag }) {
   return (
-    <div className=" px-[3.5rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-6 max-sm:px-[2rem] border rounded-lg shadow-md border-[var(--black)] mb-4 ">
+    <div className=" px-[3rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-6 max-sm:px-[1rem] border rounded-2xl shadow-md border-[var(--black)] mb-[1.5rem] ">
       <button
         id="project-item-btn"
         className="w-full hover:text-[var(--text-hover)] "

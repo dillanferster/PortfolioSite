@@ -17,7 +17,7 @@ function ProjectsPage({ burgerOpen }) {
       projectName: "YYC Flight Deals",
       path: "/ProjectArticleTwo",
       tag: "Web app",
-      desc: "Displays cheap popular flights out of Calgary  ",
+      desc: "Displays cheap flights out of Calgary  ",
       id: "01",
     },
     {
@@ -65,7 +65,7 @@ function ProjectsPage({ burgerOpen }) {
     <main className="w-full">
       <Header title="What im working on"></Header>
       <div
-        className={`pt-[12rem] px-10 ${
+        className={`pt-[12rem] px-[2rem] ${
           burgerOpen ? "h-screen overflow-y-hidden" : ""
         } `}
       >
