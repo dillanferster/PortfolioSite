@@ -19,7 +19,7 @@ function ProjectArticleTwo({ burgerOpen }) {
       {/* <Header title="YYC flight deals"></Header> */}
 
       <article className="flex flex-col px-16 max-w-[100rem] mx-auto pb-[4rem] max-md:px-2 text-[var(--black)] ">
-        <div className="  mt-[10rem] pb-[2rem] max-md:px-[4rem]  max-sm:px-6">
+        <div className="  mt-[8rem] pb-[4rem] max-md:px-[4rem]  max-sm:px-6">
           <a href="/projects">
             <button className="flex border rounded-2xl border-[var(--black)] p-1  justify-evenly w-[7rem] items-center text-[18px] text-[var(--black)] hover:text-[var(--text-hover)]">
               <img
