@@ -65,7 +65,7 @@ function ProjectsPage({ burgerOpen }) {
     <main className="w-full">
       <Header title="What im working on"></Header>
       <div
-        className={`pt-[8rem] px-[2rem] ${
+        className={`pt-[8rem] max-sm:pt-[6rem] px-[2rem] ${
           burgerOpen ? "h-screen overflow-y-hidden" : ""
         } `}
       >
