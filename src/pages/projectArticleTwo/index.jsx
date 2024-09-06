@@ -32,7 +32,7 @@ function ProjectArticleTwo({ burgerOpen }) {
           </a>
         </div>
 
-        <section id="the-concept" className="pb-[10rem] mt-[2rem] ">
+        <section id="the-concept" className="pb-[12rem] mt-[2rem] ">
           <div className=" flex flex-wrap justify-between max-lg:justify-center">
             <div className=" flex flex-col">
               <h2 className="text-[48px] font-bold">
@@ -51,7 +51,7 @@ function ProjectArticleTwo({ burgerOpen }) {
             </div>
           </div>
         </section>
-        <section className="pb-[8rem] ">
+        <section className="pb-[15rem] ">
           <div className="flex flex-col gap-[2rem] justify-center items-center ">
             <div className="  p-[1rem] max-w-[70rem] px-8 text-center w-full rounded-2xl border border-[var(--black)] ">
               <p className=" text-[var(--beige)] text-[18px]">
@@ -71,7 +71,7 @@ function ProjectArticleTwo({ burgerOpen }) {
             </div>
           </div>
         </section>
-        <section className="pb-[10rem] ">
+        <section className="pb-[15rem] ">
           <div className="flex flex-col max-w-[70rem] mx-auto ">
             <div className="flex justify-between  gap-2 max-lg:items-center max-lg:flex-col ">
               <div className="flex ">
@@ -115,7 +115,7 @@ function ProjectArticleTwo({ burgerOpen }) {
             </div>
           </div>
         </section>
-        <section className="pb-[10rem]">
+        <section className="pb-[15rem]">
           <div className=" flex flex-wrap max-w-[70rem] justify-between max-lg:justify-center">
             <div className=" flex flex-col">
               <h2 className="text-[28px] font-bold">
