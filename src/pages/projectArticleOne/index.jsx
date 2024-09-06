@@ -14,10 +14,10 @@ function ProjectArticleOne({ burgerOpen }) {
         burgerOpen ? "h-screen overflow-y-hidden" : ""
       }  w-full flex flex-col  `}
     >
-      <Header title="Portfolio Site"></Header>
+      {/* <Header title="Portfolio Site"></Header> */}
 
       <article className="flex flex-col px-16 max-w-[100rem] mx-auto pb-[4rem] max-md:px-8 text-[var(--black)]">
-        <div className="-translate-x-3 w-full mt-[10rem] pb-[2rem]">
+        <div className="-translate-x-3 w-full mt-[6rem] pb-[4rem]">
           <a href="/projects">
             <button className="flex border rounded-2xl border-[var(--black)] p-1  justify-evenly w-[7rem] items-center text-[18px] text-[var(--black)] hover:text-[var(--text-hover)]">
               <img
@@ -33,7 +33,7 @@ function ProjectArticleOne({ burgerOpen }) {
           <div className="h-auto max-w-[70rem]  pb-4  ">
             <img src={photo1} alt="website photo" />
           </div>
-          <h1 className="text-[28px] font-bold underline underline-offset-8 pb-[1rem]">
+          <h1 className="text-[28px] max-sm:text-[24px] font-bold underline underline-offset-8 pb-[1rem]">
             A focus on alignment and proximity
           </h1>
           <ul className="flex flex-col gap-1 max-w-[60rem]">
@@ -74,7 +74,7 @@ function ProjectArticleOne({ burgerOpen }) {
           <div className="h-auto max-w-[60rem]  pb-4  ">
             <img src={photo2} alt="design details" />
           </div>
-          <h1 className="text-[28px] font-bold underline underline-offset-8 pb-[1rem]">
+          <h1 className="text-[28px]   max-sm:text-[24px] font-bold underline underline-offset-8 pb-[1rem]">
             Keeping it simple
           </h1>
           <ul className="flex flex-col gap-1 max-w-[60rem]">
@@ -116,7 +116,7 @@ function ProjectArticleOne({ burgerOpen }) {
           <div className="h-auto max-w-[60rem]  pb-4  ">
             <img src={photo3} alt="repetition details image" />
           </div>
-          <h1 className="text-[28px] font-bold underline underline-offset-8 pb-[1rem]">
+          <h1 className="text-[28px]  max-sm:text-[24px] font-bold underline underline-offset-8 pb-[1rem]">
             Repetition
           </h1>
           <ul className="flex flex-col gap-1 max-w-[60rem]">
@@ -156,7 +156,7 @@ function ProjectArticleOne({ burgerOpen }) {
           <div className="h-auto max-w-[60rem]  pb-4  ">
             <img src={photo4} alt="repetition details image" />
           </div>
-          <h1 className="text-[28px] font-bold underline underline-offset-8 pb-[1rem]">
+          <h1 className="text-[28px]  max-sm:text-[24px] font-bold underline underline-offset-8 pb-[1rem]">
             Responsiveness
           </h1>
           <ul className="flex flex-col gap-1 max-w-[60rem]">
@@ -193,7 +193,7 @@ function ProjectArticleOne({ burgerOpen }) {
           <div className="h-auto max-w-[60rem]  pb-8  ">
             <img src={photo5} alt="code details image" />
           </div>
-          <h1 className="text-[28px] font-bold underline underline-offset-8 pb-[1rem]">
+          <h1 className="text-[28px]  max-sm:text-[24px] font-bold underline underline-offset-8 pb-[1rem]">
             The code
           </h1>
           <ul className="flex flex-col gap-1 max-w-[60rem]">

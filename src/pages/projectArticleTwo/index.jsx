@@ -143,7 +143,7 @@ function ProjectArticleTwo({ burgerOpen }) {
           <div className=" flex flex-col  justify-center items-center">
             <div>
               <h2 className="text-[28px] font-bold">
-                The <span className="text-[var(--red)]">Code</span>
+                The <span className="text-[var(--red)]">Tech</span>
               </h2>
             </div>
             <div className=" flex flex-col gap-8 p-8 max-w-[70rem] justify-between max-lg:justify-center border border-[var(--black)] rounded-3xl bg-[var(--card)] mt-4 max-sm:p-4">
