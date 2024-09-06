@@ -32,13 +32,13 @@ function ProjectArticleTwo({ burgerOpen }) {
           </a>
         </div>
 
-        <section id="the-concept" className="pb-[12rem] mt-[2rem] ">
-          <div className=" flex flex-wrap justify-between max-lg:justify-center">
+        <section id="the-concept" className="pb-[12rem] mt-[2rem]">
+          <div className=" flex justify-between items-center max-lg:justify-center max-lg:flex-col">
             <div className=" flex flex-col">
-              <h2 className="text-[48px] font-bold">
+              <h2 className="text-[48px] font-bold max-sm:text-[28px]">
                 <span className="text-[var(--green)]">YYC</span> Flight Deals
               </h2>
-              <p className="w-[30rem] pt-[4rem] text-[18px]">
+              <p className="w-[30rem] pt-[4rem] text-[18px] max-sm:text-[16px]  max-sm:w-[15rem]">
                 This idea come out of wanting to go somewhere but not knowing
                 exactly where you want to go ! it takes the searching and
                 thinking out of the decision , how fun right ?  this app has no
@@ -46,15 +46,15 @@ function ProjectArticleTwo({ burgerOpen }) {
                 flights out of calgary .
               </p>
             </div>
-            <div className="  w-[25rem]  max-sm:w-[20rem]">
-              <img src={plane} alt="air plane graphic" />
+            <div className=" w-[25rem]  max-sm:w-[18rem]">
+              <img className=" h-auto " src={plane} alt="air plane graphic" />
             </div>
           </div>
         </section>
         <section className="pb-[15rem] ">
           <div className="flex flex-col gap-[2rem] justify-center items-center ">
-            <div className="  p-[1rem] max-w-[70rem] px-8 text-center w-full rounded-2xl border border-[var(--black)] ">
-              <p className=" text-[var(--beige)] text-[18px]">
+            <div className="flex text-wrap  p-[1rem] max-w-[70rem] px-8 text-center w-full rounded-2xl border border-[var(--black)] ">
+              <p className="flex text-[var(--beige)] text-[18px] max-sm:text-[16px]  text-wrap">
                 What sets this app apart is its intentional lack of a search
                 function. Instead, it focuses solely on showcasing the most
                 popular and affordable direct flights departing from Calgary. By
@@ -62,9 +62,9 @@ function ProjectArticleTwo({ burgerOpen }) {
                 and simple.
               </p>
             </div>
-            <div className="max-w-[70rem] flex justify-center mx-auto">
+            <div className="h-auto max-w-[70rem] ">
               <img
-                className="h-auto rounded-3xl border border-[var(--black)] shadow-md  "
+                className=" rounded-3xl border border-[var(--black)] shadow-md  "
                 src={flight1}
                 alt="main page picture"
               />
@@ -75,13 +75,13 @@ function ProjectArticleTwo({ burgerOpen }) {
           <div className="flex flex-col max-w-[70rem] mx-auto ">
             <div className="flex justify-between  gap-2 max-lg:items-center max-lg:flex-col ">
               <div className="flex ">
-                <h2 className="text-[28px] font-bold w-[20rem] text-start max-lg:text-center">
+                <h2 className="text-[28px] font-bold  text-start max-lg:text-center">
                   The <span className="text-[var(--blue)]">Design</span>
                 </h2>
               </div>
               <div className="w-[20rem]  p-[1.5rem]   max-lg:w-full  ">
                 {" "}
-                <p className="text-[18px] text-[var(--black)] ">
+                <p className="text-[18px] max-sm:text-[16px]  text-[var(--black)] ">
                   I set out to showcase how great images can look when arranged
                   in a grid layout. The design is all about consistency and
                   simplicity. Every line in the grid shares the same width,
@@ -95,7 +95,7 @@ function ProjectArticleTwo({ burgerOpen }) {
               </div>
               <div className="w-[20rem] p-[1.5rem] max-lg:w-full  ">
                 {" "}
-                <p className="text-[18px] text-[var(--black)] ">
+                <p className="text-[18px]  max-sm:text-[16px]  text-[var(--black)] ">
                   By emphasizing this initial offering, we create an immediate
                   point of interest that's hard to miss. I also wanted to add a
                   playful touch! The "so why not go" typography adds a sense of
@@ -106,9 +106,9 @@ function ProjectArticleTwo({ burgerOpen }) {
                 </p>
               </div>
             </div>
-            <div className="max-w-[70rem] flex justify-center mx-auto pt-[4rem]">
+            <div className="h-auto max-w-[70rem]  mt-[4rem]  ">
               <img
-                className="h-auto rounded-3xl border border-[var(--black)] shadow-md  "
+                className="rounded-3xl border border-[var(--black)] shadow-md "
                 src={flight2}
                 alt="main page picture"
               />
@@ -116,12 +116,12 @@ function ProjectArticleTwo({ burgerOpen }) {
           </div>
         </section>
         <section className="pb-[15rem]">
-          <div className=" flex flex-wrap max-w-[70rem] justify-between max-lg:justify-center">
-            <div className=" flex flex-col">
+          <div className=" flex max-w-[70rem] items-center justify-between max-lg:flex-col max-lg:items-center">
+            <div className=" flex flex-col  max-lg:items-center">
               <h2 className="text-[28px] font-bold">
                 From <span className="text-[var(--yellow)]">Scratch</span>
               </h2>
-              <p className="w-[30rem] pt-[4rem] text-[18px]">
+              <p className="w-[30rem] pt-[4rem] text-[18px] max-sm:text-[16px] max-lg:text-center">
                 That's right no pre-made components were used in the making of
                 this site. Every button, card, grid layout, and interactive
                 element you see is the result of custom CSS. I gained invaluable
@@ -130,9 +130,9 @@ function ProjectArticleTwo({ burgerOpen }) {
                 interface that stands out from cookie-cutter designs.
               </p>
             </div>
-            <div>
+            <div className="h-auto  w-[30rem] max-sm:w-[20] max-lg:mt-[2rem]">
               <img
-                className=" border border-[var(--black)] w-[30rem] rounded-2xl bg-[var(--card)] shadow-md max-sm:w-[20]"
+                className=" border border-[var(--black)] rounded-2xl bg-[var(--card)] shadow-md "
                 src={detailcard}
                 alt="detail card"
               />
