@@ -19,11 +19,11 @@ function ProjectArticleTwo({ burgerOpen }) {
       {/* <Header title="YYC flight deals"></Header> */}
 
       <article className="flex flex-col px-16 max-w-[100rem] mx-auto pb-[4rem] max-md:px-8 text-[var(--black)] ">
-        <div className="-translate-x-3 w-full mt-[10rem] pb-[2rem] ">
+        <div className="-translate-x-3 w-full mt-[10rem] pb-[2rem]">
           <a href="/projects">
-            <button className="flex justify-center w-[6rem] items-center text-[18px] text-[var(--black)] hover:text-[var(--text-hover)]">
+            <button className="flex border rounded-2xl border-[var(--black)] p-1  justify-evenly w-[7rem] items-center text-[18px] text-[var(--black)] hover:text-[var(--text-hover)]">
               <img
-                className="rotate-180 pl-2 w-[35px]"
+                className="rotate-180 w-[35px] max-sm:w-[25px]"
                 src={arrow}
                 alt="back-arrow"
               />
@@ -139,7 +139,7 @@ function ProjectArticleTwo({ burgerOpen }) {
             </div>
           </div>
         </section>
-        <section className="pb-[8rem]">
+        <section className="pb-[2rem]">
           <div className=" flex flex-col  justify-center items-center">
             <div>
               <h2 className="text-[28px] font-bold">
@@ -224,28 +224,40 @@ function ProjectArticleTwo({ burgerOpen }) {
                   load.
                 </p>
               </div>
+              <div className="flex gap-2">
+                <div>
+                  <a href="https://yyc-flight-deals.vercel.app/" target="blank">
+                    <button className="flex border rounded-2xl border-[var(--black)] p-1  justify-evenly w-[9rem] items-center text-[18px] bg-[var(--bg)] text-[var(--black)] hover:text-[var(--text-hover)]">
+                      <p>Go to app</p>
+                      <img
+                        className="w-[35px] -rotate-45 max-sm:w-[25px]"
+                        src={arrow}
+                        alt="app-arrow"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://github.com/dillanferster/YYCFlightDeals.git"
+                    target="blank"
+                  >
+                    <button className="flex border rounded-2xl border-[var(--black)] p-1  justify-evenly w-[9rem] items-center text-[18px] bg-[var(--bg)] text-[var(--black)] hover:text-[var(--text-hover)]">
+                      <p>Github</p>
+                      <img
+                        className="w-[35px] -rotate-45 max-sm:w-[25px]"
+                        src={arrow}
+                        alt="app-arrow"
+                      />
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section>
-          <p className="pb-[1rem]">Thanks for reading !</p>
-          <div className="flex flex-col gap-2">
-            <p className="underline">
-              <a href="https://yyc-flight-deals.vercel.app/" target="blank">
-                Website
-              </a>
-            </p>
-            <p className="underline">
-              <a
-                href="https://github.com/dillanferster/YYCFlightDeals.git"
-                target="blank"
-              >
-                Github
-              </a>
-            </p>
-          </div>
-        </section>
+        <section></section>
       </article>
     </main>
   );
