@@ -19,7 +19,7 @@ function ProjectArticleTwo({ burgerOpen }) {
       {/* <Header title="YYC flight deals"></Header> */}
 
       <article className="flex flex-col px-16 max-w-[100rem] mx-auto pb-[4rem] max-md:px-2 text-[var(--black)] ">
-        <div className=" w-[10rem] mt-[10rem] pb-[2rem]">
+        <div className="  mt-[10rem] pb-[2rem] max-md:px-[4rem]  max-sm:px-6">
           <a href="/projects">
             <button className="flex border rounded-2xl border-[var(--black)] p-1  justify-evenly w-[7rem] items-center text-[18px] text-[var(--black)] hover:text-[var(--text-hover)]">
               <img
@@ -34,9 +34,9 @@ function ProjectArticleTwo({ burgerOpen }) {
 
         <section id="the-concept" className="pb-[12rem] mt-[2rem] ">
           <div className=" flex justify-between items-center max-lg:justify-center max-lg:flex-col">
-            <div className=" flex flex-col">
+            <div className=" flex flex-col max-sm:pb-[2rem]">
               <h2 className="flex text-[48px] font-bold max-sm:text-[28px] max-lg:justify-center">
-                <span className="text-[var(--green)]">YYC</span> Flight Deals
+                <span className="text-[var(--green)]">YYC </span> Flight Deals
               </h2>
               <p className="w-[30rem] pt-[4rem] text-[18px] max-sm:text-[16px]  max-sm:w-[20rem]  max-sm:text-center">
                 This idea come out of wanting to go somewhere but not knowing
@@ -121,7 +121,7 @@ function ProjectArticleTwo({ burgerOpen }) {
               <h2 className="text-[28px] font-bold">
                 From <span className="text-[var(--yellow)]">Scratch</span>
               </h2>
-              <p className="w-[30rem] pt-[4rem] text-[18px] max-sm:text-[16px] max-lg:text-center max-md:w-[20rem]">
+              <p className="w-[30rem] pt-[4rem] text-[18px] max-sm:text-[16px] max-lg:text-center max-md:w-[20rem] max-md:pt-[2rem]">
                 That's right no pre-made components were used in the making of
                 this site. Every button, card, grid layout, and interactive
                 element you see is the result of custom CSS. I gained invaluable
@@ -168,17 +168,16 @@ function ProjectArticleTwo({ burgerOpen }) {
               <div className=" flex flex-col ">
                 <h3 className="text-[18px] font-bold">Using the data</h3>
                 <p className=" pt-[1rem] text-[18px]  max-sm:text-[16px] text-[var(--beige)]">
-                  Flight Information: The primary API call returns an object
-                  with the airport code, price, and other flight details.
-                  However, it doesn't provide the city name. To solve this, I
-                  made a second API call to fetch a list of cities and their
-                  corresponding airport codes. City Name Lookup: I created a
-                  key-value pair object using the city and airport code data.
-                  This allows me to quickly look up and display the correct city
-                  name based on the airport code returned by the flight API.
-                  Dynamic Photos: For the images, I pass the retrieved city name
-                  to the Pexels API. This fetches relevant photos for each
-                  destination.
+                  The primary API call returns an object with the airport code,
+                  price, and other flight details. However, it doesn't provide
+                  the city name. To solve this, I made a second API call to
+                  fetch a list of cities and their corresponding airport codes.
+                  City Name Lookup: I created a key-value pair object using the
+                  city and airport code data. This allows me to quickly look up
+                  and display the correct city name based on the airport code
+                  returned by the flight API. Dynamic Photos: For the images, I
+                  pass the retrieved city name to the Pexels API. This fetches
+                  relevant photos for each destination.
                 </p>
               </div>
 
