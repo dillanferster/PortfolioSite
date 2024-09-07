@@ -41,11 +41,11 @@ function HomePage() {
         {" "}
         <div
           id="main-left-side"
-          className="flex  justify-between bg-[var(--beige)] w-full border h-[6rem] mt-[5rem] max-2xl:mt-[4rem] max-xl:h-[5rem]"
+          className="flex  justify-between bg-[var(--beige)] w-full border h-[6rem] mt-[5rem] max-2xl:mt-[4rem] max-2xl:h-[5rem]"
         >
           <div className="flex max-w-[100rem] mx-auto justify-between w-full px-16 items-center max-sm:px-8 ">
             <div>
-              <h2 className="italic text-[var(--black)] text-[18px]  max-xl:text-[16px] max-sm:text-[12px]">
+              <h2 className="italic text-[var(--black)] text-[18px]  max-2xl:text-[16px] max-sm:text-[12px]">
                 check out what i'm working on
               </h2>
             </div>
