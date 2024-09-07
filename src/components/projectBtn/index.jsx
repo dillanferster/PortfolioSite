@@ -5,11 +5,11 @@ import "./styles.css";
 function Projectbtn() {
   return (
     <div>
-      <div className="text-[var(--black)] w-[19.75rem] rounded-full border-[var(--black)] border p-2 px-4 bg-[var(--bg)] max-xl:w-[12.25rem] max-sm:w-[8rem]">
+      <div className="text-[var(--black)] w-[19.75rem] rounded-full border-[var(--black)] border p-2 px-4 bg-[var(--bg)] max-2xl:w-[12.5rem] max-sm:w-[8rem]">
         <a href="/projects">
           <button
             id="projectBtn-box"
-            className="w-full text-[28px]  flex items-center justify-between cursor-pointer hover:text-[var(--text-hover)] rounded-sm max-xl:text-[22px] max-sm:text-[16px]"
+            className="w-full text-[28px]  flex items-center justify-between cursor-pointer hover:text-[var(--text-hover)] rounded-sm max-2xl:text-[22px] max-sm:text-[16px]"
           >
             <span>Projects </span>
             <div id="projectBtn-arrow-box">
