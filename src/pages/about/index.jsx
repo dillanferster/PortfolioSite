@@ -7,9 +7,9 @@ function AboutPage() {
   return (
     <main>
       <Header title="Get to know me"></Header>
-      <div className="flex justify-between gap-16 text-[var(--black)] px-16 max-w-[100rem] mx-auto ">
+      <div className="flex justify-between gap-16 text-[var(--black)] px-16 max-w-[100rem] mx-auto max-sm:px-8">
         <article className="flex flex-col gap-8 pt-16 items-center">
-          <div className="h-auto w-[20rem] border-2 border-[var(--black)] rounded-lg shadow-md ">
+          <div className="h-auto w-[20rem] border-2 border-[var(--black)] rounded-lg shadow-md max-md:w-[15rem]">
             <img className="rounded-md" src={profilepic} alt="profile pic" />
           </div>
           <section>
