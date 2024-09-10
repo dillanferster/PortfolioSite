@@ -70,7 +70,10 @@ function App() {
           path="/ProjectArticleFour"
           element={<ProjectArticleFour></ProjectArticleFour>}
         ></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
+        <Route
+          path="/about"
+          element={<AboutPage burgerOpen={burgerOpen} />}
+        ></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
       </Routes>
     </BrowserRouter>

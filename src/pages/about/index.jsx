@@ -3,9 +3,9 @@ import Header from "../../components/header";
 
 import profilepic from "../../assets/profilePic.png";
 
-function AboutPage() {
+function AboutPage({ burgerOpen }) {
   return (
-    <main>
+    <main className={` ${burgerOpen ? "h-screen overflow-y-hidden" : ""}  `}>
       <Header title="Get to know me"></Header>
       <div className="flex justify-between gap-16 text-[var(--black)] px-16 max-w-[100rem] mx-auto max-sm:px-8 pb-[2rem]">
         <article className="flex flex-col gap-8 pt-16 items-center">
