@@ -1,19 +1,23 @@
 import React from "react";
 import Header from "../../components/header";
 
+import profilepic from "../../assets/profilePic.png";
+
 function AboutPage() {
   return (
     <main>
       <Header title="Get to know me"></Header>
       <div className="flex justify-between gap-16 text-[var(--black)] px-16 max-w-[100rem] mx-auto ">
-        <article className="flex flex-col gap-8 pt-16">
-          <div className="w-[10rem] h-[10rem] border"></div>
+        <article className="flex flex-col gap-8 pt-16 items-center">
+          <div className="h-auto w-[20rem] border-2 border-[var(--black)] rounded-lg shadow-md ">
+            <img className="rounded-md" src={profilepic} alt="profile pic" />
+          </div>
           <section>
             <h3 className="font-bold text-[18px]">About me</h3>
             <p className="pb-4">
               Hi, my name is Dillan Ferster, I’m a designer and developer. I
               love to make designs and build them into functional and
-              user-friendly experiences. Before getting into software
+              user-friendly applications. Before getting into software
               development my background involved problem solving and design in
               the areas of refrigeration as a HVAC/R technician and freelancing
               in graphic design. Combining my experience in those fields, I
