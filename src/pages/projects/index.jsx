@@ -4,6 +4,63 @@ import ProjectItem from "../../components/projectItem";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+// project objects//
+const ProjectList = [
+  {
+    projectName: "Portfolio Site",
+    path: "/ProjectArticleOne",
+    tag: "#Website",
+    desc: "A dive into the site you are currently on",
+    id: "00",
+  },
+  {
+    projectName: "YYC Flight Deals",
+    path: "/ProjectArticleTwo",
+    tag: "#WebApp",
+    desc: "Displays cheap flights out of Calgary  ",
+    id: "01",
+  },
+];
+///
+const GraphicList = [
+  {
+    projectName: "Graphic Art",
+    path: "/GraphicArticleOne",
+    desc: "Various posters and designs I have made",
+    id: "00",
+  },
+  {
+    projectName: "Music Posters",
+    path: "/GraphicArticleTwo",
+    desc: "Some posters I made for musics events",
+    id: "01",
+  },
+];
+///
+// varibles for framer motion //
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.18,
+      type: "spring",
+      stiffness: 100,
+    },
+  },
+};
+
+const listItem = {
+  hidden: { opacity: 0, y: -5 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+    },
+  },
+};
+//
+
 const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
   return (
     <div className="flex gap-4 mb-8 justify-center">
@@ -34,49 +91,6 @@ const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
 function ProjectsPage({ burgerOpen }) {
   const [activeTab, setActiveTab] = useState("development");
 
-  // project objects//
-  const ProjectList = [
-    {
-      projectName: "Portfolio Site",
-      path: "/ProjectArticleOne",
-      tag: "#Website",
-      desc: "A dive into the site you are currently on",
-      id: "00",
-    },
-    {
-      projectName: "YYC Flight Deals",
-      path: "/ProjectArticleTwo",
-      tag: "#WebApp",
-      desc: "Displays cheap flights out of Calgary  ",
-      id: "01",
-    },
-  ];
-  ///
-
-  // varibles for framer motion //
-  const container = {
-    show: {
-      transition: {
-        staggerChildren: 0.18,
-        type: "spring",
-        stiffness: 100,
-      },
-    },
-  };
-
-  const listItem = {
-    hidden: { opacity: 0, y: -5 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-      },
-    },
-  };
-  //
-
   return (
     <main className="w-full">
       <Header title="What im working on"></Header>
@@ -93,6 +107,24 @@ function ProjectsPage({ burgerOpen }) {
         {activeTab === "development" && (
           <motion.ul variants={container} initial="hidden" animate="show">
             {ProjectList.map(function (item) {
+              return (
+                <a href={item.path}>
+                  <motion.li key={item.id} variants={listItem}>
+                    <ProjectItem
+                      id={item.id}
+                      tag={item.tag}
+                      project={item.projectName}
+                      desc={item.desc}
+                    ></ProjectItem>
+                  </motion.li>
+                </a>
+              );
+            })}
+          </motion.ul>
+        )}
+        {activeTab === "design" && (
+          <motion.ul variants={container} initial="hidden" animate="show">
+            {GraphicList.map(function (item) {
               return (
                 <a href={item.path}>
                   <motion.li key={item.id} variants={listItem}>
