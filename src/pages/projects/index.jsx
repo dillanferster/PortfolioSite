@@ -2,37 +2,53 @@ import React from "react";
 import Header from "../../components/header";
 import ProjectItem from "../../components/projectItem";
 import { motion } from "framer-motion";
+import { useState } from "react";
+
+const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
+  return (
+    <div className="flex gap-4 mb-8 justify-center">
+      <button
+        className={`px-6 py-2 rounded-full border-2 border-[var(--black)] ${
+          activeTab === "development"
+            ? "bg-[var(--black)] text-white"
+            : "text-[var(--black)]"
+        }`}
+        onClick={() => setActiveTab("development")}
+      >
+        Development
+      </button>
+      <button
+        className={`px-6 py-2 rounded-full border-2 border-[var(--black)] ${
+          activeTab === "design"
+            ? "bg-[var(--black)] text-white"
+            : "text-[var(--black)]"
+        }`}
+        onClick={() => setActiveTab("design")}
+      >
+        Graphic Design
+      </button>
+    </div>
+  );
+};
 
 function ProjectsPage({ burgerOpen }) {
+  const [activeTab, setActiveTab] = useState("development");
+
   // project objects//
   const ProjectList = [
     {
       projectName: "Portfolio Site",
       path: "/ProjectArticleOne",
-      tag: "Website",
+      tag: "#Website",
       desc: "A dive into the site you are currently on",
       id: "00",
     },
     {
       projectName: "YYC Flight Deals",
       path: "/ProjectArticleTwo",
-      tag: "Web app",
+      tag: "#WebApp",
       desc: "Displays cheap flights out of Calgary  ",
       id: "01",
-    },
-    {
-      projectName: "Library book management",
-      path: "/ProjectArticleTwo",
-      tag: "Crud app",
-      desc: "C# .Net & Sql",
-      id: "02",
-    },
-    {
-      projectName: "Mountain weather",
-      tag: "Mobile app",
-      path: "/ProjectArticleFour",
-      desc: "Ski mountain weather",
-      id: "03",
     },
   ];
   ///
@@ -69,22 +85,29 @@ function ProjectsPage({ burgerOpen }) {
           burgerOpen ? "h-screen overflow-y-hidden" : ""
         } `}
       >
-        <motion.ul variants={container} initial="hidden" animate="show">
-          {ProjectList.map(function (item) {
-            return (
-              <a href={item.path}>
-                <motion.li key={item.id} variants={listItem}>
-                  <ProjectItem
-                    id={item.id}
-                    tag={item.tag}
-                    project={item.projectName}
-                    desc={item.desc}
-                  ></ProjectItem>
-                </motion.li>
-              </a>
-            );
-          })}
-        </motion.ul>
+        <SelectButton
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          burgerOpen={burgerOpen}
+        />
+        {activeTab === "development" && (
+          <motion.ul variants={container} initial="hidden" animate="show">
+            {ProjectList.map(function (item) {
+              return (
+                <a href={item.path}>
+                  <motion.li key={item.id} variants={listItem}>
+                    <ProjectItem
+                      id={item.id}
+                      tag={item.tag}
+                      project={item.projectName}
+                      desc={item.desc}
+                    ></ProjectItem>
+                  </motion.li>
+                </a>
+              );
+            })}
+          </motion.ul>
+        )}
       </div>
     </main>
   );

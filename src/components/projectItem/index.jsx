@@ -18,7 +18,7 @@ function ProjectItem({ project, desc, tag }) {
             </div>
 
             <div className="">
-              <div className="w-[5.5rem] bg-[var(--purple)]  text-[var(--black)] rounded-md mr-2 shadow-sm border border-[var(--beige)] shadow-[var(--purple)] mb-1 max-sm:text-[12px] max-sm:w-[4rem]">
+              <div className="w-[5.5rem]   text-[var(--beige)] rounded-md mr-2  mb-1 max-sm:text-[12px] max-sm:w-[4rem]">
                 {tag}
               </div>
               <p className="text-[18px] max-sm:text-[12px] wrap  text-start">
@@ -36,8 +36,6 @@ function ProjectItem({ project, desc, tag }) {
           </div>
         </div>
       </button>
-
-      {/* <hr className="border-[var(--black)] " /> */}
     </div>
   );
 }
