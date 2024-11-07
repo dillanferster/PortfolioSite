@@ -39,7 +39,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={weaponDestruction}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[2rem]"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -47,7 +47,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={euphoria}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[-2rem]"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
             />
           </div>
         </section>
