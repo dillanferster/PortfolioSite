@@ -8,7 +8,7 @@ import photo4 from "../../assets/portphoto4.png";
 import photo5 from "../../assets/portphoto5.png";
 import weaponDestruction from "../../assets/weaponsDestruction.png";
 import euphoria from "../../assets/euphoria.png";
-import stopScrolling from "../../assets/stopScrolling.png";
+import stopScrolling from "../../assets/StopScrolling.png";
 import Bones2 from "../../assets/Bones2.png";
 import Venom from "../../assets/Venom.png";
 import Dust from "../../assets/DUST.png";
