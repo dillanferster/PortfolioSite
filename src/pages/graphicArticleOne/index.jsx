@@ -8,6 +8,11 @@ import photo4 from "../../assets/portphoto4.png";
 import photo5 from "../../assets/portphoto5.png";
 import weaponDestruction from "../../assets/weaponsDestruction.png";
 import euphoria from "../../assets/euphoria.png";
+import stopScrolling from "../../assets/stopScrolling.png";
+import Bones2 from "../../assets/Bones2.png";
+import Venom from "../../assets/Venom.png";
+import Dust from "../../assets/DUST.png";
+import suffocate from "../../assets/suffocate.png";
 
 const galleryImages = [{ src: photo1, title: "Project Title 1" }];
 
@@ -36,6 +41,14 @@ function GraphicArticleOne({ burgerOpen }) {
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
+              src={Dust}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[-2rem] shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
               src={weaponDestruction}
               alt="weapon destruction"
               loading="lazy"
@@ -45,6 +58,38 @@ function GraphicArticleOne({ burgerOpen }) {
           <div className="p-2 mb-8">
             <img
               src={euphoria}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={stopScrolling}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={Bones2}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={Venom}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[2rem]  shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={suffocate}
               alt="weapon destruction"
               loading="lazy"
               className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
