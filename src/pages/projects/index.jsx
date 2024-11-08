@@ -75,7 +75,7 @@ const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
         Software
       </button>
       <button
-        className={`px-6 py-2 rounded-full border-2 border-[var(--black)]  ${
+        className={`px-3 py-2 rounded-full border-2 border-[var(--black)]  ${
           activeTab === "design"
             ? "bg-[var(--black)] text-white"
             : "text-[var(--black)]"
