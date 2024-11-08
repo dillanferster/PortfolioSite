@@ -65,7 +65,7 @@ const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
   return (
     <div className="flex gap-4 mb-8 justify-center">
       <button
-        className={`px-6 py-2 rounded-full border-2 border-[var(--black)] ${
+        className={`px-8 py-2 rounded-full border-2 border-[var(--black)] ${
           activeTab === "development"
             ? "bg-[var(--black)] text-white"
             : "text-[var(--black)]"
