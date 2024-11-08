@@ -47,7 +47,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={Dust}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[-2rem] shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[2rem] shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -55,7 +55,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={weaponDestruction}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -63,7 +63,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={euphoria}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -71,7 +71,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={stopScrolling}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -79,7 +79,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={Bones2}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -87,7 +87,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={Venom}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[2rem]  shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[-2rem]  shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -95,7 +95,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={suffocate}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -103,7 +103,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={sever}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -111,7 +111,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={omh}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -119,7 +119,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={comfortzone}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border shadow-xl shadow-gray-600"
             />
           </div>
           <div className="p-2 mb-8">
@@ -127,7 +127,7 @@ function GraphicArticleOne({ burgerOpen }) {
               src={saveme}
               alt="weapon destruction"
               loading="lazy"
-              className="w-[40rem] h-auto translate-x-[-2rem]  shadow-xl shadow-gray-600"
+              className="w-[40rem] h-auto translate-x-[2rem]  shadow-xl shadow-gray-600"
             />
           </div>
         </section>
