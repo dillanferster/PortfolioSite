@@ -12,6 +12,7 @@ import ProjectArticleThree from "./pages/projectArticleThree";
 import ProjectArticleFour from "./pages/projectArticleFour";
 import BurgerNav from "./components/burgerNav";
 import GraphicArticleOne from "./pages/graphicArticleOne";
+import GraphicArticleTwo from "./pages/grahpicArticleTwo";
 
 function App() {
   // burger menu state
@@ -79,6 +80,10 @@ function App() {
         <Route
           path="/GraphicArticleOne"
           element={<GraphicArticleOne burgerOpen={burgerOpen} />}
+        ></Route>
+        <Route
+          path="/GraphicArticleTwo"
+          element={<GraphicArticleTwo burgerOpen={burgerOpen} />}
         ></Route>
       </Routes>
     </BrowserRouter>
