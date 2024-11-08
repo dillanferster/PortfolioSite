@@ -15,7 +15,7 @@ import Dust from "../../assets/DUST.png";
 import suffocate from "../../assets/suffocate.png";
 import sever from "../../assets/sever.png";
 import omh from "../../assets/OMH.png";
-import comfortzone from "../../assets/ComfortZone.png";
+import comfortzone from "../../assets/comfortzone.png";
 import saveme from "../../assets/saveme.png";
 const galleryImages = [{ src: photo1, title: "Project Title 1" }];
 
