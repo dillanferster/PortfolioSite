@@ -72,7 +72,7 @@ const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
         }`}
         onClick={() => setActiveTab("development")}
       >
-        Development
+        Web Development
       </button>
       <button
         className={`px-6 py-2 rounded-full border-2 border-[var(--black)] ${

@@ -13,7 +13,10 @@ import Bones2 from "../../assets/Bones2.png";
 import Venom from "../../assets/Venom.png";
 import Dust from "../../assets/DUST.png";
 import suffocate from "../../assets/suffocate.png";
-
+import sever from "../../assets/sever.png";
+import omh from "../../assets/OMH.png";
+import comfortzone from "../../assets/ComfortZone.png";
+import saveme from "../../assets/saveme.png";
 const galleryImages = [{ src: photo1, title: "Project Title 1" }];
 
 function GraphicArticleOne({ burgerOpen }) {
@@ -93,6 +96,38 @@ function GraphicArticleOne({ burgerOpen }) {
               alt="weapon destruction"
               loading="lazy"
               className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={sever}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={omh}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[-2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={comfortzone}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[2rem]  border-[var(--black)] border-2 shadow-xl shadow-gray-600"
+            />
+          </div>
+          <div className="p-2 mb-8">
+            <img
+              src={saveme}
+              alt="weapon destruction"
+              loading="lazy"
+              className="w-[40rem] h-auto translate-x-[-2rem]  shadow-xl shadow-gray-600"
             />
           </div>
         </section>
