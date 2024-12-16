@@ -2,7 +2,7 @@ import React from "react";
 import arrow from "../../assets/arrow2.svg";
 import Header from "../../components/header";
 import funandproblems from "../../assets/funandproblems.png";
-import BadAsIWannaBe from "../../assets/BadAsIWannaBe.png";
+import BadAsIWannaBe from "../../assets/badAsIWannaBe.png";
 import curePoster from "../../assets/curePoster.png";
 
 const GraphicArticleTwo = ({ burgerOpen }) => {
