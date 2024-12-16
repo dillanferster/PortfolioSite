@@ -2,6 +2,8 @@ import React from "react";
 import arrow from "../../assets/arrow2.svg";
 import Header from "../../components/header";
 import funandproblems from "../../assets/funandproblems.png";
+import BadAsIWannaBe from "../../assets/BadAsIWannaBe.png";
+import curePoster from "../../assets/curePoster.png";
 
 const GraphicArticleTwo = ({ burgerOpen }) => {
   return (
@@ -28,8 +30,25 @@ const GraphicArticleTwo = ({ burgerOpen }) => {
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
+              src={BadAsIWannaBe}
+              alt="bad as i wanna be poster for skizzy mares"
+              loading="lazy"
+              className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
+            />
+
+            <h3 className="mt-8 underline-offset-1 underline text-[24px]">
+              BAD AS I WANNA BE
+            </h3>
+            <p className="text-[18px] ">
+              Skizzy Mars poster for his bad as I wanna be album.
+            </p>
+          </div>
+        </section>
+        <section className="pb-[4rem]">
+          <div className="p-2 mb-8">
+            <img
               src={funandproblems}
-              alt="weapon destruction"
+              alt="fun and problems poster for skizzy mares"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
             />
@@ -40,6 +59,21 @@ const GraphicArticleTwo = ({ burgerOpen }) => {
             <p className="text-[18px] ">
               Skizzy Mars poster for his fun and problems album.
             </p>
+          </div>
+        </section>
+        <section className="pb-[4rem]">
+          <div className="p-2 mb-8">
+            <img
+              src={curePoster}
+              alt="cure poster"
+              loading="lazy"
+              className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
+            />
+
+            <h3 className="mt-8 underline-offset-1 underline text-[24px]">
+              THE CURE
+            </h3>
+            <p className="text-[18px] ">The Cure poster.</p>
           </div>
         </section>
       </article>

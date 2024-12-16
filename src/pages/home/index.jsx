@@ -16,11 +16,11 @@ function HomePage() {
         >
           <div className="flex  text-[var(--black)]">
             <div className="flex justify-start items-center border border-[var(--beige)] rounded-full  px-6 max-md:px-2">
-              <h1>Software</h1>
+              <h1>Graphic</h1>
             </div>
             &nbsp;
             <div className="flex justify-center items-center pl-4 max-sm:pl-0">
-              <h1>Developer</h1>
+              <h1>Designer</h1>
             </div>
             <div className="w-full pl-8 flex items-center  max-sm:pl-2">
               {" "}
@@ -32,7 +32,7 @@ function HomePage() {
           </div>
           <div className="flex items-center">
             <hr className="border-[var(--black)] w-full mr-4 translate-y-4 max-2xl:translate-y-2 max-sm:translate-y-0  max-sm:mr-2" />
-            <h1 className="text-[var(--black)]">Designer</h1>
+            <h1 className="text-[var(--black)]">Developer</h1>
           </div>
         </div>
       </header>

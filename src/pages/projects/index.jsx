@@ -35,7 +35,14 @@ const GraphicList = [
     desc: "Some posters I made for musics events",
     id: "01",
   },
+  {
+    projectName: "Events",
+    path: "/EventArticle",
+    desc: "Event posters and posts",
+    id: "02",
+  },
 ];
+
 ///
 // varibles for framer motion //
 const container = {
@@ -65,16 +72,6 @@ const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
   return (
     <div className="flex gap-4 mb-8 justify-center">
       <button
-        className={`px-8 py-2 rounded-full border-2 border-[var(--black)] ${
-          activeTab === "development"
-            ? "bg-[var(--black)] text-white"
-            : "text-[var(--black)]"
-        }`}
-        onClick={() => setActiveTab("development")}
-      >
-        Web Dev
-      </button>
-      <button
         className={`px-3 py-2 rounded-full border-2 border-[var(--black)]  ${
           activeTab === "design"
             ? "bg-[var(--black)] text-white"
@@ -84,12 +81,22 @@ const SelectButton = ({ activeTab, setActiveTab, burgerOpen }) => {
       >
         Graphic Design
       </button>
+      <button
+        className={`px-8 py-2 rounded-full border-2 border-[var(--black)] ${
+          activeTab === "development"
+            ? "bg-[var(--black)] text-white"
+            : "text-[var(--black)]"
+        }`}
+        onClick={() => setActiveTab("development")}
+      >
+        Web Dev
+      </button>
     </div>
   );
 };
 
 function ProjectsPage({ burgerOpen }) {
-  const [activeTab, setActiveTab] = useState("development");
+  const [activeTab, setActiveTab] = useState("design");
 
   return (
     <main className="w-full">

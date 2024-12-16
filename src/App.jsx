@@ -13,7 +13,7 @@ import ProjectArticleFour from "./pages/projectArticleFour";
 import BurgerNav from "./components/burgerNav";
 import GraphicArticleOne from "./pages/graphicArticleOne";
 import GraphicArticleTwo from "./pages/grahpicArticleTwo";
-
+import EventArticle from "./pages/eventArticle";
 function App() {
   // burger menu state
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -84,6 +84,10 @@ function App() {
         <Route
           path="/GraphicArticleTwo"
           element={<GraphicArticleTwo burgerOpen={burgerOpen} />}
+        ></Route>
+        <Route
+          path="/EventArticle"
+          element={<EventArticle burgerOpen={burgerOpen} />}
         ></Route>
       </Routes>
     </BrowserRouter>
