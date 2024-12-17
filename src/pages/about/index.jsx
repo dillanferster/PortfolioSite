@@ -18,7 +18,6 @@ function AboutPage({ burgerOpen }) {
             />
           </div>
           <section>
-            <h3 className="font-bold text-[18px]">About me</h3>
             <p className="pb-4">
               Hi, my name is Dillan Ferster, I’m a designer and developer. I
               love to make designs and ART !
