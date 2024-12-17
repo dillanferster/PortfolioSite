@@ -7,8 +7,8 @@ function AboutPage({ burgerOpen }) {
   return (
     <main className={` ${burgerOpen ? "h-screen overflow-y-hidden" : ""}  `}>
       <Header title="Get to know me"></Header>
-      <div className="flex justify-between gap-16 text-[var(--black)] px-16 max-w-[100rem] mx-auto max-sm:px-8 pb-[2rem]">
-        <article className="flex flex-col gap-8 pt-16 items-center">
+      <div className="flex items-center justify-center gap-16 text-[var(--black)] px-16 max-w-[100rem] mx-auto max-sm:px-8 pb-[2rem] ">
+        <article className="flex flex-col gap-8 pt-16 items-center justify-center ">
           <div className="h-auto w-[20rem] border-2 border-[var(--black)] rounded-lg shadow-md max-md:w-[15rem]">
             <img
               className="rounded-md"
@@ -24,13 +24,6 @@ function AboutPage({ burgerOpen }) {
               love to make designs and ART !
             </p>
           </section>{" "}
-          <section>
-            <h3 className="font-bold text-[18px]">Education</h3>
-            <p>
-              I attended the Southern Alberta Institute of Technology (SAIT) and
-              received a diploma in the software development program.
-            </p>
-          </section>
         </article>
       </div>
     </main>
