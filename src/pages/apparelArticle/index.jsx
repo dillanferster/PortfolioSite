@@ -1,20 +1,17 @@
 import React from "react";
 import arrow from "../../assets/arrow2.svg";
-import Header from "../../components/header";
-import funandproblems from "../../assets/funandproblems.png";
-import BadAsIWannaBe from "../../assets/badAsIWannaBe.png";
-import curePoster from "../../assets/curePoster.png";
-import MLDcalgary from "../../assets/MLDcalgary.png";
+import mockv2 from "../../assets/mockv2.png";
+import Mockv1 from "../../assets/mockv1.png";
+import theCureT from "../../assets/theCureT.png";
+import theCure1TF from "../../assets/theCure1TF.png";
 
-const GraphicArticleTwo = ({ burgerOpen }) => {
+const ApparelArticle = ({ burgerOpen }) => {
   return (
     <main
       className={` ${
         burgerOpen ? "h-screen overflow-y-hidden" : ""
       }  w-screen flex flex-col  `}
     >
-      {/* <Header title="Portfolio Site"></Header> */}
-
       <article className="flex flex-col px-16 max-w-[120rem] mx-auto pb-[4rem] max-md:px-8 text-[var(--black)] ">
         <div className="-translate-x-3 w-full mt-[6rem] pb-[4rem]">
           <a href="/projects">
@@ -31,65 +28,50 @@ const GraphicArticleTwo = ({ burgerOpen }) => {
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
-              src={BadAsIWannaBe}
-              alt="bad as i wanna be poster for skizzy mares"
+              src={mockv2}
+              alt="venom tshirt"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
             />
-
-            <h3 className="mt-8 underline-offset-1 underline text-[24px]">
-              BAD AS I WANNA BE
-            </h3>
-            <p className="text-[18px] ">
-              Skizzy Mars poster for his bad as I wanna be album.
-            </p>
           </div>
         </section>
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
-              src={funandproblems}
-              alt="fun and problems poster for skizzy mares"
+              src={Mockv1}
+              alt="mass destruction tshirt"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
             />
 
-            <h3 className="mt-8 underline-offset-1 underline text-[24px]">
-              FUN & PROBLEMS
-            </h3>
-            <p className="text-[18px] ">
-              Skizzy Mars poster for his fun and problems album.
-            </p>
+            <h3 className="mt-8 underline-offset-1 underline text-[24px]"></h3>
+            <p className="text-[18px] "></p>
           </div>
         </section>
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
-              src={curePoster}
-              alt="cure poster"
+              src={theCureT}
+              alt="the cure tshirt back"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
             />
 
-            <h3 className="mt-8 underline-offset-1 underline text-[24px]">
-              THE CURE
-            </h3>
-            <p className="text-[18px] ">The Cure poster.</p>
+            <h3 className="mt-8 underline-offset-1 underline text-[24px]"></h3>
+            <p className="text-[18px] "></p>
           </div>
         </section>
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
-              src={MLDcalgary}
-              alt="Major league Djs poster"
+              src={theCure1TF}
+              alt="the cure tshirt front"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
             />
 
-            <h3 className="mt-8 underline-offset-1 underline text-[24px]">
-              Major League Djz
-            </h3>
-            <p className="text-[18px] ">Poster for blueprint music events</p>
+            <h3 className="mt-8 underline-offset-1 underline text-[24px]"></h3>
+            <p className="text-[18px] "></p>
           </div>
         </section>
       </article>
@@ -97,4 +79,4 @@ const GraphicArticleTwo = ({ burgerOpen }) => {
   );
 };
 
-export default GraphicArticleTwo;
+export default ApparelArticle;

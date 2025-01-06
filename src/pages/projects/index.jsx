@@ -26,20 +26,32 @@ const GraphicList = [
   {
     projectName: "Graphic Art",
     path: "/GraphicArticleOne",
-    desc: "Various posters and designs I have made",
+
     id: "00",
   },
   {
     projectName: "Music Posters",
     path: "/GraphicArticleTwo",
-    desc: "Some posters I made for musics events",
+
     id: "01",
   },
   {
     projectName: "Events",
     path: "/EventArticle",
-    desc: "Event posters and posts",
+
     id: "02",
+  },
+  {
+    projectName: "Logo Design",
+    path: "/LogoArticle",
+
+    id: "03",
+  },
+  {
+    projectName: "Apparel Graphics",
+    path: "/ApparelArticle",
+
+    id: "04",
   },
 ];
 

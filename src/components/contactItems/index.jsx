@@ -36,20 +36,15 @@ function Contact() {
           className="flex flex-col gap-8"
         >
           <motion.li variants={listItem}>
-            <a
-              href="https://www.linkedin.com/in/dillan-ferster
-
-"
-              target="blank"
-            >
+            <a href="mailto:dillyferster@gmail.com" target="blank">
               <button
-                id="contactbtn-one"
+                id="contactbtn-three"
                 className="hover:text-[var(--text-hover)] "
               >
                 <div className="flex w-[12rem] justify-between">
-                  <p>Linkedin</p>
+                  <p>Email</p>
 
-                  <div id="contact-arrow-one" className="flex items-center">
+                  <div id="contact-arrow-three" className="flex items-center">
                     <img
                       src={arrow}
                       className="w-[35px] -rotate-45 max-sm:w-[25px] "
@@ -61,7 +56,6 @@ function Contact() {
               </button>
             </a>
           </motion.li>
-
           <motion.li variants={listItem}>
             <a href="https://github.com/dillanferster" target="blank">
               <button
@@ -81,27 +75,6 @@ function Contact() {
                 </div>
                 <hr className=" border-[var(--black)] w-[12rem]" />
               </button>{" "}
-            </a>
-          </motion.li>
-          <motion.li variants={listItem}>
-            <a href="mailto:dillyferster@gmail.com" target="blank">
-              <button
-                id="contactbtn-three"
-                className="hover:text-[var(--text-hover)] "
-              >
-                <div className="flex w-[12rem] justify-between">
-                  <p>Email</p>
-
-                  <div id="contact-arrow-three" className="flex items-center">
-                    <img
-                      src={arrow}
-                      className="w-[35px] -rotate-45 max-sm:w-[25px] "
-                      alt="arrow"
-                    />
-                  </div>
-                </div>
-                <hr className=" border-[var(--black)] w-[12rem]" />
-              </button>
             </a>
           </motion.li>
         </motion.ul>

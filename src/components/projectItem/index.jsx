@@ -4,11 +4,8 @@ import "./styles.css";
 
 function ProjectItem({ project, desc, tag }) {
   return (
-    <div className=" px-[3rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-6 max-sm:px-[1rem] border rounded-2xl shadow-md border-[var(--black)] mb-[1.5rem] ">
-      <button
-        id="project-item-btn"
-        className="w-full hover:text-[var(--text-hover)] "
-      >
+    <div className=" px-[3rem]  max-w-[80rem] mx-auto  text-[var(--black)] py-6 max-sm:px-[1rem] border rounded-2xl shadow-md border-[var(--black)] mb-[1.5rem] hover:border-purple-300/40 hover:text-[var(--text-hover)] ">
+      <button id="project-item-btn" className="w-full  ">
         <div className="flex justify-between w-full">
           <div className="flex flex-col">
             <div className="flex justify-start items-center ">
