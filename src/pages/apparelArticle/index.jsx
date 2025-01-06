@@ -28,7 +28,7 @@ const ApparelArticle = ({ burgerOpen }) => {
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
-              src={mockv2}
+              src={venomHoodie}
               alt="venom tshirt"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
@@ -38,7 +38,7 @@ const ApparelArticle = ({ burgerOpen }) => {
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
-              src={Mockv1}
+              src={massDestT}
               alt="mass destruction tshirt"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
