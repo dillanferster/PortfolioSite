@@ -14,7 +14,7 @@ import BurgerNav from "./components/burgerNav";
 import GraphicArticleOne from "./pages/graphicArticleOne";
 import GraphicArticleTwo from "./pages/grahpicArticleTwo";
 import EventArticle from "./pages/eventArticle";
-import LogoArticle from "./pages/LogoArticle";
+import LogoArticle from "./pages/logoArticle";
 import ApparelArticle from "./pages/apparelArticle";
 
 function App() {
