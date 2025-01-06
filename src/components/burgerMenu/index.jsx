@@ -15,7 +15,7 @@ const BurgerMenu = () => {
   };
 
   return (
-    <div className="flex z-[1000] justify-end px-16 pt-4 items-center text-[var(--black)] text-[28px] backdrop-blur-xl absolute  w-screen h-screen max-sm:text-[18px] ">
+    <div className="flex z-[1000] justify-end px-16 pt-4 items-center text-[var(--black)] text-[28px] backdrop-blur-xl bg-gray-700/30 absolute  w-screen h-screen max-sm:text-[18px] ">
       <nav className="w-full">
         <motion.ul
           variants={container}
