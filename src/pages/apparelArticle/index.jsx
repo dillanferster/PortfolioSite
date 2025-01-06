@@ -1,7 +1,7 @@
 import React from "react";
 import arrow from "../../assets/arrow2.svg";
 import mockv2 from "../../assets/mockv2.png";
-import mockv1 from "../../assets/mockv1.png";
+import Mockv1 from "../../assets/Mockv1.png";
 import theCureT from "../../assets/theCureT.png";
 import theCure1TF from "../../assets/theCure1TF.png";
 
@@ -38,7 +38,7 @@ const ApparelArticle = ({ burgerOpen }) => {
         <section className="pb-[4rem]">
           <div className="p-2 mb-8">
             <img
-              src={mockv1}
+              src={Mockv1}
               alt="mass destruction tshirt"
               loading="lazy"
               className="w-[40rem] h-auto  shadow-xl shadow-gray-600"
