@@ -1,7 +1,7 @@
 import React from "react";
 import arrow from "../../assets/arrow2.svg";
-import mockv2 from "../../assets/mockv2.png";
-import Mockv1 from "../../assets/Mockv1.png";
+import massDestT from "../../assets/massDestT.png";
+import venomHoodie from "../../assets/venomHoodie.png";
 import theCureT from "../../assets/theCureT.png";
 import theCure1TF from "../../assets/theCure1TF.png";
 
