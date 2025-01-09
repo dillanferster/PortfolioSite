@@ -36,7 +36,7 @@ function Contact() {
           className="flex flex-col gap-8"
         >
           <motion.li variants={listItem}>
-            <a href="mailto:dillyferster@gmail.com" target="blank">
+            <a href="mailto:ferstdesignstudio@gmail.com" target="blank">
               <button
                 id="contactbtn-three"
                 className="hover:text-[var(--text-hover)] "
